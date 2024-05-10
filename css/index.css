@@ -1761,7 +1761,7 @@ hr {
 
 .ticket:before {
   border: 15px solid #d9d9d9;
-  margin-left: 20px;
+  margin-left: 15px;
   left: -35px;
 }
 
@@ -1769,7 +1769,7 @@ hr {
   border: 15px solid #d9d9d9;
   border-top-color: transparent;
   border-left-color: transparent;
-  margin-right: 20px;
+  margin-right: 15px;
   right: -35px;
 }
 
