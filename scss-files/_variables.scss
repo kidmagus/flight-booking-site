@@ -3,6 +3,10 @@ $black: #000000;
 $white: #ffffff;
 $gray: #484848;
 $pink: #d9d9d9;
+$twitter: #1da1f2;
+$facebook: #1877f2;
+$youtube: #ff0000;
+$green: #25dac5 !default;
 
 //color palette
 $colors: (
@@ -11,6 +15,10 @@ $colors: (
   "white": $white,
   "gray": $gray,
   "pink": $pink,
+  "tw": $twitter,
+  "fb": $facebook,
+  "yt": $youtube,
+  "green": $green,
 );
 
 //padding
