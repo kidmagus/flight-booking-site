@@ -1,0 +1,54 @@
+//border
+@for $i from 1 through 3 {
+  @each $key, $value in $colors {
+    @each $valueStyles in $base-border-styles {
+      .border-#{$i}-#{$valueStyles}-#{$key} {
+        border: $i + 0px $valueStyles $value;
+      }
+    }
+  }
+}
+
+//border-top
+@for $i from 1 through 3 {
+  @each $key, $value in $colors {
+    @each $valueStyles in $base-border-styles {
+      .border-top-#{$i}-#{$valueStyles}-#{$key} {
+        border-top: $i + 0px $valueStyles $value;
+      }
+    }
+  }
+}
+
+//border-bottom
+@for $i from 1 through 3 {
+  @each $key, $value in $colors {
+    @each $valueStyles in $base-border-styles {
+      .border-bottom-#{$i}-#{$valueStyles}-#{$key} {
+        border-bottom: $i + 0px $valueStyles $value;
+      }
+    }
+  }
+}
+
+//border-left
+@for $i from 1 through 3 {
+  @each $key, $value in $colors {
+    @each $valueStyles in $base-border-styles {
+      .border-left-#{$i}-#{$valueStyles}-#{$key} {
+        border-left: $i + 0px $valueStyles $value;
+      }
+    }
+  }
+}
+
+//border-right
+@for $i from 1 through 3 {
+  @each $key, $value in $colors {
+    @each $valueStyles in $base-border-styles {
+      .border-right-#{$i}-#{$valueStyles}-#{$key} {
+        border-right: $i + 0px $valueStyles $value;
+      }
+    }
+  }
+}

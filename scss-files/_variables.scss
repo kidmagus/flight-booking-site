@@ -1,0 +1,29 @@
+$primary: #636363;
+$black: #000000;
+$white: #ffffff;
+$gray: #484848;
+$pink: #d9d9d9;
+
+//color palette
+$colors: (
+  "primary": $primary,
+  "black": $black,
+  "white": $white,
+  "gray": $gray,
+  "pink": $pink,
+);
+
+//padding
+$base-padding: 0.75rem !default;
+
+//margin
+$base-margin: 0.75rem !default;
+
+//shadow
+$base-box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7) !default;
+
+//border
+$base-border-thickness: 1px;
+$base-border-radius: 20px !default;
+$base-border-thickness: 1px !default;
+$base-border-styles: solid, dashed, dotted !default;

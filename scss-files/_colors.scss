@@ -1,0 +1,102 @@
+@each $key, $val in $colors {
+  .text-#{$key} {
+    color: $val;
+  }
+
+  .text-hover-#{$key} {
+    &:hover {
+      color: $val;
+      cursor: pointer;
+    }
+  }
+
+  .bg-#{$key} {
+    background-color: $val;
+  }
+
+  //if the val is not black and white .. do this
+
+  @for $i from 1 through 9 {
+    //light variations
+    .text-#{$key}-light-#{$i} {
+      color: mix(white, $val, $i * 10);
+    }
+
+    .text-hover-#{$key}-light-#{$i} {
+      &:hover {
+        color: mix(white, $val, $i * 10);
+      }
+    }
+
+    .bg-#{$key}-light-#{$i} {
+      background-color: mix(white, $val, $i * 10);
+    }
+    //Button Lightness
+    .btn-#{$key}-light-#{$i} {
+      @include btn;
+      background-color: mix(white, $val, $i * 10);
+
+      &:hover {
+        background-color: lighten($val, 10%);
+      }
+    }
+    //Button Outlined Lightness
+    .btn-outlined-#{$key}-light-#{$i} {
+      @include btn($key);
+      border: 1px solid $val;
+
+      &:hover {
+        background-color: mix(white, $val, $i * 10);
+        border-color: mix(white, $val, $i * 10);
+      }
+    }
+
+    .card-#{$key}-light-#{$i} {
+      @include card;
+      background-color: mix(white, $val, $i * 10);
+    }
+  }
+
+  @for $i from 1 through 9 {
+    //dark variations
+    .text-#{$key}-dark-#{$i} {
+      color: mix(black, $val, $i * 10);
+    }
+
+    .text-hover-#{$key}-dark-#{$i} {
+      &:hover {
+        color: mix(black, $val, $i * 10);
+      }
+    }
+
+    .bg-#{$key}-dark-#{$i} {
+      background-color: mix(black, $val, $i * 10);
+    }
+    //Button Darkness
+    .btn-#{$key}-dark-#{$i} {
+      @include btn;
+      color: $white;
+      background-color: mix(black, $val, $i * 10);
+
+      &:hover {
+        background-color: darken($val, 10%);
+      }
+    }
+    //Button Outlined Darkness
+    .btn-outlined-#{$key}-dark-#{$i} {
+      @include btn($key);
+      border: 1px solid $val;
+
+      &:hover {
+        background-color: mix(black, $val, $i * 10);
+        border-color: mix(black, $val, $i * 10);
+        color: $white;
+      }
+    }
+
+    .card-#{$key}-dark-#{$i} {
+      @include card;
+      background-color: mix(black, $val, $i * 10);
+    }
+  }
+}

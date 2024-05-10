@@ -1,0 +1,157 @@
+@use "sass:math";
+
+//Grid Gap
+$grid-gaps: (
+  "0": 0,
+  "1": 10px,
+  "2": 20px,
+  "3": 30px,
+);
+
+@each $key, $value in $grid-gaps {
+  .gap-#{$key} > * {
+    padding: $value;
+  }
+
+  .gap-#{$key} {
+    margin-left: -$value;
+    margin-right: -$value;
+  }
+}
+
+//Column grid and Row Grid
+$gaps: (
+  "0": 0,
+  "1": 10px,
+  "2": 20px,
+  "3": 30px,
+  "4": 40px,
+  "5": 50px,
+  "6": 60px,
+  "7": 70px,
+  "8": 80px,
+  "9": 90px,
+);
+
+@each $key, $value in $gaps {
+  .col-gap-#{$key} {
+    column-gap: $value;
+  }
+
+  .row-gap-#{$key} {
+    row-gap: $value;
+  }
+}
+
+//Justify content classes
+$layout-values: flex-start, flex-end, center, space-between, space-around,
+  space-evenly;
+
+@each $value in $layout-values {
+  .justify-#{$value} {
+    justify-content: $value;
+  }
+}
+
+//Flex direction classes
+$flex-values: row, column, column-reverse, row-reverse;
+@each $value in $flex-values {
+  .flex-#{$value} {
+    flex-direction: $value;
+  }
+}
+
+//column classes
+$grid-columns: 12;
+
+@include xs {
+  @for $i from 1 through $grid-columns {
+    .col-#{$i}-xs {
+      box-sizing: border-box;
+      flex-grow: 0;
+      width: math.div($i * 100%, $grid-columns);
+    }
+  }
+
+  .container {
+    flex-direction: column;
+  }
+}
+
+@include sm {
+  @for $i from 1 through $grid-columns {
+    .col-#{$i}-sm {
+      box-sizing: border-box;
+      flex-grow: 0;
+      width: math.div($i * 100%, $grid-columns);
+    }
+  }
+
+  .container {
+    flex-direction: column;
+  }
+}
+
+@include md {
+  @for $i from 1 through $grid-columns {
+    .col-#{$i}-md {
+      box-sizing: border-box;
+      flex-grow: 0;
+      width: math.div($i * 100%, $grid-columns);
+    }
+  }
+
+  .container {
+    flex-direction: column;
+  }
+}
+
+@include lg {
+  @for $i from 1 through $grid-columns {
+    .col-#{$i}-lg {
+      box-sizing: border-box;
+      flex-grow: 0;
+      width: math.div($i * 100%, $grid-columns);
+    }
+  }
+
+  .container {
+    flex-direction: row;
+  }
+}
+
+@include xl {
+  @for $i from 1 through $grid-columns {
+    .col-#{$i}-xl {
+      box-sizing: border-box;
+      flex-grow: 0;
+      width: math.div($i * 100%, $grid-columns);
+    }
+  }
+
+  .container {
+    flex-direction: row;
+  }
+}
+
+//base layout classes
+.row {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 20px;
+}
+
+.margin-auto {
+  margin: 0 auto;
+}

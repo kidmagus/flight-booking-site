@@ -1,0 +1,21 @@
+@import "variables";
+
+@import "base";
+@import "breakpoints";
+@import "grid";
+
+@import "typography";
+
+//components;
+@import "components/border";
+@import "components/button";
+@import "components/card";
+@import "components/navbar";
+@import "components/ticket";
+@import "components/select";
+//pages
+@import "pages/firstscreen";
+
+@import "colors";
+
+@import "utilities";
