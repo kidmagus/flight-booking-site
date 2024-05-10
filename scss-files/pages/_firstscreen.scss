@@ -5,3 +5,27 @@
   max-width: 50px;
   transform: rotate(90deg);
 }
+
+@include xs {
+  .book {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 10px;
+    align-items: center;
+  }
+}
+
+@include lg {
+  .book {
+    flex-direction: row;
+    justify-content: space-around;
+    column-gap: 50px;
+    margin-top: 30px;
+    text-align: left;
+  }
+}
+
+.reserve:hover {
+  background-color: #919191;
+}
