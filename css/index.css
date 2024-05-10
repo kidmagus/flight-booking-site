@@ -1791,20 +1791,18 @@ select {
   outline: 0;
   font: inherit;
   /* Personalize */
-  max-width: 20rem;
+  max-width: 12rem;
   width: 100%;
-  padding: 1rem 4rem 1rem 1rem;
+  padding: 16px 64px 16px 16px;
   background: var(--arrow-icon) no-repeat right 0.8em center/1.4em, linear-gradient(to left, var(--arrow-bg) 3em, var(--select-bg) 3em);
   color: white;
   border-radius: 0.25em;
   box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
   cursor: pointer;
+  margin-top: -8px;
   /* Remove IE arrow */
   /* Remove focus outline */
   /* <option> colors */
-}
-select::-ms-expand {
-  display: none;
 }
 select:focus {
   outline: none;
