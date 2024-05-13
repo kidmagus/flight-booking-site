@@ -19,8 +19,10 @@
 @include lg {
   .book {
     flex-direction: row;
-    justify-content: space-around;
-    column-gap: 50px;
+    align-items: center;
+    justify-content: center;
+    column-gap: 220px;
+    padding-left: 100px;
     margin-top: 30px;
     text-align: left;
   }
