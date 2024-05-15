@@ -1,8 +1,10 @@
 const loadFile = document.querySelector(".loadFile");
 
 loadFile.addEventListener("change", (event) => {
-  const image = document.querySelector(".output");
-  image.src = URL.createObjectURL(event.target.files[0]);
+  const image = document.querySelectorAll(".output");
+  image.forEach((images) => {
+    images.src = URL.createObjectURL(event.target.files[0]);
+  });
 });
 
 const box = document.querySelectorAll(".box");
