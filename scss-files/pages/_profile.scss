@@ -55,52 +55,92 @@ $fontColor: rgb(250, 250, 250);
   grid-template-columns: $grid-temp;
 }
 
-.profile__info {
+.accordion {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: $base-padding * 2;
+  border-radius: $base-border-radius;
+}
+
+.accordion__box {
+  padding-left: $base-padding / 2;
+  border-bottom: 1px solid rgb(229, 229, 229);
+}
+
+.box__head {
+  align-items: center;
+  display: grid;
+
+  grid-template-columns: auto 1fr auto;
+
+  cursor: pointer;
+  text-align: center;
+  color: $white;
+  opacity: 0.8;
+}
+
+.box__head:hover {
+  opacity: 1;
+}
+
+.head__icon {
+  font-size: $font-size-md;
+}
+
+.head__title {
+  font-size: $font-size-md;
+  font-weight: $font-weight-xxl;
+}
+
+.head__span {
+  font-size: $font-size-md;
+  height: 35px;
+  width: 35px;
+  background-color: $white;
+  color: $primary;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.box__info {
+  color: $black;
+  font-weight: $font-weight-xxl;
+  display: none;
+  padding-bottom: $base-padding;
+}
+
+.expanded .box__info {
+  display: block;
+}
+
+.expanded .head__span {
+  transform: rotate(90deg);
+  background-color: $primary;
+  color: $white;
+}
+
+.expanded .head__title {
+  color: var(--lightpurple);
+}
+
+.form-group {
+  text-align: left;
+  display: grid;
+  align-items: center;
+  column-gap: 16px;
+  grid-template-columns: 1fr 2fr;
+
   label {
+    color: $white;
     font-size: $font-size-sm;
-    font-weight: $font-weight-md;
-    white-space: nowrap;
-    text-align: left;
-  }
-  .name {
-    input {
-      @extend .select;
-      max-width: 350px;
-      background: rgba(255, 255, 255, 0.2);
-      color: $black;
-      &:focus {
-        outline: none;
-      }
-    }
+    font-weight: $font-weight-xxl;
   }
 
-  .bio {
-    textarea {
-      @extend .select;
-      max-width: 350px;
-      max-height: 300px;
-      background: rgba(255, 255, 255, 0.2);
-    }
-  }
-}
-
-@include xs {
-  .name {
-    @include grid(1fr 2fr);
-  }
-  .bio {
-    @include grid(1fr 2fr);
-  }
-}
-
-@include md {
-}
-
-@include lg {
-  .name {
-    @include grid(1fr 4fr);
-  }
-  .bio {
-    @include grid(1fr 5fr);
+  input {
+    @extend .select;
+    background: none;
+    background-color: $facebook;
+    max-width: 240px;
+    width: 100%;
   }
 }

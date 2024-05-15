@@ -23,4 +23,35 @@
     @include card;
     background-color: $val;
   }
+
+  .card-hover-#{$key} {
+    &:hover {
+      background-color: $val;
+      cursor: pointer;
+    }
+  }
+
+  @for $i from 1 through 9 {
+    .card-#{$key}-light-#{$i} {
+      background-color: mix(white, $val, $i * 10);
+    }
+
+    .card-hover-#{$key}-light-#{$i} {
+      &:hover {
+        cursor: pointer;
+        background-color: mix(white, $val, $i * 10);
+      }
+    }
+
+    .card-#{$key}-dark-#{$i} {
+      background-color: mix(black, $val, $i * 10);
+    }
+
+    .card-hover-#{$key}-dark-#{$i} {
+      &:hover {
+        cursor: pointer;
+        background-color: mix(black, $val, $i * 10);
+      }
+    }
+  }
 }

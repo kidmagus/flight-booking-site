@@ -1,8 +1,12 @@
-$primary: #636363;
-$black: #000000;
+$primary: #03045e;
+$secondary: #0077b6;
+$tertiary: #00b4d8;
+$quaternary: #90e0ef;
+$quinary: #caf0f8;
+$senary: #fdfdf5;
 $white: #ffffff;
+$black: #000000;
 $gray: #484848;
-$pink: #d9d9d9;
 $twitter: #1da1f2;
 $facebook: #1877f2;
 $youtube: #ff0000;
@@ -11,10 +15,13 @@ $green: #25dac5 !default;
 //color palette
 $colors: (
   "primary": $primary,
+  "secondary": $secondary,
+  "tertiary": $tertiary,
+  "quaternary": $quaternary,
+  "quinary": $quinary,
+  "senary": $senary,
   "black": $black,
   "white": $white,
-  "gray": $gray,
-  "pink": $pink,
   "tw": $twitter,
   "fb": $facebook,
   "yt": $youtube,

@@ -1,8 +1,8 @@
 :root {
-  --arrow-bg: rgba(255, 255, 255, 0.3);
+  --arrow-bg: #1877f2;
   --arrow-icon: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg);
-  --option-bg: white;
-  --select-bg: rgba(255, 255, 255, 0.2);
+  // --option-bg: #0077b6;
+  --select-bg: #1877f2;
 }
 * {
   box-sizing: border-box;
@@ -16,7 +16,7 @@
   outline: 0;
   font: inherit;
   /* Personalize */
-  max-width: 12rem;
+  max-width: 240px;
   width: 100%;
   padding: 16px 64px 16px 16px;
   background: var(--arrow-icon) no-repeat right 0.8em center / 1.4em,
@@ -26,6 +26,7 @@
   box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
   cursor: pointer;
   margin-top: -8px;
+
   /* Remove IE arrow */
 
   /* Remove focus outline */
@@ -35,6 +36,6 @@
   /* <option> colors */
   option {
     color: inherit;
-    background-color: black;
+    background-color: $black;
   }
 }
