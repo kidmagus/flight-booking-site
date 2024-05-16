@@ -5525,6 +5525,11 @@ input:checked + .slider:before {
   object-fit: cover;
 }
 
+.-profile {
+  height: 165px;
+  width: 165px;
+}
+
 .profile-pic {
   color: transparent;
   transition: all 0.3s ease;
