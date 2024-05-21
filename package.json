@@ -12,5 +12,8 @@
     "gulp": "^5.0.0",
     "gulp-sass": "^5.1.0",
     "sass": "^1.77.0"
+  },
+  "dependencies": {
+    "@splidejs/splide": "^4.1.4"
   }
 }
