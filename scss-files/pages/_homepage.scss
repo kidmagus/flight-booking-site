@@ -5,3 +5,54 @@
   object-fit: cover;
   border-radius: $base-border-radius;
 }
+
+.splide {
+  &__slide {
+    position: relative;
+
+    img {
+      width: 1200px;
+      height: 440px;
+      object-fit: cover;
+    }
+  }
+
+  &__content {
+    position: absolute;
+    background: none;
+    color: white;
+    margin: 0;
+    padding: 24px 36px 30px;
+    filter: brightness(30%);
+    left: 30px;
+    top: 100px;
+    transition: 0.7s linear;
+
+    &.animate {
+      filter: brightness(160%);
+      animation-name: anim;
+      animation-duration: 2s;
+      animation-fill-mode: both;
+    }
+
+    h1 {
+      color: orangered;
+    }
+  }
+}
+
+@keyframes anim {
+  from {
+    transform: translateX(5px);
+  }
+  to {
+    transform: translateX(30px);
+  }
+}
+
+.header {
+  z-index: 100;
+  &.sticky {
+    position: fixed;
+  }
+}
