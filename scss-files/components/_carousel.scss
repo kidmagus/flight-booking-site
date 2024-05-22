@@ -3,7 +3,7 @@
     position: relative;
 
     img {
-      height: 730px;
+      height: 818px;
       object-fit: cover;
     }
   }
@@ -15,8 +15,8 @@
     margin: 0;
     padding: 24px 36px 30px;
     filter: brightness(30%);
-    left: -30px;
-    top: 190px;
+    left: -5px;
+    top: 260px;
     transition: 0.7s linear;
 
     &.animate {
