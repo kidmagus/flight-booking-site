@@ -54,9 +54,6 @@
   }
 }
 
-@include sm {
-}
-
 @include md {
   .splide {
     &__content {
@@ -65,9 +62,6 @@
       }
     }
   }
-}
-
-@include lg {
 }
 
 @include xl {

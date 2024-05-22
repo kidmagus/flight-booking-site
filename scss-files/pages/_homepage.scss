@@ -14,3 +14,15 @@
     position: fixed;
   }
 }
+
+.section {
+  padding: 3rem;
+  border-top: 1px solid #ddd;
+
+  transition: transform 1s, opacity 1s;
+
+  &--hidden {
+    opacity: 0;
+    transform: translateY(8rem);
+  }
+}
