@@ -1,0 +1,98 @@
+.splide {
+  &__slide {
+    position: relative;
+
+    img {
+      height: 730px;
+      object-fit: cover;
+    }
+  }
+
+  &__content {
+    position: absolute;
+    background: none;
+    color: white;
+    margin: 0;
+    padding: 24px 36px 30px;
+    filter: brightness(30%);
+    left: -30px;
+    top: 190px;
+    transition: 0.7s linear;
+
+    &.animate {
+      filter: brightness(160%);
+      animation-name: anim;
+      animation-duration: 2s;
+      animation-fill-mode: both;
+    }
+
+    h1 {
+      color: orangered;
+      text-transform: capitalize;
+      font-size: 80px;
+      line-height: 0.2;
+    }
+  }
+}
+
+@keyframes anim {
+  from {
+    transform: translateX(5px);
+  }
+  to {
+    transform: translateX(30px);
+  }
+}
+
+.your-class-arrows {
+  position: absolute;
+  left: 99em;
+  right: 1em;
+  bottom: 80px;
+}
+
+.your-class-arrow {
+  background-color: #0cc3d3;
+  color: white;
+  width: 42px;
+  height: 42px;
+
+  font-size: 20px;
+  line-height: 44px;
+}
+
+@include xs {
+  .splide {
+    &__content {
+      h1 {
+        font-size: 50px;
+      }
+    }
+  }
+}
+
+@include sm {
+}
+
+@include md {
+  .splide {
+    &__content {
+      h1 {
+        font-size: 70px;
+      }
+    }
+  }
+}
+
+@include lg {
+}
+
+@include xl {
+  .splide {
+    &__content {
+      h1 {
+        font-size: 80px;
+      }
+    }
+  }
+}

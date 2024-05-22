@@ -5367,7 +5367,7 @@ input:focus {
   width: 100%;
   height: 60px;
   border-radius: 50%;
-  z-index: 2;
+  z-index: 1;
   background-color: #caf0f8;
 }
 
@@ -5483,6 +5483,76 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
+.splide__slide {
+  position: relative;
+}
+.splide__slide img {
+  height: 730px;
+  object-fit: cover;
+}
+.splide__content {
+  position: absolute;
+  background: none;
+  color: white;
+  margin: 0;
+  padding: 24px 36px 30px;
+  filter: brightness(30%);
+  left: -30px;
+  top: 190px;
+  transition: 0.7s linear;
+}
+.splide__content.animate {
+  filter: brightness(160%);
+  animation-name: anim;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+.splide__content h1 {
+  color: orangered;
+  text-transform: capitalize;
+  font-size: 80px;
+  line-height: 0.2;
+}
+
+@keyframes anim {
+  from {
+    transform: translateX(5px);
+  }
+  to {
+    transform: translateX(30px);
+  }
+}
+.your-class-arrows {
+  position: absolute;
+  left: 99em;
+  right: 1em;
+  bottom: 80px;
+}
+
+.your-class-arrow {
+  background-color: #0cc3d3;
+  color: white;
+  width: 42px;
+  height: 42px;
+  font-size: 20px;
+  line-height: 44px;
+}
+
+@media (min-width: 0) {
+  .splide__content h1 {
+    font-size: 50px;
+  }
+}
+@media (min-width: 720px) {
+  .splide__content h1 {
+    font-size: 70px;
+  }
+}
+@media (min-width: 1200px) {
+  .splide__content h1 {
+    font-size: 80px;
+  }
+}
 .logo {
   width: 100%;
   display: block;
@@ -5659,44 +5729,8 @@ input:checked + .slider:before {
   border-radius: 20px;
 }
 
-.splide__slide {
-  position: relative;
-}
-.splide__slide img {
-  width: 1200px;
-  height: 440px;
-  object-fit: cover;
-}
-.splide__content {
-  position: absolute;
-  background: none;
-  color: white;
-  margin: 0;
-  padding: 24px 36px 30px;
-  filter: brightness(30%);
-  left: 30px;
-  top: 100px;
-  transition: 0.7s linear;
-}
-.splide__content.animate {
-  filter: brightness(160%);
-  animation-name: anim;
-  animation-duration: 2s;
-  animation-fill-mode: both;
-}
-.splide__content h1 {
-  color: orangered;
-}
-
-@keyframes anim {
-  from {
-    transform: translateX(5px);
-  }
-  to {
-    transform: translateX(30px);
-  }
-}
 .header {
+  position: relative;
   z-index: 100;
 }
 .header.sticky {
