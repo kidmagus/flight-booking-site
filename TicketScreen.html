@@ -10,166 +10,176 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
   </head>
-  <body class="bg-quinary">
-    <header class="navbar-primary header">
-      <div
-        class="container text-white display-f align-center justify-space-between"
-      >
-        <div class="display-f align-center col-gap-2">
-          <p class="font-lg fw-xl"><a href="Homepage.html">Envision Air</a></p>
-          <img class="logo" src="img/logo.png" />
-        </div>
-
-        <nav class="display-f col-gap-2 font-md">
-          <ul class="p-0">
-            <a class="text-hover-gray-light-5" href="FirstScreen.html"
-              ><i class="fa-solid fa-house"></i
-            ></a>
-          </ul>
-          <ul>
-            <a class="text-hover-gray-light-5" href="TicketScreen.html"
-              ><i class="fa-solid fa-ticket"></i
-            ></a>
-          </ul>
-          <ul>
-            <a class="text-hover-gray-light-5" href="Profile.html"
-              ><i class="fa-solid fa-user"></i
-            ></a>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
-    <div class="container">
-      <h3 class="font-md">Recommended Flight</h3>
-      <div class="ticket bg-senary-dark-2">
-        <div class="text-primary">
-          <div class="display-f justify-space-around align-center mt-3 mb-4">
-            <div class="display-f flex-column">
-              <span>02:00PM</span>
-              <span>PHL CRK</span>
-            </div>
-            <i class="fa-solid fa-plane-up"></i>
-            <div class="display-f flex-column">
-              <span>11:00PM</span>
-              <span>911 NYC</span>
-            </div>
-          </div>
-
-          <hr class="border-top-1-dashed-primary" />
-          <div class="display-f align-center flex-column">
-            <h2 class="">EMIRATES</h2>
-            <p class="fw-lg">$25,000</p>
-          </div>
-        </div>
-      </div>
-      <hr />
-      <div class="ticket mt-5 bg-senary-dark-2">
-        <div class="ticket-content-wrapper text-primary">
-          <div class="display-f justify-space-around align-center mt-3 mb-4">
-            <div class="display-f flex-column">
-              <span>09:00PM</span>
-              <span>PHL CRK</span>
-            </div>
-            <i class="fa-solid fa-plane-up"></i>
-            <div class="display-f flex-column">
-              <span>14:00PM</span>
-              <span>CHI BEI</span>
-            </div>
-          </div>
-
-          <hr class="border-top-1-dashed-primary" />
-          <div class="display-f align-center flex-column">
-            <h2 class="">PHILIPPINES</h2>
-            <p class="fw-lg">$55,000</p>
-          </div>
-        </div>
-      </div>
-      <hr />
-      <div class="ticket mt-5 bg-senary-dark-2">
-        <div class="ticket-content-wrapper text-primary">
-          <div class="display-f justify-space-around align-center mt-3 mb-4">
-            <div class="display-f flex-column">
-              <span>09:00PM</span>
-              <span>PHL CRK</span>
-            </div>
-            <i class="fa-solid fa-plane-up"></i>
-            <div class="display-f flex-column">
-              <span>14:00PM</span>
-              <span>CHI BEI</span>
-            </div>
-          </div>
-
-          <hr class="border-top-1-dashed-primary" />
-          <div class="display-f align-center flex-column">
-            <h2 class="">MONGOLIA</h2>
-            <p class="fw-lg">$125,000</p>
-          </div>
-        </div>
-      </div>
-
-      <h3 class="text-center">
-        <a href="#" class="mr-1">Back to Top</a
-        ><span><i class="fa-solid fa-arrow-up"></i></span>
-      </h3>
+  <body onload="load()" class="bg-quinary">
+    <div class="ring">
+      <img src="img/logo.png" class="plane__logo" />
+      <span><img src="img/airplane.png" class="plane" /></span>
     </div>
-
-    <footer class="footer bg-primary-dark-6 text-white pt-2 pb-2">
-      <div class="container row col-gap-9 justify-space-between">
-        <div class="col-12-sm col-2-lg">
-          <h3>Startup 3</h3>
-          <label
-            >Be sure to take a look at our Terms of Use and Privacy
-            Policy</label
-          >
-        </div>
-        <div class="col-4-sm col-1-lg">
-          <h3>About</h3>
-          <p>About Us</p>
-          <p>Blog</p>
-          <p>Team</p>
-          <p>Career</p>
-          <p>Contact</p>
-        </div>
-        <div class="col-4-sm col-1-lg">
-          <h3>Company</h3>
-          <p>Privacy</p>
-          <p>Support</p>
-          <p>Help Desk</p>
-          <p>FAQ</p>
-        </div>
-        <div class="col-12-sm col-4-lg">
-          <h3>Subscribe to our NewsLetters</h3>
-          <input
-            class="font-sm pl-1 pt-1 b-rad pb-1 text-black border-1-solid-black"
-            type="text"
-            placeholder="Your email"
-          />
-          <button class="btn-green text-white font-sm pl-2 pr-2 mt-1 b-rad">
-            Subscribe
-          </button>
-          <div class="display-f font-md mt-2 align-center col-gap-3">
-            <li class="text-tw text-hover-tw-dark-1">
-              <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            </li>
-            <li class="text-fb text-hover-fb-dark-1">
-              <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            </li>
-            <li class="text-yt text-hover-yt-dark-1">
-              <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
-            </li>
+    <div class="hide">
+      <header class="navbar-primary header">
+        <div
+          class="container text-white display-f align-center justify-space-between"
+        >
+          <div class="display-f align-center col-gap-2">
+            <p class="font-lg fw-xl">
+              <a href="Homepage.html">Envision Air</a>
+            </p>
+            <img class="logo" src="img/logo.png" />
           </div>
+
+          <nav class="display-f col-gap-2 font-md">
+            <ul class="p-0">
+              <a class="text-hover-gray-light-5" href="FirstScreen.html"
+                ><i class="fa-solid fa-house"></i
+              ></a>
+            </ul>
+            <ul>
+              <a class="text-hover-gray-light-5" href="TicketScreen.html"
+                ><i class="fa-solid fa-ticket"></i
+              ></a>
+            </ul>
+            <ul>
+              <a class="text-hover-gray-light-5" href="Profile.html"
+                ><i class="fa-solid fa-user"></i
+              ></a>
+            </ul>
+          </nav>
         </div>
-      </div>
-    </footer>
-    <div class="navbar-quaternary text-center">
+      </header>
+
       <div class="container">
-        <p class="text-gray-dark-2">
-          Startup Framework contains components and complex blocks which can
-          easily be integrated into almost any design.
-        </p>
+        <h3 class="font-md">Recommended Flight</h3>
+        <div class="ticket bg-senary-dark-2">
+          <div class="text-primary">
+            <div class="display-f justify-space-around align-center mt-3 mb-4">
+              <div class="display-f flex-column">
+                <span>02:00PM</span>
+                <span>PHL CRK</span>
+              </div>
+              <i class="fa-solid fa-plane-up"></i>
+              <div class="display-f flex-column">
+                <span>11:00PM</span>
+                <span>911 NYC</span>
+              </div>
+            </div>
+
+            <hr class="border-top-1-dashed-primary" />
+            <div class="display-f align-center flex-column">
+              <h2 class="">EMIRATES</h2>
+              <p class="fw-lg">$25,000</p>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="ticket mt-5 bg-senary-dark-2">
+          <div class="ticket-content-wrapper text-primary">
+            <div class="display-f justify-space-around align-center mt-3 mb-4">
+              <div class="display-f flex-column">
+                <span>09:00PM</span>
+                <span>PHL CRK</span>
+              </div>
+              <i class="fa-solid fa-plane-up"></i>
+              <div class="display-f flex-column">
+                <span>14:00PM</span>
+                <span>CHI BEI</span>
+              </div>
+            </div>
+
+            <hr class="border-top-1-dashed-primary" />
+            <div class="display-f align-center flex-column">
+              <h2 class="">PHILIPPINES</h2>
+              <p class="fw-lg">$55,000</p>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="ticket mt-5 bg-senary-dark-2">
+          <div class="ticket-content-wrapper text-primary">
+            <div class="display-f justify-space-around align-center mt-3 mb-4">
+              <div class="display-f flex-column">
+                <span>09:00PM</span>
+                <span>PHL CRK</span>
+              </div>
+              <i class="fa-solid fa-plane-up"></i>
+              <div class="display-f flex-column">
+                <span>14:00PM</span>
+                <span>CHI BEI</span>
+              </div>
+            </div>
+
+            <hr class="border-top-1-dashed-primary" />
+            <div class="display-f align-center flex-column">
+              <h2 class="">MONGOLIA</h2>
+              <p class="fw-lg">$125,000</p>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="text-center">
+          <a href="#" class="mr-1">Back to Top</a
+          ><span><i class="fa-solid fa-arrow-up"></i></span>
+        </h3>
+      </div>
+
+      <footer class="footer bg-primary-dark-6 text-white pt-2 pb-2">
+        <div class="container row col-gap-9 justify-space-between">
+          <div class="col-12-sm col-2-lg">
+            <h3>Startup 3</h3>
+            <label
+              >Be sure to take a look at our Terms of Use and Privacy
+              Policy</label
+            >
+          </div>
+          <div class="col-4-sm col-1-lg">
+            <h3>About</h3>
+            <p>About Us</p>
+            <p>Blog</p>
+            <p>Team</p>
+            <p>Career</p>
+            <p>Contact</p>
+          </div>
+          <div class="col-4-sm col-1-lg">
+            <h3>Company</h3>
+            <p>Privacy</p>
+            <p>Support</p>
+            <p>Help Desk</p>
+            <p>FAQ</p>
+          </div>
+          <div class="col-12-sm col-4-lg">
+            <h3>Subscribe to our NewsLetters</h3>
+            <input
+              class="font-sm pl-1 pt-1 b-rad pb-1 text-black border-1-solid-black"
+              type="text"
+              placeholder="Your email"
+            />
+            <button class="btn-green text-white font-sm pl-2 pr-2 mt-1 b-rad">
+              Subscribe
+            </button>
+            <div class="display-f font-md mt-2 align-center col-gap-3">
+              <li class="text-tw text-hover-tw-dark-1">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li class="text-fb text-hover-fb-dark-1">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              </li>
+              <li class="text-yt text-hover-yt-dark-1">
+                <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+              </li>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="navbar-quaternary text-center">
+        <div class="container">
+          <p class="text-gray-dark-2">
+            Startup Framework contains components and complex blocks which can
+            easily be integrated into almost any design.
+          </p>
+        </div>
       </div>
     </div>
-    <script src="js/general.js"></script>
+
+    <script src="js/nav.js"></script>
+    <script src="js/loadingmenu.js"></script>
   </body>
 </html>

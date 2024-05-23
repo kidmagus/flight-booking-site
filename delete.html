@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Settings</title>
+    <title>Delete Account</title>
     <link rel="stylesheet" href="css/index.css" />
 
     <link
@@ -11,7 +11,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
   </head>
-  <body onload="load()" class="bg-quinary">
+  <body onload="load()">
     <div class="ring">
       <img src="img/logo.png" class="plane__logo" />
       <span><img src="img/airplane.png" class="plane" /></span>
@@ -48,43 +48,40 @@
         </div>
       </header>
 
-      <div class="container mt-2">
-        <div class="settings bg-senary-light-1 p-2 b-rad-xs">
-          <div class="pb-1 pt-1 border-bottom-1-solid-primary">
-            <h1>General</h1>
+      <div class="container mt-4">
+        <h1 class="text-center">
+          Are you sure you want to permanently delete your account?
+        </h1>
 
-            <p class="text-hover-primary-light-1">
-              <a href="notification-setting.html">Notification Settings</a>
-            </p>
-            <div
-              class="switch-label pointer m-0 display-f align-center justify-space-between"
-            >
-              <p>Location</p>
-              <label class="switch">
-                <input type="checkbox" class="switch-input" />
-                <span class="switcher round"></span>
-              </label>
-            </div>
+        <div class="bg-quinary p-2 mt-4">
+          <h2 class="text-center">
+            This cannot be undone. By deleting this account you agree that:
+          </h2>
+          <div class="display-f flex-column mt-3 mb-2 row-gap-3">
+            <label class="container__chkbox">
+              <input class="checkbox" type="checkbox" />
+              No one will be able to use this username ever, including yourself.
+              <span class="checkmark"></span>
+            </label>
+
+            <label class="container__chkbox">
+              <input class="checkbox" type="checkbox" />
+              You will lose your personal chats, files and git data
+              <span class="checkmark"></span>
+            </label>
+            <label class="container__chkbox">
+              <input class="checkbox" type="checkbox" />
+              I understand that deleting my account is permanent and I will lose
+              all data associated with it.
+              <span class="checkmark"></span>
+            </label>
           </div>
-          <div class="pb-1 pt-1 border-bottom-1-solid-primary">
-            <h1>Account & Security</h1>
-            <p class="text-hover-primary-light-1">
-              <a href="security-setting.html">Security Settings</a>
-            </p>
-            <p class="text-yt text-hover-yt-light-2">
-              <a href="delete.html">Delete Account</a>
-            </p>
-          </div>
-          <div class="pb-1 pt-1 border-bottom-1-solid-primary">
-            <h1>Others</h1>
-            <p>About Envisionair app</p>
-            <p>Privacy & Policy</p>
-            <p>Terms & Conditions</p>
-            <div class="display-f align-center justify-space-between">
-              <p>Version</p>
-              <span class="text-primary font-md">1.021</span>
-            </div>
-          </div>
+        </div>
+        <div class="display-f align-center justify-center col-gap-9 mt-2">
+          <button class="btn-yt text-white font-md">Confirm</button>
+          <button class="btn-green text-white font-md">
+            <a href="settings.html">Cancel</a>
+          </button>
         </div>
       </div>
 
@@ -146,6 +143,6 @@
       </div>
     </div>
     <script src="js/loadingmenu.js"></script>
-    <script src="js/switch.js"></script>
+    <script src="js/checkbox.js"></script>
   </body>
 </html>

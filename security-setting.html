@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Notification Setting</title>
+    <title>Security Settings</title>
     <link rel="stylesheet" href="css/index.css" />
 
     <link
@@ -11,6 +11,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
   </head>
+
   <body onload="load()">
     <div class="ring">
       <img src="img/logo.png" class="plane__logo" />
@@ -50,19 +51,50 @@
 
       <div class="container mt-2">
         <div class="b-rad-sm bg-secondary p-2">
-          <h2 class="display-f justify-center pt-2">Notification Settings</h2>
+          <h2 class="display-f justify-center pt-2">Security Settings</h2>
           <div class="bg-green b-rad-sm">
             <div class="">
               <div class="p-2 border-bottom-1-solid-primary">
-                <h4>Push Notification</h4>
-                <p>To enable notification go to <span>Settings</span></p>
+                <h4>Credit Card</h4>
               </div>
+            </div>
+
+            <div class="">
+              <div
+                class="double pointer bg-senary-light-1 p-2 display-f align-center justify-space-between border-bottom-1-solid-primary"
+              >
+                <div>
+                  <h4>Double Verification</h4>
+                  <p>
+                    Enter CCV & OTP code for more secure payment verification
+                  </p>
+                </div>
+
+                <label class="container__radio">
+                  <input type="radio" name="radio" class="double-radio" />
+                  <span class="radiomark"></span>
+                </label>
+              </div>
+              <div
+                class="single pointer bg-senary-light-1 p-2 display-f align-center justify-space-between border-bottom-1-solid-primary"
+              >
+                <div>
+                  <h4>Single Verification</h4>
+                  <p>
+                    Enter CCV & OTP code for swift and hassle-free payment
+                    verification
+                  </p>
+                </div>
+                <label class="container__radio">
+                  <input type="radio" name="radio" class="single-radio" />
+                  <span class="radiomark"></span>
+                </label>
+              </div>
+            </div>
+
+            <div class="">
               <div class="p-2 border-bottom-1-solid-primary">
-                <h4>Activity</h4>
-                <p>
-                  Secure your account by keeping your log in, register and OTP
-                  activity on track.
-                </p>
+                <h4>Biometrics</h4>
               </div>
             </div>
 
@@ -70,47 +102,14 @@
               <div
                 class="switch-label pointer bg-senary-light-1 p-2 display-f align-center justify-space-between border-bottom-1-solid-primary"
               >
-                <h4>Email</h4>
-                <label class="switch">
-                  <input type="checkbox" class="switch-input" />
-                  <span class="switcher round"></span>
-                </label>
-              </div>
-              <div
-                class="switch-label pointer bg-senary-light-1 p-2 display-f align-center justify-space-between border-bottom-1-solid-primary"
-              >
-                <h4>Push Notification</h4>
-                <label class="switch">
-                  <input type="checkbox" class="switch-input" />
-                  <span class="switcher round"></span>
-                </label>
-              </div>
-            </div>
+                <div>
+                  <h4>Activate Biometric Feature</h4>
+                  <p>
+                    To enjoy a seamless log in with a fingerprint or face
+                    recognition
+                  </p>
+                </div>
 
-            <div class="">
-              <div class="p-2 border-bottom-1-solid-primary">
-                <h4>Special For You</h4>
-                <p>
-                  You can never have too much of limited-time discount,
-                  exclusive offers, tips and info about new features.
-                </p>
-              </div>
-            </div>
-
-            <div class="">
-              <div
-                class="switch-label pointer bg-senary-light-1 p-2 display-f align-center justify-space-between border-bottom-1-solid-primary"
-              >
-                <h4>Email</h4>
-                <label class="switch">
-                  <input type="checkbox" class="switch-input" />
-                  <span class="switcher round"></span>
-                </label>
-              </div>
-              <div
-                class="switch-label pointer bg-senary-light-1 p-2 display-f align-center justify-space-between border-bottom-1-solid-primary"
-              >
-                <h4>Push Notification</h4>
                 <label class="switch">
                   <input type="checkbox" class="switch-input" />
                   <span class="switcher round"></span>
@@ -120,8 +119,7 @@
 
             <div class="">
               <div class="p-2 border-bottom-1-solid-primary">
-                <h4>Membership</h4>
-                <p>You'll get emails about Rewards and Surveys.</p>
+                <h4>Device</h4>
               </div>
             </div>
 
@@ -129,16 +127,11 @@
               <div
                 class="switch-label pointer bg-senary-light-1 p-2 display-f align-center justify-space-between border-bottom-1-solid-primary"
               >
-                <h4>Email</h4>
-                <label class="switch">
-                  <input type="checkbox" class="switch-input" />
-                  <span class="switcher round"></span>
-                </label>
-              </div>
-              <div
-                class="switch-label pointer bg-senary-light-1 p-2 display-f align-center justify-space-between border-bottom-1-solid-primary"
-              >
-                <h4>Push Notification</h4>
+                <div>
+                  <h4>Set Device As Trusted</h4>
+                  <p>Activate to set a PIN and manage device connectivity</p>
+                </div>
+
                 <label class="switch">
                   <input type="checkbox" class="switch-input" />
                   <span class="switcher round"></span>
@@ -146,6 +139,26 @@
               </div>
             </div>
             <div>
+              <div class="">
+                <div class="p-2 border-bottom-1-solid-primary">
+                  <h4>Device</h4>
+                </div>
+              </div>
+
+              <div class="">
+                <div
+                  class="bg-senary-light-1 p-2 display-f align-center justify-space-between border-bottom-1-solid-primary"
+                >
+                  <div>
+                    <h4>Set PIN</h4>
+                    <p>
+                      Set a 6 digit verification PIN to secure your accounts
+                      activities
+                    </p>
+                  </div>
+                </div>
+              </div>
+
               <br />
               <br />
             </div>
@@ -214,6 +227,7 @@
       </div>
     </div>
     <script src="js/loadingmenu.js"></script>
+    <script src="js/verification.js"></script>
     <script src="js/switch.js"></script>
   </body>
 </html>

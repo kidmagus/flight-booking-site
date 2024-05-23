@@ -1,4 +1,4 @@
-const splide = new Splide(".splide", {
+const firstSplide = new Splide("#first-slider", {
   focus: "center",
   type: "fade",
   rewind: "true",
@@ -8,13 +8,20 @@ const splide = new Splide(".splide", {
 }).mount();
 
 document.addEventListener("DOMContentLoaded", function () {
-  splide.on("active", function (e) {
+  firstSplide.on("active", function (e) {
     const element = document.querySelectorAll(".splide__content");
     element[e.index].classList.add("animate");
   });
 
-  splide.on("inactive", function (e) {
+  firstSplide.on("inactive", function (e) {
     const element = document.querySelectorAll(".splide__content");
     element[e.index].classList.remove("animate");
   });
 });
+
+const secondSplide = new Splide("#second-slider", {
+  focus: "center",
+  type: "fade",
+  rewind: "true",
+  perPage: "1",
+}).mount();
