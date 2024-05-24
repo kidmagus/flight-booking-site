@@ -5524,12 +5524,12 @@ input:checked + .switcher:before {
 }
 @media (min-width: 0) {
   .splide__content h1 {
-    font-size: 50px;
+    font-size: 40px;
   }
 }
 @media (min-width: 720px) {
   .splide__content h1 {
-    font-size: 70px;
+    font-size: 60px;
   }
 }
 @media (min-width: 1200px) {
@@ -5935,13 +5935,12 @@ input:checked + .switcher:before {
   transform: translateY(8rem);
 }
 
-.operations__container {
-  display: flex;
-  justify-content: center;
-  column-gap: 30px;
+.operations__section {
+  background-color: #fdfdf5;
+  width: 100%;
 }
 
-@media (min-width: 480px) {
+@media (min-width: 0) {
   .operations__container {
     display: flex;
     flex-flow: none;
@@ -5949,10 +5948,19 @@ input:checked + .switcher:before {
     align-items: center;
   }
 }
+@media (min-width: 960px) {
+  .operations__container {
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+  }
+  .operations__tab {
+    width: 190px;
+  }
+}
 .operations__tab {
   font-size: 1rem;
   transform: translateY(56%);
-  width: 190px;
   filter: brightness(85%);
 }
 
@@ -5966,12 +5974,42 @@ input:checked + .switcher:before {
 }
 
 .operations__content.active {
-  padding: 3.75rem;
   display: flex;
-  align-items: first baseline;
-  column-gap: 35px;
 }
 
+@media (min-width: 0) {
+  .operations__content.active {
+    align-items: center;
+    flex-direction: column;
+    padding: 1.5rem;
+    padding-top: 3.75rem;
+  }
+}
+@media (min-width: 480px) {
+  .operations__content.active {
+    flex-direction: column;
+    column-gap: 35px;
+    align-items: center;
+    padding: 1.5rem;
+    padding-top: 3.75rem;
+  }
+}
+@media (min-width: 720px) {
+  .operations__content.active {
+    flex-direction: row;
+    column-gap: 35px;
+    padding: 3.75rem;
+    align-items: first baseline;
+  }
+}
+@media (min-width: 960px) {
+  .operations__content.active {
+    flex-direction: row;
+    column-gap: 35px;
+    padding: 3.75rem;
+    align-items: first baseline;
+  }
+}
 .settings h1 {
   color: #03045e;
 }
@@ -19435,6 +19473,10 @@ input:checked + .switcher:before {
   letter-spacing: 30px;
 }
 
+.mx-width-50 {
+  max-width: 50px;
+}
+
 .mx-width-170 {
   max-width: 170px;
 }
@@ -19449,6 +19491,30 @@ input:checked + .switcher:before {
 
 .mx-width-800 {
   max-width: 800px;
+}
+
+.w-50 {
+  width: 50px;
+}
+
+.w-170 {
+  width: 170px;
+}
+
+.w-340 {
+  width: 340px;
+}
+
+.w-600 {
+  width: 600px;
+}
+
+.w-800 {
+  width: 800px;
+}
+
+.h-50 {
+  height: 50px;
 }
 
 .h-170 {
