@@ -40,3 +40,8 @@ input {
     outline: inherit;
   }
 }
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}

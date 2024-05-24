@@ -27,11 +27,16 @@
   }
 }
 
-.operations__section {
-  background-color: $senary;
-  width: 100%;
+.operations__text {
+  h2,
+  p {
+    color: $white;
+  }
 }
 
+.operations__content-img {
+  color: $white;
+}
 //operations button container media responsiveness
 @include xs {
   .operations__container {
@@ -58,13 +63,16 @@
   font-size: $font-size-sm;
   transform: translateY(56%);
 
-  filter: brightness(85%);
+  filter: brightness(90%);
 }
 
 .operations__tab.active {
   transform: translateY(26%);
   filter: brightness(100%);
+
+  box-shadow: $base-box-shadow;
 }
+
 ////////////////////////////////////
 .operations__content {
   display: none;
@@ -112,5 +120,26 @@
     column-gap: 35px;
     padding: $base-padding * 5;
     align-items: first baseline;
+  }
+}
+
+#signup {
+  scroll-margin-top: 300px;
+
+  img {
+    max-width: 580px;
+    height: 490px;
+    width: 100%;
+    object-fit: contain;
+  }
+  input {
+    border-radius: $base-border-radius;
+    border: 1px solid gray;
+  }
+
+  .signup__email {
+    width: 100%;
+    max-width: 300px;
+    padding: 12px 0px 12px 14px;
   }
 }

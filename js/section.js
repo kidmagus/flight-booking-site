@@ -19,3 +19,12 @@ allSections.forEach(function (section) {
   sectionObserver.observe(section);
   section.classList.add("section--hidden");
 });
+
+const btnStarted = document.querySelector(".btn-started");
+const signUp = document.getElementById("signup");
+
+btnStarted.addEventListener("click", () => {
+  signUp.scrollIntoView({
+    behavior: "smooth",
+  });
+});

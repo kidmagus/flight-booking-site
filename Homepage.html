@@ -14,6 +14,7 @@
   </head>
   <body onload="load()" class="bg-quinary">
     <div class="ring">
+      <img src="img/earth.png" class="earth" />
       <img src="img/logo.png" class="plane__logo" />
       <span><img src="img/airplane.png" class="plane" /></span>
     </div>
@@ -118,7 +119,9 @@
             </p>
           </div>
           <div>
-            <button class="btn-green font-sm pl-2 pr-2">Get Started</button>
+            <button class="btn-started btn-green font-sm pl-2 pr-2">
+              Get Started
+            </button>
             <p>It is absolutely free.</p>
           </div>
         </div>
@@ -208,27 +211,27 @@
         </div>
         <div class="operations__container mt-2">
           <button
-            class="btn-green text-white operations__tab operations__tab--1 operations__tab active"
+            class="btn-tertiary text-white operations__tab operations__tab--1 operations__tab active"
             data-tab-target="1"
           >
             01 Instant Schedule
           </button>
           <button
-            class="btn-yt text-white operations__tab operations__tab--2"
+            class="btn-secondary text-white operations__tab operations__tab--2"
             data-tab-target="2"
           >
             02 Instant Flight
           </button>
           <button
-            class="btn-primary text-white operations__tab operations__tab--3"
+            class="btn-primary-light-1 text-white operations__tab operations__tab--3"
             data-tab-target="3"
           >
             03 Instant Closing
           </button>
         </div>
-        <div class="operations__section">
+        <div class="b-rad-sm">
           <div
-            class="operations__content operations__content--1 operations__content active"
+            class="card-tertiary b-rad-sm operations__content operations__content--1 operations__content active"
             data-tab-content="1"
           >
             <div class="operations__content-img font-lg">
@@ -246,7 +249,7 @@
             </div>
           </div>
           <div
-            class="operations__content operations__content--2"
+            class="card-secondary b-rad-sm operations__content operations__content--2"
             data-tab-content="2"
           >
             <div class="operations__content-img font-lg">
@@ -264,7 +267,7 @@
             </div>
           </div>
           <div
-            class="operations__content operations__content--3"
+            class="card-primary b-rad-sm operations__content operations__content--3"
             data-tab-content="3"
           >
             <div class="operations__content-img font-lg">
@@ -285,18 +288,17 @@
       </div>
 
       <div class="container mt-2 mb-5 section">
-        <h4>NOT SURE YET?</h4>
+        <h4 class="text-green">NOT SURE YET?</h4>
         <h1 class="font-xxl">
           Millions of Envisions are already making their lifes simpler.
         </h1>
-        <div class="bg-primary-light-6">
+        <div class="">
           <div class="splide" id="second-slider">
             <div class="splide__track">
               <ul class="splide__list">
                 <li class="splide__slide">
                   <div class="splide__section">
-                    <!-- <img src="" /> -->
-                    <div class="splide__message p-3">
+                    <div class="splide__message">
                       <h2>The last step to becoming minimalist</h2>
                       <p>
                         Lorem ipsum dolor sit amet consectetur, adipisicing
@@ -305,21 +307,118 @@
                         corporis, magnam nobis pariatur vitae molestias id?
                         Perferendis nam esse architecto.
                       </p>
-                      <div class="splide__author">
-                        <!-- <img src="img/profile.jpg" /> -->
+                      <div class="splide__author mb-3">
+                        <img src="img/profile.jpg" />
                         <div class="author__name">
-                          <h3>Matthew Samson</h3>
-                          <p>London UK</p>
+                          <h3>Socorro Cunanan</h3>
+                          <span>London UK</span>
                         </div>
                       </div>
                     </div>
                   </div>
                 </li>
-                <li class="splide__slide">2</li>
-                <li class="splide__slide">3</li>
-                <li class="splide__slide">4</li>
+                <li class="splide__slide">
+                  <div class="splide__section">
+                    <div class="splide__message">
+                      <h2>The first step to becoming minimalist</h2>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. Sapiente perspiciatis recusandae animi aperiam,
+                        culpa obcaecati fugiat aliquam architecto necessitatibus
+                        corporis, magnam nobis pariatur vitae molestias id?
+                        Perferendis nam esse architecto.
+                      </p>
+                      <div class="splide__author">
+                        <img src="img/profile.jpg" />
+                        <div class="author__name">
+                          <h3>Enrico Estardo</h3>
+                          <span>Ohio USA</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="splide__section">
+                    <div class="splide__message">
+                      <h2>The last step to becoming maximalist</h2>
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Rerum enim inventore numquam tenetur! Cupiditate hic
+                        ratione nisi corrupti explicabo temporibus magni non
+                        architecto.
+                      </p>
+                      <div class="splide__author">
+                        <img src="img/profile.jpg" />
+                        <div class="author__name">
+                          <h3>Josephine Dungca</h3>
+                          <span>Dubai UAE</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="splide__slide">
+                  <div class="splide__section">
+                    <div class="splide__message">
+                      <h2>The last step to becoming minimalist</h2>
+                      <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Odio ipsam voluptate debitis quas necessitatibus
+                        optio consectetur suscipit quo quam sint. Officia
+                        dolorem porro minima.
+                      </p>
+                      <div class="splide__author">
+                        <img src="img/profile.jpg" />
+                        <div class="author__name">
+                          <h3>Cris Jocson</h3>
+                          <span>Bical PH</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
               </ul>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container text-center mb-5" id="signup">
+        <div class="display-f align-center flex-column">
+          <span class="text-gray-light-5 spacing-1">GET STARTED</span>
+          <h1 class="font-xxl text-primary">Elevate your travel experience</h1>
+          <img src="img/SUBMARK.png" />
+        </div>
+
+        <div class="container">
+          <div class="align-center display-f justify-center col-gap-1 mt-2">
+            <input type="text" class="signup__email" placeholder="Your Email" />
+            <button class="btn-green text-white pl-3 pr-3 pt-1 pb-1 font-sm">
+              Send
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mb-5">
+        <div
+          class="row align-center text-center text-gray-light-2 border-top-1-solid-gray"
+        >
+          <div class="col-12-xs col-4-lg">
+            <h4 class="text-primary-light-2">New York, NY</h4>
+            <p>62 West 55th Street, Suite 302</p>
+            <p>New York, NY, 10230</p>
+          </div>
+          <div class="col-12-xs col-4-lg">
+            <h4 class="text-primary-light-2">San Francisco, CA</h4>
+            <p>560 Judah St. & 15th Ave, Apt 5</p>
+            <p>San Francisco, CA, 230903</p>
+          </div>
+          <div class="col-12-xs col-4-lg">
+            <h4 class="text-primary-light-2">Dubai</h4>
+            <p>U237-02, Gold Tower, Jumeirah</p>
+            <p>Lakes Towers, Dubai, UAE</p>
           </div>
         </div>
       </div>

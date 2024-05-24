@@ -24,4 +24,9 @@ const secondSplide = new Splide("#second-slider", {
   type: "fade",
   rewind: "true",
   perPage: "1",
+  breakpoints: {
+    640: {
+      arrows: false,
+    },
+  },
 }).mount();
