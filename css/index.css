@@ -5938,6 +5938,9 @@ input:checked + .switcher:before {
   }
 }
 
+#second-slider .splide__message {
+  margin-bottom: 60px;
+}
 #second-slider .splide__message h2 {
   font-size: 3rem;
   color: #03045e;
@@ -5945,6 +5948,7 @@ input:checked + .switcher:before {
 }
 #second-slider .splide__message p {
   font-size: 1.5rem;
+  line-height: 1.8;
 }
 #second-slider .splide__author {
   margin-top: 30px;
@@ -6404,9 +6408,11 @@ input:checked + .switcher:before {
   transform: translateY(8rem);
 }
 
-.operations__text h2,
+.operations__text {
+  color: white;
+}
 .operations__text p {
-  color: #ffffff;
+  line-height: 1.8;
 }
 
 .operations__content-img {

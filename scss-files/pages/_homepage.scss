@@ -1,145 +1,146 @@
 .feature {
-  display: block;
-  height: 200px;
-  width: 100%;
-  object-fit: cover;
-  border-radius: $base-border-radius;
+	display: block;
+	height: 200px;
+	width: 100%;
+	object-fit: cover;
+	border-radius: $base-border-radius;
 }
 
 .header {
-  position: relative;
-  z-index: 100;
+	position: relative;
+	z-index: 100;
 
-  &.sticky {
-    position: fixed;
-  }
+	&.sticky {
+		position: fixed;
+	}
 }
 
 .section {
-  padding: 3rem;
-  border-top: 1px solid #ddd;
+	padding: 3rem;
+	border-top: 1px solid #ddd;
 
-  transition: transform 1s, opacity 1s;
+	transition: transform 1s, opacity 1s;
 
-  &--hidden {
-    opacity: 0;
-    transform: translateY(8rem);
-  }
+	&--hidden {
+		opacity: 0;
+		transform: translateY(8rem);
+	}
 }
 
 .operations__text {
-  h2,
-  p {
-    color: $white;
-  }
+	color: white;
+
+	p {
+		line-height: 1.8;
+	}
 }
 
 .operations__content-img {
-  color: $white;
+	color: $white;
 }
 //operations button container media responsiveness
 @include xs {
-  .operations__container {
-    display: flex;
-    flex-flow: none;
-    justify-content: center;
-    align-items: center;
-  }
+	.operations__container {
+		display: flex;
+		flex-flow: none;
+		justify-content: center;
+		align-items: center;
+	}
 }
 
 @include lg {
-  .operations__container {
-    display: flex;
-    justify-content: center;
-    column-gap: 30px;
-  }
+	.operations__container {
+		display: flex;
+		justify-content: center;
+		column-gap: 30px;
+	}
 
-  .operations__tab {
-    width: 190px;
-  }
+	.operations__tab {
+		width: 190px;
+	}
 }
 
 .operations__tab {
-  font-size: $font-size-sm;
-  transform: translateY(56%);
+	font-size: $font-size-sm;
+	transform: translateY(56%);
 
-  filter: brightness(90%);
+	filter: brightness(90%);
 }
 
 .operations__tab.active {
-  transform: translateY(26%);
-  filter: brightness(100%);
+	transform: translateY(26%);
+	filter: brightness(100%);
 
-  box-shadow: $base-box-shadow;
+	box-shadow: $base-box-shadow;
 }
 
 ////////////////////////////////////
 .operations__content {
-  display: none;
+	display: none;
 }
 
 .operations__content.active {
-  display: flex;
+	display: flex;
 }
 
 // content media responsivenesss
 
 @include xs {
-  .operations__content.active {
-    align-items: center;
-    flex-direction: column;
+	.operations__content.active {
+		align-items: center;
+		flex-direction: column;
 
-    padding: $base-padding * 2;
-    padding-top: $base-padding * 5;
-  }
+		padding: $base-padding * 2;
+		padding-top: $base-padding * 5;
+	}
 }
 
 @include sm {
-  .operations__content.active {
-    flex-direction: column;
-    column-gap: 35px;
-    align-items: center;
+	.operations__content.active {
+		flex-direction: column;
+		column-gap: 35px;
+		align-items: center;
 
-    padding: $base-padding * 2;
-    padding-top: $base-padding * 5;
-  }
+		padding: $base-padding * 2;
+		padding-top: $base-padding * 5;
+	}
 }
 
 @include md {
-  .operations__content.active {
-    flex-direction: row;
-    column-gap: 35px;
-    padding: $base-padding * 5;
-    align-items: first baseline;
-  }
+	.operations__content.active {
+		flex-direction: row;
+		column-gap: 35px;
+		padding: $base-padding * 5;
+		align-items: first baseline;
+	}
 }
 
 @include lg {
-  .operations__content.active {
-    flex-direction: row;
-    column-gap: 35px;
-    padding: $base-padding * 5;
-    align-items: first baseline;
-  }
+	.operations__content.active {
+		flex-direction: row;
+		column-gap: 35px;
+		padding: $base-padding * 5;
+		align-items: first baseline;
+	}
 }
 
 #signup {
-  scroll-margin-top: 300px;
+	scroll-margin-top: 300px;
 
-  img {
-    max-width: 580px;
-    height: 490px;
-    width: 100%;
-    object-fit: contain;
-  }
-  input {
-    border-radius: $base-border-radius;
-    border: 1px solid gray;
-  }
+	img {
+		max-width: 580px;
+		height: 490px;
+		width: 100%;
+		object-fit: contain;
+	}
+	input {
+		border-radius: $base-border-radius;
+		border: 1px solid gray;
+	}
 
-  .signup__email {
-    width: 100%;
-    max-width: 300px;
-    padding: 12px 0px 12px 14px;
-  }
+	.signup__email {
+		width: 100%;
+		max-width: 300px;
+		padding: 12px 0px 12px 14px;
+	}
 }
