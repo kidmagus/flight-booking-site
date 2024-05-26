@@ -6195,7 +6195,7 @@ input:checked + .switcher:before {
   padding: 5rem 6rem;
   box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
   z-index: 1000;
-  transition: all 0.5s;
+  transition: all 0.5s ease-in;
 }
 
 .overlay {
@@ -6207,7 +6207,7 @@ input:checked + .switcher:before {
   background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(3px);
   z-index: 100;
-  transition: all 0.5s;
+  transition: all 0.5s ease-in;
 }
 
 .logo {
