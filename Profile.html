@@ -53,6 +53,7 @@
           <label class="-profile" for="file"> </label>
           <img src="img/icon.jpg" class="output" />
         </div>
+        <h2 class="profile-name text-center font-lg">1</h2>
         <div class="accordion bg-senary-dark-9">
           <div class="accordion__box box">
             <div class="box__head head">
@@ -62,7 +63,7 @@
             </div>
             <div class="box__info">
               <div class="container p-2 b-rad-lg mt-2 mb-2 text-center">
-                <form>
+                <form class="form">
                   <div
                     class="text-white display-f align-center justify-space-evenly mb-3"
                   >
@@ -78,7 +79,7 @@
                   <div class="row gap-2">
                     <div class="form-group col-12-xs col-6-lg">
                       <label>First Name:</label>
-                      <input type="text" />
+                      <input type="text" name="fname" class="fname" />
                     </div>
                     <div class="form-group col-12-xs col-6-lg">
                       <label>Middle Name:</label>
@@ -86,7 +87,7 @@
                     </div>
                     <div class="form-group col-12-xs col-6-lg">
                       <label>Last Name:</label>
-                      <input type="text" />
+                      <input type="text" name="lname" class="lname" />
                     </div>
                     <div class="form-group col-12-xs col-6-lg">
                       <label>Email:</label>
@@ -113,6 +114,11 @@
                       <input type="text" />
                     </div>
                   </div>
+                  <button
+                    class="btn-tertiary btn--submit text-white font-sm mt-2"
+                  >
+                    Submit
+                  </button>
                 </form>
               </div>
             </div>

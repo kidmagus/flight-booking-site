@@ -21,7 +21,7 @@ allSections.forEach(function (section) {
 });
 
 const btnStarted = document.querySelector(".btn-started");
-const signUp = document.getElementById("signup");
+const signUp = document.getElementById("getStarted");
 
 btnStarted.addEventListener("click", () => {
   signUp.scrollIntoView({

@@ -3302,6 +3302,17 @@ input:focus {
   background-color: #25dac5;
 }
 
+.btn--go-back {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 550;
+  position: absolute;
+  right: 10px;
+  color: #03045e;
+  top: 10px;
+}
+
 .card {
   display: block;
   padding: 0.75rem;
@@ -6214,6 +6225,36 @@ input:checked + .switcher:before {
   transition: all 0.5s ease-in;
 }
 
+.credentials {
+  display: flex;
+  flex-direction: column;
+}
+
+.credentials label.text {
+  font-size: 1rem;
+  color: #03045e;
+  font-weight: 600;
+  position: relative;
+  top: 0.5rem;
+  margin: 7px 0 0 10px;
+  padding: 0 3px;
+  background: white;
+  width: fit-content;
+}
+
+.credentials input.input {
+  padding: 12px 10px;
+  font-size: 1rem;
+  border: 2px #03045e solid;
+  border-radius: 10px;
+  background: white;
+  width: 300px;
+}
+
+.credentials input.input:focus {
+  outline: none;
+}
+
 .logo {
   width: 100%;
   display: block;
@@ -6490,23 +6531,18 @@ input:checked + .switcher:before {
     align-items: first baseline;
   }
 }
-#signup {
+#getStarted {
   scroll-margin-top: 300px;
 }
-#signup img {
+#getStarted img {
   max-width: 580px;
   height: 490px;
   width: 100%;
   object-fit: contain;
 }
-#signup input {
+#getStarted input {
   border-radius: 20px;
   border: 1px solid gray;
-}
-#signup .signup__email {
-  width: 100%;
-  max-width: 300px;
-  padding: 12px 0px 12px 14px;
 }
 
 .settings h1 {
@@ -21091,6 +21127,10 @@ input:checked + .switcher:before {
 
 .w-170 {
   width: 170px;
+}
+
+.w-300 {
+  width: 300px;
 }
 
 .w-340 {
