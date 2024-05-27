@@ -21165,6 +21165,10 @@ input:checked + .switcher:before {
   height: 800px;
 }
 
+.ws-nowrap {
+  white-space: nowrap;
+}
+
 .o-0 {
   opacity: 0;
 }

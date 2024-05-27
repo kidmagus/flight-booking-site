@@ -52,7 +52,6 @@ form.addEventListener("submit", (event) => {
   const formData = new FormData(form);
   const fnameContent = formData.get("fname");
   const lnameContent = formData.get("lname");
-  const imageContent = formData.get("image");
 
   fArr.push(fnameContent);
   lArr.push(lnameContent);
