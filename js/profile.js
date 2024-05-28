@@ -58,11 +58,10 @@ form.addEventListener("submit", (event) => {
 
   updateLocalStorage();
   renderElement();
-  // renderElement();
 });
 
 const loadFile = document.querySelector(".loadFile");
-
+const imageContent = document.querySelectorAll(".output");
 loadFile.addEventListener("change", (event) => {
   const files = event.target.files;
 
@@ -79,7 +78,6 @@ loadFile.addEventListener("change", (event) => {
     localStorage.setItem("uploadedImage", dataURL);
 
     // Update image elements with the stored data URL
-    const imageContent = document.querySelectorAll(".output");
 
     imageContent.forEach((image, index) => {
       image.src = dataURL;
@@ -95,8 +93,6 @@ window.addEventListener("load", () => {
   const storedImage = localStorage.getItem("uploadedImage");
 
   if (storedImage) {
-    const imageContent = document.querySelectorAll(".output");
-
     imageContent.forEach((image, index) => {
       image.src = storedImage;
       image.setAttribute("data-id", index);
