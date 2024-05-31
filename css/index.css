@@ -5981,13 +5981,31 @@ input:checked + .switcher:before {
 #second-slider .splide__author .author__name {
   margin-bottom: 20px;
 }
+#second-slider .splide__pagination__page {
+  background-color: #03045e;
+  width: 10px;
+  height: 10px;
+  padding: 5px;
+}
+#second-slider .splide__arrow {
+  background-color: #03045e;
+}
+#second-slider .splide__arrow svg {
+  fill: #fff;
+}
 @media (min-width: 0) {
+  #second-slider .splide__arrow {
+    display: none;
+  }
   #second-slider .splide__message {
     padding-left: 0px;
     padding-right: 0px;
   }
 }
 @media (min-width: 960px) {
+  #second-slider .splide__arrow {
+    display: block;
+  }
   #second-slider .splide__message {
     padding-left: 90px;
     padding-right: 90px;
