@@ -6450,6 +6450,44 @@ input:checked + .switcher:before {
   transform: translateY(8rem);
 }
 
+.amenities img {
+  filter: brightness(50%);
+}
+
+.amenities--type {
+  position: relative;
+}
+
+.amenities__description {
+  position: absolute;
+  bottom: 20px;
+  left: 23px;
+  color: #fff;
+}
+.amenities__description a {
+  text-decoration: underline;
+  transition: color 0.3s ease-in-out;
+}
+.amenities__description a:hover {
+  color: #03045e;
+}
+
+@media (min-width: 480px) {
+  .amenities__dinner, .amenities__shopping, .amenities__lounge, .amenities__entertainment {
+    height: 300px;
+    width: 100%;
+  }
+}
+@media (min-width: 960px) {
+  .amenities__dinner, .amenities__shopping {
+    height: 600px;
+    width: 100%;
+  }
+  .amenities__lounge, .amenities__entertainment {
+    height: 295px;
+    width: 100%;
+  }
+}
 .operations__text {
   color: white;
 }
@@ -6901,6 +6939,10 @@ input:checked + .switcher:before {
   max-width: 170px;
 }
 
+.mx-width-300 {
+  max-width: 300px;
+}
+
 .mx-width-340 {
   max-width: 340px;
 }
@@ -6943,6 +6985,14 @@ input:checked + .switcher:before {
 
 .h-170 {
   height: 170px;
+}
+
+.h-290 {
+  height: 290px;
+}
+
+.h-300 {
+  height: 300px;
 }
 
 .h-340 {

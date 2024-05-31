@@ -27,6 +27,58 @@
   }
 }
 
+.amenities img {
+  filter: brightness(50%);
+}
+
+.amenities--type {
+  position: relative;
+}
+
+.amenities__description {
+  position: absolute;
+  bottom: 20px;
+  left: 23px;
+  color: #fff;
+
+  a {
+    text-decoration: underline;
+    transition: color 0.3s ease-in-out;
+  }
+
+  a:hover {
+    color: $primary;
+  }
+}
+
+@include sm {
+  .amenities {
+    &__dinner,
+    &__shopping,
+    &__lounge,
+    &__entertainment {
+      height: 300px;
+      width: 100%;
+    }
+  }
+}
+
+@include lg {
+  .amenities {
+    &__dinner,
+    &__shopping {
+      height: 600px;
+      width: 100%;
+    }
+
+    &__lounge,
+    &__entertainment {
+      height: 295px;
+      width: 100%;
+    }
+  }
+}
+
 .operations__text {
   color: white;
 
