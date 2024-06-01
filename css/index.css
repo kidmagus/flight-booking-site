@@ -6509,6 +6509,16 @@ input:checked + .switcher:before {
   padding: 12px 0px 12px 14px;
 }
 
+.ads {
+  position: relative;
+}
+.ads iframe {
+  position: fixed;
+  width: 20%;
+  height: 360px;
+  top: 550px;
+}
+
 .settings h1 {
   color: #03045e;
 }

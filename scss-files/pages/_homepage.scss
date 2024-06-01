@@ -144,3 +144,14 @@
 		padding: 12px 0px 12px 14px;
 	}
 }
+
+.ads {
+	position: relative;
+
+	iframe {
+		position: fixed;
+		width: 20%;
+		height: 360px;
+		top: 550px;
+	}
+}
