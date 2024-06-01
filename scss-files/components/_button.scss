@@ -33,3 +33,14 @@
     }
   }
 }
+
+.btn--go-back {
+  background: none;
+  border: none;
+  font-size: $font-size-md;
+  font-weight: $font-weight-xl;
+  position: absolute;
+  right: 10px;
+  color: $primary;
+  top: 10px;
+}
