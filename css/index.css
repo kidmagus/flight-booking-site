@@ -5799,9 +5799,10 @@ input:focus {
 }
 
 :root {
-  --arrow-bg: #1877f2;
+  --arrow-bg: #caf0f8;
+  --dark-blue: #03045e;
   --arrow-icon: url(https://upload.wikimedia.org/wikipedia/commons/9/9d/Caret_down_font_awesome_whitevariation.svg);
-  --select-bg: #1877f2;
+  --select-bg: #caf0f8;
 }
 
 * {
@@ -5820,7 +5821,7 @@ input:focus {
   width: 100%;
   padding: 16px 64px 16px 16px;
   background: var(--arrow-icon) no-repeat right 0.8em center/1.4em, linear-gradient(to left, var(--arrow-bg) 3em, var(--select-bg) 3em);
-  color: white;
+  color: #000000;
   border-radius: 0.25em;
   box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.2);
   cursor: pointer;
@@ -5834,7 +5835,7 @@ input:focus {
 }
 .select option, .form-group input option {
   color: inherit;
-  background-color: #000000;
+  background-color: #ffffff;
 }
 
 .switch {
@@ -6437,7 +6438,8 @@ input:checked + .switcher:before {
 }
 .form-group input {
   background: none;
-  background-color: #1877f2;
+  background-color: #caf0f8;
+  color: #000000;
   max-width: 240px;
   width: 100%;
 }
