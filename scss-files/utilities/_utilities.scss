@@ -1,14 +1,7 @@
 @use "sass:math";
 
 $utilities: (
-	"fill": (
-		"prefix": "fill",
-		"values": (
-			"red": red,
-		),
-	)
-	"font-size":
-	(
+	"font-size": (
 		"prefix": "font",
 		"values": (
 			"xs": $font-size-xs,
