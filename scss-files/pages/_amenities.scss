@@ -1,0 +1,21 @@
+.selected {
+  color: $tertiary;
+  border-bottom: 3px solid $tertiary;
+  padding: 25px 0px;
+}
+
+.service {
+  background: linear-gradient(to left, #fff 50%, #faad13 75%, #c82b24);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  cursor: pointer;
+  transition: all ease 0.3s;
+
+  &:hover {
+    background-position: left bottom;
+    color: white;
+  }
+  &__desc {
+    padding: 17px;
+  }
+}

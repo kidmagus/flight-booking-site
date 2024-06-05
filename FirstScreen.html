@@ -5,10 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>First Screen</title>
     <link rel="stylesheet" href="css/index.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
   </head>
 
   <body onload="load()" class="bg-quinary">
@@ -20,9 +17,7 @@
 
     <div class="hide">
       <header class="navbar-primary header">
-        <div
-          class="container text-white display-f align-center justify-space-between"
-        >
+        <div class="container text-white display-f align-center justify-space-between">
           <div class="display-f align-center col-gap-2">
             <p class="font-lg fw-xl">
               <a href="Homepage.html">Envision Air</a>
@@ -32,19 +27,13 @@
 
           <nav class="display-f col-gap-2 font-md">
             <ul class="p-0">
-              <a class="text-hover-gray-light-5" href="FirstScreen.html"
-                ><i class="fa-solid fa-house"></i
-              ></a>
+              <a class="text-hover-gray-light-5" href="FirstScreen.html"><i class="fa-solid fa-house"></i></a>
             </ul>
             <ul>
-              <a class="text-hover-gray-light-5" href="TicketScreen.html"
-                ><i class="fa-solid fa-ticket"></i
-              ></a>
+              <a class="text-hover-gray-light-5" href="TicketScreen.html"><i class="fa-solid fa-ticket"></i></a>
             </ul>
             <ul>
-              <a class="text-hover-gray-light-5" href="Profile.html"
-                ><i class="fa-solid fa-user"></i
-              ></a>
+              <a class="text-hover-gray-light-5" href="Profile.html"><i class="fa-solid fa-user"></i></a>
             </ul>
           </nav>
         </div>
@@ -63,19 +52,17 @@
                     <hr />
                   </div>
                   <div class="">
-                    <i
-                      class="arrow fa-solid fa-arrow-right-arrow-left font-lg"
-                    ></i>
+                    <i class="arrow fa-solid fa-arrow-right-arrow-left font-lg"></i>
                   </div>
 
                   <div class="">
                     <p>To</p>
-                    <select class="select" id="trigger">
-                      <option selected value="0">Select a Flight</option>
-                      <option value="1">GER FRA</option>
-                      <option value="2">HND NRT</option>
-                      <option value="3">SYD MEL</option>
-                      <option value="4">LHR MAN</option>
+                    <select class="select" id="flight">
+                      <option selected disabled hidden>Select a Flight</option>
+                      <option value="GER FRA">GER FRA</option>
+                      <option value="HND NRT">HND NRT</option>
+                      <option value="SYD MEL">SYD MEL</option>
+                      <option value="LHR MAN">LHR MAN</option>
                     </select>
 
                     <hr />
@@ -87,12 +74,12 @@
           <div class="col-12-xs col-4-lg text-center">
             <div class="card-senary-light-1 b-rad-sm">
               <h4>Departure</h4>
-              <select class="select">
-                <option selected value="0">Select a Date</option>
-                <option value="1">May 07</option>
-                <option value="2">May 19</option>
-                <option value="3">May 27</option>
-                <option value="4">May 31</option>
+              <select class="select" id="departure__date">
+                <option selected disabled hidden>Select a Date</option>
+                <option value="May 07">May 07</option>
+                <option value="May 19">May 19</option>
+                <option value="May 27">May 27</option>
+                <option value="May 31">May 31</option>
               </select>
               <hr />
             </div>
@@ -100,12 +87,12 @@
           <div class="col-12-xs col-4-lg text-center">
             <div class="card-senary-light-1 b-rad-sm">
               <h4>Return</h4>
-              <select class="select">
-                <option selected value="0">Select a Date</option>
-                <option value="1">May 07</option>
-                <option value="2">May 19</option>
-                <option value="3">May 27</option>
-                <option value="4">May 31</option>
+              <select class="select" id="return__date">
+                <option selected disabled hidden>Select a Date</option>
+                <option value="May 07">May 07</option>
+                <option value="May 19">May 19</option>
+                <option value="May 27">May 27</option>
+                <option value="May 31">May 31</option>
               </select>
 
               <hr />
@@ -114,22 +101,119 @@
           <div class="col-12-xs col-4-lg text-center">
             <div class="card-senary-light-1 b-rad-sm">
               <h4>Passenger</h4>
-              <select class="select">
-                <option selected value="0">1</option>
-                <option value="1">2</option>
-                <option value="2">3</option>
-                <option value="3">4</option>
-                <option value="4">5</option>
-              </select>
+              <form>
+                <select class="select" id="passenger">
+                  <option selected value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </form>
+
               <hr />
             </div>
           </div>
           <div class="col-12-xs col-12-lg pointer">
             <div class="reserve card-primary b-rad-sm text-white text-center">
-              <p class="font-md">Reserve Flight</p>
+              <p class="font-md bookflight btn--open-modal">Reserve Flight</p>
             </div>
           </div>
         </div>
+      </div>
+
+      <div class="container boarding hide mt-2 ">
+        <div class="card-primary p-0 b-rad-xs ">
+          <div class="bg-quaternary p-1 ">
+            <h2 class="text-center">Boarding Pass</h2>
+            <!-- <button class="btn--close-modal">X</button> -->
+          <div class="row pt-2 fw-xxl text-primary-dark-5">
+            <div class="display-f align-center flex-column col-6-xs col-6-md col-6-lg">
+              <div class="text-center"><i class="fa-solid fa-plane-departure"></i></div>
+              <h2>PHL CRK <h2>
+            </div>
+            <div class="display-f align-center flex-column col-6-xs col-6-md col-6-lg">
+              <div class="text-center"><i class="fa-solid fa-plane-arrival"></i></div>
+              <h2 class="chosen__flight"></h2>
+            </div>
+          </div>
+          
+          <div class="bg-white">
+            <div class="row text-center align-center gap-1 pt-1">
+              <div class="col-4-xs col-4-md col-4-lg">
+                <label class="text-gray">Flight</label>
+                <p class="fw-xxl">AA2005</p>
+              </div>
+              <div class="col-4-xs col-4-md col-4-lg">
+                <i class="fa-solid fa-plane"></i>
+              </div>
+              <div class="col-4-xs col-4-md col-4-lg">
+                <label class="text-gray">Gate</label>
+                <p class="fw-xxl">B3</p>
+              </div>
+            </div>
+
+            <div class="row text-center align-center gap-1 pt-1"> 
+              <div class="col-4-xs col-4-md col-4-lg">
+                <label class="text-gray">Boards</label>
+                <p class="fw-xxl chosen__board"></p>
+                <p class="fw-xxl">10:25AM</p>
+              </div>
+  
+              <div class="col-4-xs col-4-md col-4-lg">
+                <label class="text-gray">Departs</label>
+                <p class="fw-xxl chosen__depart"></p>
+                <p class="fw-xxl">11:25AM</p>
+              </div>
+            
+  
+              <div class="col-4-xs col-4-md col-4-lg">
+                <label class="text-gray">Arrives</label>
+                <p class="fw-xxl chosen__return"></p>
+                <p class="fw-xxl">1:05PM</p>
+              </div>
+            
+            </div>
+          
+          
+            <hr>
+            <div class="row text-center align-center gap-1 pt-1"> 
+              <div class="col-4-xs col-4-md col-4-lg">
+                <label class="text-gray">Passenger</label>
+                <p class="fw-xxl">Jestoni Estardo</p>
+              </div>
+  
+              <div class="col-4-xs col-4-md col-4-lg">
+                <label class="text-gray">Seat</label>
+                <p class="fw-xxl">11E</p>
+              </div>
+            
+  
+              <div class="col-4-xs col-4-md col-4-lg">
+                <label class="text-gray">Group</label>
+                <p class="fw-xxl chosen__passenger"></p>
+              </div>
+            
+            </div>
+            <div class="font-xxl text-center">
+              <i class="fa-solid fa-barcode"></i>
+              <i class="fa-solid fa-barcode"></i>
+              <i class="fa-solid fa-barcode"></i>
+              <i class="fa-solid fa-barcode"></i>
+              <i class="fa-solid fa-barcode"></i>
+             
+            
+            </div>
+          
+          </div>
+
+          <div class="text-center mt-1"> 
+            <button class="btn-secondary text-white"><a href="paymentPage.html">Proceed to Payment</a></button>
+          </div>
+         
+        </div>
+        
+      </div>
       </div>
 
       <div class="container">
@@ -205,10 +289,7 @@
         <div class="container row col-gap-9 justify-space-between">
           <div class="col-12-sm col-2-lg">
             <h3>Startup 3</h3>
-            <label
-              >Be sure to take a look at our Terms of Use and Privacy
-              Policy</label
-            >
+            <label>Be sure to take a look at our Terms of Use and Privacy Policy</label>
           </div>
           <div class="col-4-sm col-1-lg">
             <h3>About</h3>
@@ -227,14 +308,8 @@
           </div>
           <div class="col-12-sm col-4-lg">
             <h3>Subscribe to our NewsLetters</h3>
-            <input
-              class="font-sm pl-1 pt-1 b-rad text-black border-1-solid-black pb-1"
-              type="text"
-              placeholder="Your email"
-            />
-            <button class="btn-green text-white font-sm pl-2 pr-2 mt-1 b-rad">
-              Subscribe
-            </button>
+            <input class="font-sm pl-1 pt-1 b-rad text-black border-1-solid-black pb-1" type="text" placeholder="Your email" />
+            <button class="btn-green text-white font-sm pl-2 pr-2 mt-1 b-rad">Subscribe</button>
             <div class="display-f font-md mt-2 align-center col-gap-3">
               <li class="text-tw text-hover-tw-dark-1">
                 <a href="#"><i class="fa-brands fa-twitter"></i></a>
@@ -251,15 +326,13 @@
       </footer>
       <div class="navbar-quaternary text-center">
         <div class="container">
-          <p class="text-gray-dark-2">
-            Startup Framework contains components and complex blocks which can
-            easily be integrated into almost any design.
-          </p>
+          <p class="text-gray-dark-2">Startup Framework contains components and complex blocks which can easily be integrated into almost any design.</p>
         </div>
       </div>
     </div>
 
-    <script src="js/nav.js"></script>
+    <!-- <script src="js/nav.js"></script> -->
     <script src="js/loadingmenu.js"></script>
+    <script src="js/booking.js"></script>
   </body>
 </html>

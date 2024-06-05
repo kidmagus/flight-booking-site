@@ -44,8 +44,7 @@ $gaps: (
 }
 
 //Justify content classes
-$layout-values: flex-start, flex-end, center, space-between, space-around,
-  space-evenly;
+$layout-values: flex-start, flex-end, center, space-between, space-around, space-evenly;
 
 @each $value in $layout-values {
   .justify-#{$value} {
@@ -154,4 +153,10 @@ $grid-columns: 12;
 
 .margin-auto {
   margin: 0 auto;
+}
+
+.inputlabel {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  align-items: center;
 }

@@ -29,9 +29,11 @@
 @import "pages/profile";
 @import "pages/homepage";
 @import "pages/settings";
+@import "pages/payment";
+@import "pages/amenities";
 
 //utilities
 @import "utilities/utilities";
-@import "../node_modules/include-media/dist/include-media";
+
 //theme
 @import "theme/colors";
