@@ -3,19 +3,25 @@
   border-bottom: 3px solid $tertiary;
   padding: 25px 0px;
 }
-
 .service {
-  background: linear-gradient(to left, #fff 50%, #faad13 75%, #c82b24);
-  background-size: 200% 100%;
-  background-position: right bottom;
-  cursor: pointer;
-  transition: all ease 0.3s;
+  &__card {
+    background: linear-gradient(to left, #fff 50%, #c82b24 50%, #faad13);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    cursor: pointer;
+    transition: all ease 0.5s;
 
-  &:hover {
-    background-position: left bottom;
-    color: white;
+    &:hover {
+      background-position: left bottom;
+      color: white;
+    }
   }
   &__desc {
+    font-size: 24px;
     padding: 17px;
   }
+}
+
+.service--inactive {
+  display: none;
 }

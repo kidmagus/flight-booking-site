@@ -192,12 +192,46 @@
 }
 
 .ads {
-	position: relative;
+  position: relative;
+  video {
+    position: fixed;
+    width: 20%;
+    height: 360px;
+    top: 550px;
+  }
 
-	iframe {
-		position: fixed;
-		width: 20%;
-		height: 360px;
-		top: 550px;
-	}
+  button {
+    cursor: pointer;
+    position: fixed;
+    border: none;
+    width: 20%;
+    height: 360px;
+
+    background: none;
+    font-weight: 800;
+    font-size: $font-size-md;
+    color: $youtube;
+  }
+}
+
+.ads--none {
+  display: none;
+}
+
+@include sm {
+  .ads {
+    button {
+      left: 34px;
+      top: 500px;
+    }
+  }
+}
+
+@include lg {
+  .ads {
+    button {
+      top: 410px;
+      left: 180px;
+    }
+  }
 }
