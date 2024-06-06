@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script defer src="js/about.js"></script>
+  </head>
+  <body onload="load()" class="bg-quinary">
+    <div class="ring">
+      <img src="img/earth.png" class="earth" />
+      <img src="img/logo.png" class="plane__logo" />
+      <span><img src="img/airplane.png" class="plane" /></span>
+    </div>
+
+    <div class="hide">
+      <header class="navbar-primary header">
+        <div class="container text-white display-f align-center justify-space-between">
+          <div class="display-f align-center col-gap-2">
+            <p class="font-lg fw-xl">
+              <a href="Homepage.html">Envision Air</a>
+            </p>
+            <img class="logo" src="img/logo.png" />
+          </div>
+
+          <nav class="display-f col-gap-2 font-md">
+            <ul class="p-0">
+              <a class="text-hover-gray-light-5" href="FirstScreen.html"><i class="fa-solid fa-house"></i></a>
+            </ul>
+            <ul>
+              <a class="text-hover-gray-light-5" href="TicketScreen.html"><i class="fa-solid fa-ticket"></i></a>
+            </ul>
+            <ul>
+              <a class="text-hover-gray-light-5" href="Profile.html"><i class="fa-solid fa-user"></i></a>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <div class="container">
+        <div id="map"></div>
+      </div>
+
+      <footer class="footer bg-primary-dark-6 text-white pt-2 pb-2">
+        <div class="container row col-gap-9 justify-space-between">
+          <div class="col-12-sm col-2-lg">
+            <h3>Startup 3</h3>
+            <label>Be sure to take a look at our Terms of Use and Privacy Policy</label>
+          </div>
+          <div class="col-4-sm col-1-lg">
+            <h3>About</h3>
+            <p>About Us</p>
+            <p>Blog</p>
+            <p>Team</p>
+            <p>Career</p>
+            <p>Contact</p>
+          </div>
+          <div class="col-4-sm col-1-lg">
+            <h3>Company</h3>
+            <p>Privacy</p>
+            <p>Support</p>
+            <p>Help Desk</p>
+            <p>FAQ</p>
+          </div>
+          <div class="col-12-sm col-4-lg">
+            <h3>Subscribe to our NewsLetters</h3>
+            <input class="font-sm pl-1 pt-1 b-rad text-black border-1-solid-black pb-1" type="text" placeholder="Your email" />
+            <button class="btn-green text-white font-sm pl-2 pr-2 mt-1 b-rad">Subscribe</button>
+            <div class="display-f font-md mt-2 align-center col-gap-3">
+              <li class="text-tw text-hover-tw-dark-1">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li class="text-fb text-hover-fb-dark-1">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              </li>
+              <li class="text-yt text-hover-yt-dark-1">
+                <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+              </li>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="navbar-quaternary text-center">
+        <div class="container">
+          <p class="text-gray-dark-2">Startup Framework contains components and complex blocks which can easily be integrated into almost any design.</p>
+        </div>
+      </div>
+    </div>
+    <script src="js/loadingmenu.js"></script>
+  </body>
+</html>

@@ -1,0 +1,62 @@
+.support {
+  position: fixed;
+
+  bottom: 10px;
+  right: 5px;
+  z-index: 1000;
+
+  &__icon {
+    position: relative;
+    padding: 3px;
+    width: 60px;
+    border-radius: 60px;
+    border: none;
+    height: 60px;
+    font-size: 29px;
+    background-color: #0066cc;
+    color: #fff;
+    cursor: pointer;
+    line-height: 100%;
+  }
+  :hover {
+    background-color: darken($color: #0066cc, $amount: 10px);
+  }
+}
+
+.chat {
+  width: 250px;
+  position: fixed;
+  bottom: 10px;
+  right: 5px;
+  z-index: 1001;
+
+  &__btn {
+    height: 48px;
+    width: 48px;
+
+    margin-bottom: 12px;
+    border-radius: 50px;
+    box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.16);
+
+    transform: translateX(200px);
+    text-align: center;
+    cursor: pointer;
+    opacity: 0.94;
+    border: none;
+    background-color: #0066cc;
+    color: #fff;
+  }
+
+  &__header {
+    padding: 15px;
+    background-color: #0066cc;
+    color: #fff;
+    border-radius: 10px;
+  }
+
+  &__content {
+    border-radius: 20px;
+    background-color: $senary;
+    height: 360px;
+  }
+}

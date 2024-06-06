@@ -193,24 +193,25 @@
 
 .ads {
   position: relative;
-  video {
+  &__video {
     position: fixed;
     width: 20%;
     height: 360px;
     top: 550px;
+    z-index: 1000;
   }
 
-  button {
-    cursor: pointer;
+  &__btn {
     position: fixed;
-    border: none;
-    width: 20%;
-    height: 360px;
-
     background: none;
+    border: none;
     font-weight: 800;
     font-size: $font-size-md;
     color: $youtube;
+    cursor: pointer;
+    top: 550px;
+    left: 330px;
+    z-index: 1000;
   }
 }
 
@@ -220,18 +221,12 @@
 
 @include sm {
   .ads {
-    button {
-      left: 34px;
-      top: 500px;
-    }
+    display: none;
   }
 }
 
 @include lg {
   .ads {
-    button {
-      top: 410px;
-      left: 180px;
-    }
+    display: block;
   }
 }

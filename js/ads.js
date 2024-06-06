@@ -4,9 +4,10 @@ const adsBtn = document.querySelector(".ads__btn");
 setInterval(function () {
   adsVideo.classList.remove("ads--none");
   adsBtn.classList.remove("ads--none");
-}, 1000);
+}, 10000);
 
 adsBtn.addEventListener("click", () => {
-  adsVideo.classList.add("ads--none");
-  adsBtn.classList.add("ads--none");
+  adsVideo.style.display = "none";
+  adsBtn.style.display = "none";
+  adsVideo.pause();
 });
