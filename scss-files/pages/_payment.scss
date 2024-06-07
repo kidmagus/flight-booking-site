@@ -37,7 +37,5 @@
     max-width: 400px;
   }
   display: grid;
-  grid-template-columns: auto auto;
-  column-gap: 10px;
-  row-gap: 10px;
+  grid-template-columns: 1fr 1fr auto;
 }
