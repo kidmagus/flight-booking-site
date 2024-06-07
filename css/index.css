@@ -6718,6 +6718,8 @@ input:checked + .switcher:before {
 .paypal {
   position: relative;
   padding-bottom: 30px;
+  max-width: 1200px;
+  width: 100%;
 }
 .paypal input[type=text] {
   width: 100%;
@@ -6727,6 +6729,8 @@ input:checked + .switcher:before {
 .credit {
   position: relative;
   padding-bottom: 30px;
+  max-width: 1200px;
+  width: 100%;
 }
 
 .btn--checkout {
@@ -6737,6 +6741,21 @@ input:checked + .switcher:before {
 
 .checked {
   background-color: #90e0ef;
+}
+
+.inputlabel {
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+.inputlabel label {
+  min-width: 150px;
+  width: 100%;
+}
+.inputlabel input {
+  width: 100%;
+  max-width: 400px;
 }
 
 .selected {

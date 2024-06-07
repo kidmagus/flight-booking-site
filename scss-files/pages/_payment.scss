@@ -1,7 +1,8 @@
 .paypal {
   position: relative;
   padding-bottom: 30px;
-
+  max-width: 1200px;
+  width: 100%;
   input[type="text"] {
     width: 100%;
     max-width: 400px;
@@ -11,6 +12,8 @@
 .credit {
   position: relative;
   padding-bottom: 30px;
+  max-width: 1200px;
+  width: 100%;
 }
 
 .btn--checkout {
@@ -21,4 +24,20 @@
 
 .checked {
   background-color: $quaternary;
+}
+
+.inputlabel {
+  label {
+    min-width: 150px;
+    width: 100%;
+  }
+
+  input {
+    width: 100%;
+    max-width: 400px;
+  }
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 10px;
+  row-gap: 10px;
 }
