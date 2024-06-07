@@ -6689,7 +6689,7 @@ input:checked + .switcher:before {
   font-size: 1.5rem;
   color: #ff0000;
   cursor: pointer;
-  top: 550px;
+  top: 570px;
   left: 330px;
   z-index: 1000;
 }
