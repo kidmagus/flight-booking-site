@@ -220,13 +220,15 @@
 }
 
 @include xs {
-  .ads {
+  .ads video,
+  button {
     display: none;
   }
 }
 
 @include lg {
-  .ads {
+  .ads video,
+  button {
     display: block;
   }
 }

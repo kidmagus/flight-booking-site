@@ -6699,12 +6699,14 @@ input:checked + .switcher:before {
 }
 
 @media (min-width: 0) {
-  .ads {
+  .ads video,
+  button {
     display: none;
   }
 }
 @media (min-width: 960px) {
-  .ads {
+  .ads video,
+  button {
     display: block;
   }
 }
