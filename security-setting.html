@@ -1,236 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Security Settings</title>
-		<link rel="stylesheet" href="css/index.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Security Settings</title>
+    <link rel="stylesheet" href="css/index.css" />
 
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-		/>
-	</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  </head>
 
-	<body onload="load()">
-		<div class="ring">
-			<img src="img/earth.png" class="earth" />
-			<img src="img/logo.png" class="plane__logo" />
-			<span><img src="img/airplane.png" class="plane" /></span>
-		</div>
-		<div class="hide">
-			<header class="navbar-primary">
-				<div
-					class="container text-white display-f align-center justify-space-between"
-				>
-					<div class="display-f align-center col-gap-2">
-						<p class="font-lg fw-xl">
-							<a href="Homepage.html">Envision Air</a>
-						</p>
-						<img class="logo" src="img/logo.png" />
-					</div>
+  <body onload="load()">
+    <div class="ring">
+      <img src="img/earth.png" class="earth" />
+      <img src="img/logo.png" class="plane__logo" />
+      <span><img src="img/airplane.png" class="plane" /></span>
+    </div>
+    <div class="hide">
+      <header class="navbar-primary">
+        <div class="container text-white display-f align-center justify-space-between">
+          <div class="display-f align-center col-gap-2">
+            <p class="font-lg fw-xl">
+              <a href="Homepage.html">Envision Air</a>
+            </p>
+            <img class="logo" src="img/logo.png" />
+          </div>
 
-					<nav class="display-f col-gap-2 font-md">
-						<ul class="p-0">
-							<a class="text-hover-gray-light-5" href="FirstScreen.html"
-								><i class="fa-solid fa-house"></i
-							></a>
-						</ul>
-						<ul>
-							<a class="text-hover-gray-light-5" href="TicketScreen.html"
-								><i class="fa-solid fa-ticket"></i
-							></a>
-						</ul>
-						<ul>
-							<a class="text-hover-gray-light-5" href="Profile.html"
-								><i class="fa-solid fa-user"></i
-							></a>
-						</ul>
-					</nav>
-				</div>
-			</header>
+          <nav class="display-f col-gap-2 font-md">
+            <ul class="p-0">
+              <a class="text-hover-gray-light-5" href="FirstScreen.html"><i class="fa-solid fa-house"></i></a>
+            </ul>
+            <ul>
+              <a class="text-hover-gray-light-5" href="TicketScreen.html"><i class="fa-solid fa-ticket"></i></a>
+            </ul>
+            <ul>
+              <a class="text-hover-gray-light-5" href="Profile.html"><i class="fa-solid fa-user"></i></a>
+            </ul>
+          </nav>
+        </div>
+      </header>
 
-			<div class="container mt-2">
-				<div class="b-rad-sm p-2">
-					<h2 class="display-f justify-center pt-2 font-xxl">
-						Security Settings
-					</h2>
-					<div class="bg-green-light-9 border-1-solid-primary b-rad-sm">
-						<div class="">
-							<div class="p-2 border-bottom-1-solid-primary">
-								<h4>Credit Card</h4>
-							</div>
-						</div>
+      <div class="container mt-2">
+        <div class="b-rad-sm p-2">
+          <h2 class="display-f justify-center pt-2 font-xxl">Security Settings</h2>
+          <div class="bg-green-light-9 border-1-solid-primary b-rad-sm">
+            <div class="">
+              <div class="p-2 border-bottom-1-solid-primary">
+                <h4>Credit Card</h4>
+              </div>
+            </div>
 
-						<div class="">
-							<div
-								class="double pointer bg-senary-light-1 p-2 display-f align-center justify-space-between border-bottom-1-solid-primary"
-							>
-								<div>
-									<h4>Double Verification</h4>
-									<p>
-										Enter CCV & OTP code for more secure payment verification
-									</p>
-								</div>
+            <div class="">
+              <div class="double pointer bg-senary-light-1 p-2 display-f align-center justify-space-between border-bottom-1-solid-primary">
+                <div>
+                  <h4>Double Verification</h4>
+                  <p>Enter CCV & OTP code for more secure payment verification</p>
+                </div>
 
-								<label class="container__radio">
-									<input type="radio" name="radio" class="double-radio" />
-									<span class="radiomark"></span>
-								</label>
-							</div>
-							<div
-								class="single pointer bg-senary-light-1 p-2 display-f align-center justify-space-between border-bottom-1-solid-primary"
-							>
-								<div>
-									<h4>Single Verification</h4>
-									<p>
-										Enter CCV & OTP code for swift and hassle-free payment
-										verification
-									</p>
-								</div>
-								<label class="container__radio">
-									<input type="radio" name="radio" class="single-radio" />
-									<span class="radiomark"></span>
-								</label>
-							</div>
-						</div>
+                <label class="container__radio">
+                  <input type="radio" name="radio" class="double-radio" />
+                  <span class="radiomark"></span>
+                </label>
+              </div>
+              <div class="single pointer bg-senary-light-1 p-2 display-f align-center justify-space-between border-bottom-1-solid-primary">
+                <div>
+                  <h4>Single Verification</h4>
+                  <p>Enter CCV & OTP code for swift and hassle-free payment verification</p>
+                </div>
+                <label class="container__radio">
+                  <input type="radio" name="radio" class="single-radio" />
+                  <span class="radiomark"></span>
+                </label>
+              </div>
+            </div>
 
-						<div class="">
-							<div class="p-2 border-bottom-1-solid-primary">
-								<h4>Biometrics</h4>
-							</div>
-						</div>
+            <div class="">
+              <div class="p-2 border-bottom-1-solid-primary">
+                <h4>Biometrics</h4>
+              </div>
+            </div>
 
-						<div class="">
-							<div
-								class="switch-label pointer bg-senary-light-1 p-2 display-f align-center justify-space-between border-bottom-1-solid-primary"
-							>
-								<div>
-									<h4>Activate Biometric Feature</h4>
-									<p>
-										To enjoy a seamless log in with a fingerprint or face
-										recognition
-									</p>
-								</div>
+            <div class="">
+              <div class="switch-label pointer bg-senary-light-1 p-2 display-f align-center justify-space-between border-bottom-1-solid-primary">
+                <div>
+                  <h4>Activate Biometric Feature</h4>
+                  <p>To enjoy a seamless log in with a fingerprint or face recognition</p>
+                </div>
 
-								<label class="switch">
-									<input type="checkbox" class="switch-input" />
-									<span class="switcher round"></span>
-								</label>
-							</div>
-						</div>
+                <label class="switch">
+                  <input type="checkbox" class="switch-input" />
+                  <span class="switcher round"></span>
+                </label>
+              </div>
+            </div>
 
-						<div class="">
-							<div class="p-2 border-bottom-1-solid-primary">
-								<h4>Device</h4>
-							</div>
-						</div>
+            <div class="">
+              <div class="p-2 border-bottom-1-solid-primary">
+                <h4>Device</h4>
+              </div>
+            </div>
 
-						<div class="">
-							<div
-								class="switch-label pointer bg-senary-light-1 p-2 display-f align-center justify-space-between border-bottom-1-solid-primary"
-							>
-								<div>
-									<h4>Set Device As Trusted</h4>
-									<p>Activate to set a PIN and manage device connectivity</p>
-								</div>
+            <div class="">
+              <div class="switch-label pointer bg-senary-light-1 p-2 display-f align-center justify-space-between border-bottom-1-solid-primary">
+                <div>
+                  <h4>Set Device As Trusted</h4>
+                  <p>Activate to set a PIN and manage device connectivity</p>
+                </div>
 
-								<label class="switch">
-									<input type="checkbox" class="switch-input" />
-									<span class="switcher round"></span>
-								</label>
-							</div>
-						</div>
-						<div>
-							<div class="">
-								<div class="p-2 border-bottom-1-solid-primary">
-									<h4>Device</h4>
-								</div>
-							</div>
+                <label class="switch">
+                  <input type="checkbox" class="switch-input" />
+                  <span class="switcher round"></span>
+                </label>
+              </div>
+            </div>
+            <div>
+              <div class="">
+                <div class="p-2 border-bottom-1-solid-primary">
+                  <h4>Device</h4>
+                </div>
+              </div>
 
-							<div class="">
-								<div
-									class="bg-senary-light-1 p-2 display-f align-center justify-space-between border-bottom-1-solid-primary"
-								>
-									<div>
-										<h4>Set PIN</h4>
-										<p>
-											Set a 6 digit verification PIN to secure your accounts
-											activities
-										</p>
-									</div>
-								</div>
-							</div>
+              <div class="">
+                <div class="bg-senary-light-1 p-2 display-f align-center justify-space-between border-bottom-1-solid-primary">
+                  <div>
+                    <h4>Set PIN</h4>
+                    <p>Set a 6 digit verification PIN to secure your accounts activities</p>
+                  </div>
+                </div>
+              </div>
 
-							<br />
-							<br />
-						</div>
-					</div>
-					<br />
-					<br />
-					<br />
-				</div>
-			</div>
+              <br />
+              <br />
+            </div>
+          </div>
+          <br />
+          <br />
+          <br />
+        </div>
+      </div>
 
-			<footer class="footer bg-primary-dark-6 text-white pt-2 pb-2 mt-5">
-				<div class="container row col-gap-9 justify-space-between">
-					<div class="col-12-sm col-2-lg">
-						<h3>Startup 3</h3>
-						<label
-							>Be sure to take a look at our Terms of Use and Privacy
-							Policy</label
-						>
-					</div>
-					<div class="col-4-sm col-1-lg">
-						<h3>About</h3>
-						<p>About Us</p>
-						<p>Blog</p>
-						<p>Team</p>
-						<p>Career</p>
-						<p>Contact</p>
-					</div>
-					<div class="col-4-sm col-1-lg">
-						<h3>Company</h3>
-						<p>Privacy</p>
-						<p>Support</p>
-						<p>Help Desk</p>
-						<p>FAQ</p>
-					</div>
-					<div class="col-12-sm col-4-lg">
-						<h3>Subscribe to our NewsLetters</h3>
-						<input
-							class="font-sm pl-1 pt-1 b-rad text-black border-1-solid-black pb-1"
-							type="text"
-							placeholder="Your email"
-						/>
-						<button class="btn-green text-white font-sm pl-2 pr-2 mt-1 b-rad">
-							Subscribe
-						</button>
-						<div class="display-f font-md mt-2 align-center col-gap-3">
-							<li class="text-tw text-hover-tw-dark-1">
-								<a href="#"><i class="fa-brands fa-twitter"></i></a>
-							</li>
-							<li class="text-fb text-hover-fb-dark-1">
-								<a href="#"><i class="fa-brands fa-facebook"></i></a>
-							</li>
-							<li class="text-yt text-hover-yt-dark-1">
-								<a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
-							</li>
-						</div>
-					</div>
-				</div>
-			</footer>
-			<div class="navbar-quaternary text-center">
-				<div class="container">
-					<p class="text-gray-dark-2">
-						Startup Framework contains components and complex blocks which can
-						easily be integrated into almost any design.
-					</p>
-				</div>
-			</div>
-		</div>
-		<script src="js/loadingmenu.js"></script>
-		<script src="js/verification.js"></script>
-		<script src="js/switch.js"></script>
-	</body>
+      <div class="support">
+        <button class="support__icon"><i class="fa-solid fa-comments"></i></button>
+      </div>
+
+      <div class="chat hide">
+        <button class="chat__btn"><i class="fa-solid fa-chevron-down"></i></button>
+        <div class="display-f align-center col-gap-1 chat__header">
+          <i class="fa-solid fa-comments"></i>
+          <h2>Conversation</h2>
+        </div>
+
+        <div class="chat__content">
+          <input type="text" class="chat__input" />
+        </div>
+      </div>
+
+      <footer class="footer bg-primary-dark-6 text-white pt-2 pb-2 mt-5">
+        <div class="container row col-gap-9 justify-space-between">
+          <div class="col-12-sm col-2-lg">
+            <h3>Startup 3</h3>
+            <label>Be sure to take a look at our Terms of Use and Privacy Policy</label>
+          </div>
+          <div class="col-4-sm col-1-lg">
+            <h3>About</h3>
+            <p>About Us</p>
+            <p>Blog</p>
+            <p>Team</p>
+            <p>Career</p>
+            <p>Contact</p>
+          </div>
+          <div class="col-4-sm col-1-lg">
+            <h3>Company</h3>
+            <p>Privacy</p>
+            <p>Support</p>
+            <p>Help Desk</p>
+            <p>FAQ</p>
+          </div>
+          <div class="col-12-sm col-4-lg">
+            <h3>Subscribe to our NewsLetters</h3>
+            <input class="font-sm pl-1 pt-1 b-rad text-black border-1-solid-black pb-1" type="text" placeholder="Your email" />
+            <button class="btn-green text-white font-sm pl-2 pr-2 mt-1 b-rad">Subscribe</button>
+            <div class="display-f font-md mt-2 align-center col-gap-3">
+              <li class="text-tw text-hover-tw-dark-1">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li class="text-fb text-hover-fb-dark-1">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              </li>
+              <li class="text-yt text-hover-yt-dark-1">
+                <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+              </li>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="navbar-quaternary text-center">
+        <div class="container">
+          <p class="text-gray-dark-2">Startup Framework contains components and complex blocks which can easily be integrated into almost any design.</p>
+        </div>
+      </div>
+    </div>
+    <script src="js/loadingmenu.js"></script>
+    <script src="js/verification.js"></script>
+    <script src="js/switch.js"></script>
+    <script src="js/chatsupport.js"></script>
+  </body>
 </html>

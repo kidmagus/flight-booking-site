@@ -6,10 +6,7 @@
     <title>Settings</title>
     <link rel="stylesheet" href="css/index.css" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
   </head>
   <body onload="load()" class="bg-quinary">
     <div class="ring">
@@ -19,9 +16,7 @@
     </div>
     <div class="hide">
       <header class="navbar-primary">
-        <div
-          class="container text-white display-f align-center justify-space-between"
-        >
+        <div class="container text-white display-f align-center justify-space-between">
           <div class="display-f align-center col-gap-2">
             <p class="font-lg fw-xl">
               <a href="Homepage.html">Envision Air</a>
@@ -31,19 +26,13 @@
 
           <nav class="display-f col-gap-2 font-md">
             <ul class="p-0">
-              <a class="text-hover-gray-light-5" href="FirstScreen.html"
-                ><i class="fa-solid fa-house"></i
-              ></a>
+              <a class="text-hover-gray-light-5" href="FirstScreen.html"><i class="fa-solid fa-house"></i></a>
             </ul>
             <ul>
-              <a class="text-hover-gray-light-5" href="TicketScreen.html"
-                ><i class="fa-solid fa-ticket"></i
-              ></a>
+              <a class="text-hover-gray-light-5" href="TicketScreen.html"><i class="fa-solid fa-ticket"></i></a>
             </ul>
             <ul>
-              <a class="text-hover-gray-light-5" href="Profile.html"
-                ><i class="fa-solid fa-user"></i
-              ></a>
+              <a class="text-hover-gray-light-5" href="Profile.html"><i class="fa-solid fa-user"></i></a>
             </ul>
           </nav>
         </div>
@@ -57,9 +46,7 @@
             <p class="text-hover-primary-light-1">
               <a href="notification-setting.html">Notification Settings</a>
             </p>
-            <div
-              class="switch-label pointer m-0 display-f align-center justify-space-between"
-            >
+            <div class="switch-label pointer m-0 display-f align-center justify-space-between">
               <p>Location</p>
               <label class="switch">
                 <input type="checkbox" class="switch-input" />
@@ -89,14 +76,27 @@
         </div>
       </div>
 
+      <div class="support">
+        <button class="support__icon"><i class="fa-solid fa-comments"></i></button>
+      </div>
+
+      <div class="chat hide">
+        <button class="chat__btn"><i class="fa-solid fa-chevron-down"></i></button>
+        <div class="display-f align-center col-gap-1 chat__header">
+          <i class="fa-solid fa-comments"></i>
+          <h2>Conversation</h2>
+        </div>
+
+        <div class="chat__content">
+          <input type="text" class="chat__input" />
+        </div>
+      </div>
+
       <footer class="footer bg-primary-dark-6 text-white pt-2 pb-2 mt-5">
         <div class="container row col-gap-9 justify-space-between">
           <div class="col-12-sm col-2-lg">
             <h3>Startup 3</h3>
-            <label
-              >Be sure to take a look at our Terms of Use and Privacy
-              Policy</label
-            >
+            <label>Be sure to take a look at our Terms of Use and Privacy Policy</label>
           </div>
           <div class="col-4-sm col-1-lg">
             <h3>About</h3>
@@ -115,14 +115,8 @@
           </div>
           <div class="col-12-sm col-4-lg">
             <h3>Subscribe to our NewsLetters</h3>
-            <input
-              class="font-sm pl-1 pt-1 b-rad text-black border-1-solid-black pb-1"
-              type="text"
-              placeholder="Your email"
-            />
-            <button class="btn-green text-white font-sm pl-2 pr-2 mt-1 b-rad">
-              Subscribe
-            </button>
+            <input class="font-sm pl-1 pt-1 b-rad text-black border-1-solid-black pb-1" type="text" placeholder="Your email" />
+            <button class="btn-green text-white font-sm pl-2 pr-2 mt-1 b-rad">Subscribe</button>
             <div class="display-f font-md mt-2 align-center col-gap-3">
               <li class="text-tw text-hover-tw-dark-1">
                 <a href="#"><i class="fa-brands fa-twitter"></i></a>
@@ -139,14 +133,12 @@
       </footer>
       <div class="navbar-quaternary text-center">
         <div class="container">
-          <p class="text-gray-dark-2">
-            Startup Framework contains components and complex blocks which can
-            easily be integrated into almost any design.
-          </p>
+          <p class="text-gray-dark-2">Startup Framework contains components and complex blocks which can easily be integrated into almost any design.</p>
         </div>
       </div>
     </div>
     <script src="js/loadingmenu.js"></script>
     <script src="js/switch.js"></script>
+    <script src="js/chatsupport.js"></script>
   </body>
 </html>

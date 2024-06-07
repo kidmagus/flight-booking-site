@@ -6,7 +6,7 @@
     <title>Amenities</title>
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-    <link rel="stylesheet" href="node_modules/hamburgers/dist/hamburgers.css"
+    <link href="node_modules/hamburgers/dist/hamburgers.css" rel="stylesheet" />
   </head>
   <body onload="load()" class="bg-quinary">
     <div class="ring">
@@ -39,27 +39,43 @@
         </div>
       </header>
 
-      <div class="container mt-2 mb-5">
-        <nav class="navbar-primary b-rad-sm">
+      <div class="container mt-2 mb-1">
+        <button class="hamburger hamburger--collapse" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+        <nav class="navbar-primary b-rad-sm mob__amenities--tab hide">
+          <ul class="display-f text-white flex-column row-gap-2">
+            <li><a href="#" class="mob--all mob--selected" data-tag="all">All</a></li>
+            <li><a href="#" class="mob--dinner" data-tag="dining">Dinner</a></li>
+            <li><a href="#" class="mob--entertainment" data-tag="entertainment">Entertainment</a></li>
+            <li><a href="#" class="mob--shopping" data-tag="shopping">Shopping</a></li>
+            <li><a href="#" class="mob--lounge" data-tag="lounge">Lounge</a></li>
+            <li><a href="#" class="mob--deals" data-tag="deals">Deals and Offers</a></li>
+          </ul>
+        </nav>
+
+        <nav class="navbar-primary b-rad-sm amenities--tab">
           <ul class="display-f text-white col-gap-6 align-center">
-            <li><a href="#" class="all selected">All</a></li>
+            <li><a href="#" class="all selected" data-tag="all">All</a></li>
             <hr class="h-15" />
-            <li><a href="#" class="dinner">Dinner</a></li>
+            <li><a href="#" class="dinner" data-tag="dining">Dinner</a></li>
             <hr class="h-15" />
-            <li><a href="#" class="entertainment">Entertainment</a></li>
+            <li><a href="#" class="entertainment" data-tag="entertainment">Entertainment</a></li>
             <hr class="h-15" />
-            <li><a href="#" class="shopping">Shopping</a></li>
+            <li><a href="#" class="shopping" data-tag="shopping">Shopping</a></li>
             <hr class="h-15" />
-            <li><a href="#" class="lounge">Lounge</a></li>
+            <li><a href="#" class="lounge" data-tag="lounge">Lounge</a></li>
             <hr class="h-15" />
-            <li><a href="#" class="deals">Deals and Offers</a></li>
+            <li><a href="#" class="deals" data-tag="deals">Deals and Offers</a></li>
           </ul>
         </nav>
       </div>
 
       <div class="container">
         <div class="row gap-1">
-          <div class="col-12-xs col-4-md col-4-lg service service--shop">
+          <div class="col-12-xs col-4-md col-4-lg service service--shop" data-tags="shopping all ">
             <div class="service__card service--confection">
               <img src="img/confectionery.jpg" />
               <div class="display-f align-center justify-space-between service__desc">
@@ -68,7 +84,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12-xs col-4-md col-4-lg service service--shop">
+          <div class="col-12-xs col-4-md col-4-lg service service--shop" data-tags="shopping all">
             <div class="service__card service--convention">
               <img src="img/convention-store.jpg" />
               <div class="display-f align-center justify-space-between service__desc">
@@ -77,7 +93,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12-xs col-4-md col-4-lg service service--shop">
+          <div class="col-12-xs col-4-md col-4-lg service service--shop" data-tags="shopping all">
             <div class="service__card service--fashion">
               <img src="img/fashion-new.jpg" />
               <div class="display-f align-center justify-space-between service__desc">
@@ -86,7 +102,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12-xs col-4-md col-4-lg service service--shop">
+          <div class="col-12-xs col-4-md col-4-lg service service--shop" data-tags="shopping all">
             <div class="service__card service--jewels">
               <img src="img/jewels.jpg" />
               <div class="display-f align-center justify-space-between service__desc">
@@ -95,7 +111,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12-xs col-4-md col-4-lg service service--shop">
+          <div class="col-12-xs col-4-md col-4-lg service service--shop" data-tags="shopping all">
             <div class="service__card service--liquor">
               <img src="img/liquor.jpg" />
               <div class="display-f align-center justify-space-between service__desc">
@@ -104,7 +120,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12-xs col-4-md col-4-lg service service--shop">
+          <div class="col-12-xs col-4-md col-4-lg service service--shop" data-tags="shopping all">
             <div class="service__card service--cosmetics">
               <img src="img/cosmetics-new.jpg" />
               <div class="display-f align-center justify-space-between service__desc">
@@ -113,7 +129,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12-xs col-4-md col-4-lg service service--shop">
+          <div class="col-12-xs col-4-md col-4-lg service service--shop" data-tags="shopping all ">
             <div class="service__card service--souvenirs">
               <img src="img/souvenir-new.jpg" />
               <div class="display-f align-center justify-space-between service__desc">
@@ -123,7 +139,7 @@
             </div>
           </div>
 
-          <div class="col-12-xs col-4-md col-4-lg service service--shop">
+          <div class="col-12-xs col-4-md col-4-lg service service--shop" data-tags="shopping all">
             <div class="service__card service--toystore">
               <img src="img/toy-store-and-play-area.jpg" />
               <div class="display-f align-center justify-space-between service__desc">
@@ -132,7 +148,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12-xs col-4-md col-4-lg service service--dining">
+          <div class="col-12-xs col-4-md col-4-lg service service--dining" data-tags="dining all">
             <div class="service__card service--casual">
               <img src="img/casual-dining1.jpg" />
               <div class="display-f align-center justify-space-between service__desc">
@@ -141,7 +157,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12-xs col-4-md col-4-lg service service--dining">
+          <div class="col-12-xs col-4-md col-4-lg service service--dining" data-tags="dining all">
             <div class="service__card service--bar">
               <img src="img/bar-and-drinks.jpg" />
               <div class="display-f align-center justify-space-between service__desc">
@@ -150,7 +166,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12-xs col-4-md col-4-lg service service--dining">
+          <div class="col-12-xs col-4-md col-4-lg service service--dining" data-tags="dining all">
             <div class="service__card service--coffee">
               <img src="img/coffee.jpg" />
               <div class="display-f align-center justify-space-between service__desc">
@@ -159,7 +175,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12-xs col-4-md col-4-lg service service--dining">
+          <div class="col-12-xs col-4-md col-4-lg service service--dining" data-tags="dining all">
             <div class="service__card service--grab">
               <img src="img/grab-go-new.jpg" />
               <div class="display-f align-center justify-space-between service__desc">
@@ -168,7 +184,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12-xs col-4-md col-4-lg service service--dining">
+          <div class="col-12-xs col-4-md col-4-lg service service--dining" data-tags="dining all">
             <div class="service__card service--qsr">
               <img src="img/quick-service-restaurant.jpg" />
               <div class="display-f align-center justify-space-between service__desc">
@@ -177,7 +193,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12-xs col-4-md col-4-lg service service--lounge">
+          <div class="col-12-xs col-4-md col-4-lg service service--lounge" data-tags="lounge all">
             <div class="service__card service--govt">
               <img src="img/govt-office.jpg" />
               <div class="display-f align-center justify-space-between service__desc">
@@ -186,7 +202,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12-xs col-4-md col-4-lg service service--lounge">
+          <div class="col-12-xs col-4-md col-4-lg service service--lounge" data-tags="lounge all">
             <div class="service__card service--prayer">
               <img src="img/prayer-room.jpg" />
               <div class="display-f align-center justify-space-between service__desc">
@@ -195,7 +211,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12-xs col-4-md col-4-lg service service--entertainment">
+          <div class="col-12-xs col-4-md col-4-lg service service--entertainment" data-tags="entertainment all">
             <div class="service__card service--airport">
               <img src="img/airport-hotel.jpg" />
               <div class="display-f align-center justify-space-between service__desc">
@@ -204,7 +220,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12-xs col-4-md col-4-lg service service--lounge">
+          <div class="col-12-xs col-4-md col-4-lg service service--lounge" data-tags="lounge all">
             <div class="service__card service--lounge">
               <img src="img/lounge.jpg" />
               <div class="display-f align-center justify-space-between service__desc">
@@ -213,7 +229,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12-xs col-4-md col-4-lg service service--entertainment">
+          <div class="col-12-xs col-4-md col-4-lg service service--entertainment" data-tags="entertainment all">
             <div class="service__card service--luggage">
               <img src="img/luggage-handling-new.jpg" />
               <div class="display-f align-center justify-space-between service__desc">
@@ -222,7 +238,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12-xs col-4-md col-4-lg service service--entertainment">
+          <div class="col-12-xs col-4-md col-4-lg service service--entertainment" data-tags="entertainment all">
             <div class="service__card service--massage">
               <img src="img/massage-new.jpg" />
               <div class="display-f align-center justify-space-between service__desc">
@@ -231,7 +247,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12-xs col-4-md col-4-lg service service--lounge">
+          <div class="col-12-xs col-4-md col-4-lg service service--lounge" data-tags="lounge all">
             <div class="service__card service--money">
               <img src="img/money-exchange-new.jpg" />
               <div class="display-f align-center justify-space-between service__desc">
@@ -240,7 +256,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12-xs col-4-md col-4-lg service service--entertainment">
+          <div class="col-12-xs col-4-md col-4-lg service service--entertainment" data-tags="entertainment all">
             <div class="service__card service--pharmacy">
               <img src="img/pharmacy-logo.jpg" />
               <div class="display-f align-center justify-space-between service__desc">
@@ -249,7 +265,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12-xs col-4-md col-4-lg service service--lounge">
+          <div class="col-12-xs col-4-md col-4-lg service service--lounge" data-tags="lounge all">
             <div class="service__card service--porter">
               <img src="img/porter-service-new.jpg" />
               <div class="display-f align-center justify-space-between service__desc">
@@ -258,7 +274,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12-xs col-4-md col-4-lg service service--entertainment">
+          <div class="col-12-xs col-4-md col-4-lg service service--entertainment" data-tags="entertainment all">
             <div class="service__card service--telecom">
               <img src="img/telecom-new.jpg" />
               <div class="display-f align-center justify-space-between service__desc">
@@ -267,7 +283,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12-xs col-4-md col-4-lg service service--lounge">
+          <div class="col-12-xs col-4-md col-4-lg service service--lounge" data-tags="lounge all">
             <div class="service__card service--ticketing">
               <img src="img/ticketing-new.jpg" />
               <div class="display-f align-center justify-space-between service__desc">
@@ -276,7 +292,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12-xs col-6-md col-6-lg service service--deals service--inactive">
+          <div class="col-12-xs col-6-md col-6-lg service service--deals service--inactive" data-tags="deals ">
             <div class="service__card service--deal-1">
               <img src="img/ticketing-new.jpg" />
               <div class="display-f align-center justify-space-between service__desc">
@@ -285,7 +301,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12-xs col-6-md col-6-lg service service--deals service--inactive">
+          <div class="col-12-xs col-6-md col-6-lg service service--deals service--inactive" data-tags="deals">
             <div class="service__card service--deal-2">
               <img src="img/ticketing-new.jpg" />
               <div class="display-f align-center justify-space-between service__desc">
@@ -294,6 +310,22 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div class="support">
+        <button class="support__icon"><i class="fa-solid fa-comments"></i></button>
+      </div>
+
+      <div class="chat hide">
+        <button class="chat__btn"><i class="fa-solid fa-chevron-down"></i></button>
+        <div class="display-f align-center col-gap-1 chat__header">
+          <i class="fa-solid fa-comments"></i>
+          <h2>Conversation</h2>
+        </div>
+
+        <div class="chat__content">
+          <input type="text" class="chat__input" />
         </div>
       </div>
 
@@ -346,5 +378,6 @@
     <script src="js/loadingmenu.js"></script>
     <script src="js/amenities.js"></script>
     <script src="js/hamburger.js"></script>
+    <script src="js/chatsupport.js"></script>
   </body>
 </html>

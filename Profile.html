@@ -1,350 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Profile</title>
-		<link rel="stylesheet" href="css/index.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="css/index.css" />
 
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-		/>
-	</head>
-	<body onload="load()" class="bg-quinary">
-		<div class="ring">
-			<img src="img/earth.png" class="earth" />
-			<img src="img/logo.png" class="plane__logo" />
-			<span><img src="img/airplane.png" class="plane" /></span>
-		</div>
-		<div class="hide">
-			<header class="navbar-primary">
-				<div
-					class="container text-white display-f align-center justify-space-between"
-				>
-					<div class="display-f align-center col-gap-2">
-						<p class="font-lg fw-xl">
-							<a href="Homepage.html">Envision Air</a>
-						</p>
-						<img class="logo" src="img/logo.png" />
-					</div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  </head>
+  <body onload="load()" class="bg-quinary">
+    <div class="ring">
+      <img src="img/earth.png" class="earth" />
+      <img src="img/logo.png" class="plane__logo" />
+      <span><img src="img/airplane.png" class="plane" /></span>
+    </div>
+    <div class="hide">
+      <header class="navbar-primary">
+        <div class="container text-white display-f align-center justify-space-between">
+          <div class="display-f align-center col-gap-2">
+            <p class="font-lg fw-xl">
+              <a href="Homepage.html">Envision Air</a>
+            </p>
+            <img class="logo" src="img/logo.png" />
+          </div>
 
-					<nav class="display-f col-gap-2 font-md">
-						<ul class="p-0">
-							<a class="text-hover-gray-light-5" href="FirstScreen.html"
-								><i class="fa-solid fa-house"></i
-							></a>
-						</ul>
-						<ul>
-							<a class="text-hover-gray-light-5" href="TicketScreen.html"
-								><i class="fa-solid fa-ticket"></i
-							></a>
-						</ul>
-						<ul>
-							<a class="text-hover-gray-light-5" href="Profile.html"
-								><i class="fa-solid fa-user"></i
-							></a>
-						</ul>
-					</nav>
-				</div>
-			</header>
-			<div class="container mt-3">
-				<div class="profile-pic mb-3">
-					<label class="-profile" for="file"> </label>
-					<img src="img/icon.jpg" class="output" />
-				</div>
-				<h2 class="profile-name text-center font-lg">1</h2>
-				<div class="accordion bg-primary">
-					<div class="accordion__box box">
-						<div class="box__head head">
-							<div class="head__icon"><i class="fa-solid fa-user"></i></div>
-							<h5 class="head__title">Edit Profile</h5>
-							<span class="head__span">></span>
-						</div>
-						<div class="box__info">
-							<div class="container p-2 b-rad-lg mt-2 mb-2 text-center">
-								<form class="form">
-									<div
-										class="text-white display-f align-center justify-space-evenly mb-3"
-									>
-										<div class="profile-pic">
-											<label class="-label" for="file">
-												<span>Change Image</span>
-											</label>
-											<input id="file" type="file" class="loadFile" />
-											<img src="img/icon.jpg" class="output" />
-										</div>
-									</div>
+          <nav class="display-f col-gap-2 font-md">
+            <ul class="p-0">
+              <a class="text-hover-gray-light-5" href="FirstScreen.html"><i class="fa-solid fa-house"></i></a>
+            </ul>
+            <ul>
+              <a class="text-hover-gray-light-5" href="TicketScreen.html"><i class="fa-solid fa-ticket"></i></a>
+            </ul>
+            <ul>
+              <a class="text-hover-gray-light-5" href="Profile.html"><i class="fa-solid fa-user"></i></a>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="container mt-3">
+        <div class="profile-pic mb-3">
+          <label class="-profile" for="file"> </label>
+          <img src="img/icon.jpg" class="output" />
+        </div>
+        <h2 class="profile-name text-center font-lg">1</h2>
+        <div class="accordion bg-primary">
+          <div class="accordion__box box">
+            <div class="box__head head">
+              <div class="head__icon"><i class="fa-solid fa-user"></i></div>
+              <h5 class="head__title">Edit Profile</h5>
+              <span class="head__span">></span>
+            </div>
+            <div class="box__info">
+              <div class="container p-2 b-rad-lg mt-2 mb-2 text-center">
+                <form class="form">
+                  <div class="text-white display-f align-center justify-space-evenly mb-3">
+                    <div class="profile-pic">
+                      <label class="-label" for="file">
+                        <span>Change Image</span>
+                      </label>
+                      <input id="file" type="file" class="loadFile" />
+                      <img src="img/icon.jpg" class="output" />
+                    </div>
+                  </div>
 
-									<div class="row gap-2">
-										<div class="form-group col-12-xs col-6-lg">
-											<label>First Name:</label>
-											<input type="text" name="fname" class="fname" />
-										</div>
-										<div class="form-group col-12-xs col-6-lg">
-											<label>Middle Name:</label>
-											<input type="text" />
-										</div>
-										<div class="form-group col-12-xs col-6-lg">
-											<label>Last Name:</label>
-											<input type="text" name="lname" class="lname" />
-										</div>
-										<div class="form-group col-12-xs col-6-lg">
-											<label>Email:</label>
-											<input type="text" />
-										</div>
-										<div class="form-group col-12-xs col-6-lg">
-											<label>Contact:</label>
-											<input type="text" />
-										</div>
-										<div class="form-group col-12-xs col-6-lg">
-											<label>Gender</label>
-											<select class="select">
-												<option selected value="0"></option>
-												<option value="1">Male</option>
-												<option value="2">Female</option>
-											</select>
-										</div>
-										<div class="form-group col-12-xs col-6-lg">
-											<label>Address:</label>
-											<input type="text" />
-										</div>
-										<div class="form-group col-12-xs col-6-lg">
-											<label>Bio:</label>
-											<input type="text" />
-										</div>
-									</div>
-									<button
-										class="btn-tertiary btn--submit text-white font-sm mt-2"
-									>
-										Submit
-									</button>
-								</form>
-							</div>
-						</div>
-					</div>
-					<div class="accordion__box box">
-						<div class="box__head head">
-							<div class="head__icon"><i class="fa-solid fa-bell"></i></div>
-							<h5 class="head__title">Notification</h5>
-							<span class="head__span">></span>
-						</div>
-						<div class="box__info notif">
-							<div class="notif__message bg-white b-rad-sm p-2">
-								<div class="mesage__header">
-									<span><i class="fa-solid fa-envelope"></i></span>
-									<h3 class="display-i-b ml-1">Clark International Airport</h3>
-								</div>
-								<label>Dear Vincent John,</label>
-								<> We hope this email finds you well. We're reaching out to
-								inform about you about an important update regarding your
-								upcoming flight from Clark International Airport to Tokyo
-								Airport on May 31, 2024.
-								<br />
-								<br />
-								Due to unforeseen circumstances, there has been a change to the
-								departure time of your flight. The new departure time is 04:00
-								AM. We kindly ask that you arrive at the airport at least 2 hour
-								prior to the new departure to ensure a smooth check-in process
-								and to accommodate any potential delays.
-								<br />
-								<br />
-								Please note that our team is working diligently to minimize any
-								inconvenience caused by this schedule change.
-								<br />
-								<br />
-								Should you have any questions or concerns, please don't hesitate
-								to contact our customer service team at 3-600.
-								<br />
-								<br />
-								Thank you for your understanding and cooperation. We look
-								forward to serving you and providing you with a pleasant travel
-								experience.
-								<br />
-								<br />
+                  <div class="row gap-2">
+                    <div class="form-group col-12-xs col-6-lg">
+                      <label>First Name:</label>
+                      <input type="text" name="fname" class="fname" />
+                    </div>
+                    <div class="form-group col-12-xs col-6-lg">
+                      <label>Middle Name:</label>
+                      <input type="text" />
+                    </div>
+                    <div class="form-group col-12-xs col-6-lg">
+                      <label>Last Name:</label>
+                      <input type="text" name="lname" class="lname" />
+                    </div>
+                    <div class="form-group col-12-xs col-6-lg">
+                      <label>Email:</label>
+                      <input type="text" />
+                    </div>
+                    <div class="form-group col-12-xs col-6-lg">
+                      <label>Contact:</label>
+                      <input type="text" />
+                    </div>
+                    <div class="form-group col-12-xs col-6-lg">
+                      <label>Gender</label>
+                      <select class="select">
+                        <option selected value="0"></option>
+                        <option value="1">Male</option>
+                        <option value="2">Female</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-12-xs col-6-lg">
+                      <label>Address:</label>
+                      <input type="text" />
+                    </div>
+                    <div class="form-group col-12-xs col-6-lg">
+                      <label>Bio:</label>
+                      <input type="text" />
+                    </div>
+                  </div>
+                  <button class="btn-tertiary btn--submit text-white font-sm mt-2">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="accordion__box box">
+            <div class="box__head head">
+              <div class="head__icon"><i class="fa-solid fa-bell"></i></div>
+              <h5 class="head__title">Notification</h5>
+              <span class="head__span">></span>
+            </div>
+            <div class="box__info notif">
+              <div class="notif__message bg-white b-rad-sm p-2">
+                <div class="mesage__header">
+                  <span><i class="fa-solid fa-envelope"></i></span>
+                  <h3 class="display-i-b ml-1">Clark International Airport</h3>
+                </div>
+                <label>Dear Vincent John,</label>
+                <> We hope this email finds you well. We're reaching out to inform about you about an important update regarding your upcoming flight from Clark International Airport to Tokyo Airport
+                on May 31, 2024.
+                <br />
+                <br />
+                Due to unforeseen circumstances, there has been a change to the departure time of your flight. The new departure time is 04:00 AM. We kindly ask that you arrive at the airport at least
+                2 hour prior to the new departure to ensure a smooth check-in process and to accommodate any potential delays.
+                <br />
+                <br />
+                Please note that our team is working diligently to minimize any inconvenience caused by this schedule change.
+                <br />
+                <br />
+                Should you have any questions or concerns, please don't hesitate to contact our customer service team at 3-600.
+                <br />
+                <br />
+                Thank you for your understanding and cooperation. We look forward to serving you and providing you with a pleasant travel experience.
+                <br />
+                <br />
 
-								Safe travels.
+                Safe travels.
 
-								<br />
-								<br />
-								<p>Vincent John Jocson</p>
-								<p>Clark International Airport</p>
-								<p>0911911911</p>
-							</div>
-						</div>
-					</div>
-					<div class="accordion__box box">
-						<div class="box__head head">
-							<div class="head__icon"><i class="fa-solid fa-globe"></i></div>
+                <br />
+                <br />
+                <p>Vincent John Jocson</p>
+                <p>Clark International Airport</p>
+                <p>0911911911</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion__box box">
+            <div class="box__head head">
+              <div class="head__icon"><i class="fa-solid fa-globe"></i></div>
 
-							<h5 class="head__title">Language</h5>
-							<span class="head__span">></span>
-						</div>
-						<div class="box__info lang">
-							<div class="lang__content">
-								<div class="row gap-2">
-									<div class="col-12-xs col-6-md col-6-lg">
-										<div
-											class="card-secondary-light-1 card-hover-secondary-dark-1 b-rad-sm text-center"
-										>
-											<img
-												class="b-rad-xs"
-												src="img/Flag_of_the_Philippines.svg.webp"
-											/>
-											<h3>Philippines</h3>
-										</div>
-									</div>
-									<div class="col-12-xs col-6-md col-6-lg">
-										<div
-											class="card-secondary-light-1 card-hover-secondary-dark-1 b-rad-sm text-center"
-										>
-											<img
-												class="b-rad-xs"
-												src="img/Flag_of_the_Philippines.svg.webp"
-											/>
-											<h3>Philippines</h3>
-										</div>
-									</div>
-									<div class="col-12-xs col-6-md col-6-lg">
-										<div
-											class="card-secondary-light-1 card-hover-secondary-dark-1 b-rad-sm text-center"
-										>
-											<img
-												class="b-rad-xs"
-												src="img/Flag_of_the_Philippines.svg.webp"
-											/>
-											<h3>Philippines</h3>
-										</div>
-									</div>
-									<div class="col-12-xs col-6-md col-6-lg">
-										<div
-											class="card-secondary-light-1 card-hover-secondary-dark-1 b-rad-sm text-center"
-										>
-											<img
-												class="b-rad-xs"
-												src="img/Flag_of_the_Philippines.svg.webp"
-											/>
-											<h3>Philippines</h3>
-										</div>
-									</div>
-									<div class="col-12-xs col-6-md col-6-lg">
-										<div
-											class="card-secondary-light-1 card-hover-secondary-dark-1 b-rad-sm text-center"
-										>
-											<img
-												class="b-rad-xs"
-												src="img/Flag_of_the_Philippines.svg.webp"
-											/>
-											<h3>Philippines</h3>
-										</div>
-									</div>
-									<div class="col-12-xs col-6-md col-6-lg">
-										<div
-											class="card-secondary-light-1 card-hover-secondary-dark-1 b-rad-sm text-center"
-										>
-											<img
-												class="b-rad-xs"
-												src="img/Flag_of_the_Philippines.svg.webp"
-											/>
-											<h3>Philippines</h3>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="accordion__box box">
-						<a href="settings.html">
-							<div class="box__head">
-								<div class="head__icon"><i class="fa-solid fa-gear"></i></div>
-								<h5 class="head__title">Settings</h5>
-								<span class="head__span">></span>
-							</div>
-						</a>
-					</div>
-					<div class="accordion__box box">
-						<div class="box__head btn--open-modal">
-							<div class="head__icon">
-								<i class="fa-solid fa-right-from-bracket"></i>
-							</div>
-							<h5 class="head__title">Logout</h5>
-							<span class="head__span">></span>
-						</div>
-					</div>
-				</div>
-			</div>
+              <h5 class="head__title">Language</h5>
+              <span class="head__span">></span>
+            </div>
+            <div class="box__info lang">
+              <div class="lang__content">
+                <div class="row gap-2">
+                  <div class="col-12-xs col-6-md col-6-lg">
+                    <div class="card-secondary-light-1 card-hover-secondary-dark-1 b-rad-sm text-center">
+                      <img class="b-rad-xs" src="img/Flag_of_the_Philippines.svg.webp" />
+                      <h3>Philippines</h3>
+                    </div>
+                  </div>
+                  <div class="col-12-xs col-6-md col-6-lg">
+                    <div class="card-secondary-light-1 card-hover-secondary-dark-1 b-rad-sm text-center">
+                      <img class="b-rad-xs" src="img/Flag_of_the_Philippines.svg.webp" />
+                      <h3>Philippines</h3>
+                    </div>
+                  </div>
+                  <div class="col-12-xs col-6-md col-6-lg">
+                    <div class="card-secondary-light-1 card-hover-secondary-dark-1 b-rad-sm text-center">
+                      <img class="b-rad-xs" src="img/Flag_of_the_Philippines.svg.webp" />
+                      <h3>Philippines</h3>
+                    </div>
+                  </div>
+                  <div class="col-12-xs col-6-md col-6-lg">
+                    <div class="card-secondary-light-1 card-hover-secondary-dark-1 b-rad-sm text-center">
+                      <img class="b-rad-xs" src="img/Flag_of_the_Philippines.svg.webp" />
+                      <h3>Philippines</h3>
+                    </div>
+                  </div>
+                  <div class="col-12-xs col-6-md col-6-lg">
+                    <div class="card-secondary-light-1 card-hover-secondary-dark-1 b-rad-sm text-center">
+                      <img class="b-rad-xs" src="img/Flag_of_the_Philippines.svg.webp" />
+                      <h3>Philippines</h3>
+                    </div>
+                  </div>
+                  <div class="col-12-xs col-6-md col-6-lg">
+                    <div class="card-secondary-light-1 card-hover-secondary-dark-1 b-rad-sm text-center">
+                      <img class="b-rad-xs" src="img/Flag_of_the_Philippines.svg.webp" />
+                      <h3>Philippines</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion__box box">
+            <a href="settings.html">
+              <div class="box__head">
+                <div class="head__icon"><i class="fa-solid fa-gear"></i></div>
+                <h5 class="head__title">Settings</h5>
+                <span class="head__span">></span>
+              </div>
+            </a>
+          </div>
+          <div class="accordion__box box">
+            <div class="box__head btn--open-modal">
+              <div class="head__icon">
+                <i class="fa-solid fa-right-from-bracket"></i>
+              </div>
+              <h5 class="head__title">Logout</h5>
+              <span class="head__span">></span>
+            </div>
+          </div>
+        </div>
+      </div>
 
-			<div class="modal hidden b-rad-sm bg-senary-light-1">
-				<h1 class="text-center text-primary">Log out of EnvisionAir?</h1>
-				<div
-					class="display-f align-center justify-center col-gap-1 text-white font-sm fw-lg"
-				>
-					<a href="Homepage.html"> <button class="btn-yt">Yes</button></a>
-					<button class="btn-secondary btn--close-modal">No</button>
-				</div>
-			</div>
-			<div class="overlay hidden"></div>
+      <div class="modal hidden b-rad-sm bg-senary-light-1">
+        <h1 class="text-center text-primary">Log out of EnvisionAir?</h1>
+        <div class="display-f align-center justify-center col-gap-1 text-white font-sm fw-lg">
+          <a href="Homepage.html"> <button class="btn-yt">Yes</button></a>
+          <button class="btn-secondary btn--close-modal">No</button>
+        </div>
+      </div>
+      <div class="overlay hidden"></div>
 
-			<footer class="footer bg-primary-dark-6 text-white pt-2 pb-2 mt-5">
-				<div class="container row col-gap-9 justify-space-between">
-					<div class="col-12-sm col-2-lg">
-						<h3>Startup 3</h3>
-						<label
-							>Be sure to take a look at our Terms of Use and Privacy
-							Policy</label
-						>
-					</div>
-					<div class="col-4-sm col-1-lg">
-						<h3>About</h3>
-						<p>About Us</p>
-						<p>Blog</p>
-						<p>Team</p>
-						<p>Career</p>
-						<p>Contact</p>
-					</div>
-					<div class="col-4-sm col-1-lg">
-						<h3>Company</h3>
-						<p>Privacy</p>
-						<p>Support</p>
-						<p>Help Desk</p>
-						<p>FAQ</p>
-					</div>
-					<div class="col-12-sm col-4-lg">
-						<h3>Subscribe to our NewsLetters</h3>
-						<input
-							class="font-sm pl-1 pt-1 b-rad text-black border-1-solid-black pb-1"
-							type="text"
-							placeholder="Your email"
-						/>
-						<button class="btn-green text-white font-sm pl-2 pr-2 mt-1 b-rad">
-							Subscribe
-						</button>
-						<div class="display-f font-md mt-2 align-center col-gap-3">
-							<li class="text-tw text-hover-tw-dark-1">
-								<a href="#"><i class="fa-brands fa-twitter"></i></a>
-							</li>
-							<li class="text-fb text-hover-fb-dark-1">
-								<a href="#"><i class="fa-brands fa-facebook"></i></a>
-							</li>
-							<li class="text-yt text-hover-yt-dark-1">
-								<a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
-							</li>
-						</div>
-					</div>
-				</div>
-			</footer>
-			<div class="navbar-quaternary text-center">
-				<div class="container">
-					<p class="text-gray-dark-2">
-						Startup Framework contains components and complex blocks which can
-						easily be integrated into almost any design.
-					</p>
-				</div>
-			</div>
-		</div>
+      <div class="support">
+        <button class="support__icon"><i class="fa-solid fa-comments"></i></button>
+      </div>
 
-		<script src="js/profile.js"></script>
-		<script src="js/loadingmenu.js"></script>
-		<script src="js/modal.js"></script>
-	</body>
+      <div class="chat hide">
+        <button class="chat__btn"><i class="fa-solid fa-chevron-down"></i></button>
+        <div class="display-f align-center col-gap-1 chat__header">
+          <i class="fa-solid fa-comments"></i>
+          <h2>Conversation</h2>
+        </div>
+
+        <div class="chat__content">
+          <input type="text" class="chat__input" />
+        </div>
+      </div>
+
+      <footer class="footer bg-primary-dark-6 text-white pt-2 pb-2 mt-5">
+        <div class="container row col-gap-9 justify-space-between">
+          <div class="col-12-sm col-2-lg">
+            <h3>Startup 3</h3>
+            <label>Be sure to take a look at our Terms of Use and Privacy Policy</label>
+          </div>
+          <div class="col-4-sm col-1-lg">
+            <h3>About</h3>
+            <p>About Us</p>
+            <p>Blog</p>
+            <p>Team</p>
+            <p>Career</p>
+            <p>Contact</p>
+          </div>
+          <div class="col-4-sm col-1-lg">
+            <h3>Company</h3>
+            <p>Privacy</p>
+            <p>Support</p>
+            <p>Help Desk</p>
+            <p>FAQ</p>
+          </div>
+          <div class="col-12-sm col-4-lg">
+            <h3>Subscribe to our NewsLetters</h3>
+            <input class="font-sm pl-1 pt-1 b-rad text-black border-1-solid-black pb-1" type="text" placeholder="Your email" />
+            <button class="btn-green text-white font-sm pl-2 pr-2 mt-1 b-rad">Subscribe</button>
+            <div class="display-f font-md mt-2 align-center col-gap-3">
+              <li class="text-tw text-hover-tw-dark-1">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li class="text-fb text-hover-fb-dark-1">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              </li>
+              <li class="text-yt text-hover-yt-dark-1">
+                <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+              </li>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="navbar-quaternary text-center">
+        <div class="container">
+          <p class="text-gray-dark-2">Startup Framework contains components and complex blocks which can easily be integrated into almost any design.</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/profile.js"></script>
+    <script src="js/loadingmenu.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/chatsupport.js"></script>
+  </body>
 </html>

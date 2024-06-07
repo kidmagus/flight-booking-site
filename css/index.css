@@ -6332,9 +6332,14 @@ input:checked + .switcher:before {
   border-radius: 10px;
 }
 .chat__content {
-  border-radius: 20px;
   background-color: #fdfdf5;
   height: 360px;
+  display: flex;
+}
+.chat__input {
+  align-self: flex-end;
+  width: 100%;
+  padding: 10px;
 }
 
 .logo {
@@ -6760,11 +6765,33 @@ input:checked + .switcher:before {
   display: none;
 }
 
+.mob--selected {
+  color: #00b4d8;
+  border-bottom: 3px solid #00b4d8;
+  padding: 2px 0px;
+}
+
+@media (min-width: 0) {
+  .amenities--tab {
+    display: none;
+  }
+  .hamburger {
+    display: inline-block;
+  }
+}
+@media (min-width: 960px) {
+  .amenities--tab {
+    display: block;
+  }
+  .hamburger {
+    display: none;
+  }
+}
 #map {
   flex: 1;
-  height: 280px;
+  height: 380px;
+  margin-top: 200px;
   background-color: var(--color-light--1);
-  margin: 0 auto;
 }
 
 /* Popup width is defined in JS using options */

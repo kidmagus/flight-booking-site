@@ -25,3 +25,30 @@
 .service--inactive {
   display: none;
 }
+
+//Mobile
+.mob--selected {
+  color: $tertiary;
+  border-bottom: 3px solid $tertiary;
+  padding: 2px 0px;
+}
+
+@include xs {
+  .amenities--tab {
+    display: none;
+  }
+
+  .hamburger {
+    display: inline-block;
+  }
+}
+
+@include lg {
+  .amenities--tab {
+    display: block;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
