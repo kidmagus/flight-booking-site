@@ -250,31 +250,34 @@
 const hamburger = document.querySelector(".hamburger");
 const mobAmenities = document.querySelector(".mob__amenities--tab");
 hamburger.addEventListener("click", () => {
-  hamburger.classList.toggle("is-active");
-  mobAmenities.classList.toggle("hide");
+	hamburger.classList.toggle("is-active");
+	mobAmenities.classList.toggle("hide");
 });
 
 const tabTarget = document.querySelectorAll("[data-tag]");
 const tabContents = document.querySelectorAll("[data-tags]");
 
 tabTarget.forEach((tabTargets) => {
-  const target = tabTargets.getAttribute("data-tag");
-  const targetContent = document.querySelectorAll(`[data-tags*="${target}"]`);
+	const target = tabTargets.getAttribute("data-tag");
+	const targetContent = document.querySelectorAll(`[data-tags*="${target}"]`);
 
-  tabTargets.addEventListener("click", () => {
-    tabTarget.forEach((t) => {
-      t.classList.remove("selected");
-      t.classList.remove("mob--selected");
-    });
+	tabTargets.addEventListener("click", () => {
+		tabTarget.forEach((t) => {
+			t.classList.remove("selected");
+			t.classList.remove("mob--selected");
+		});
 
-    tabContents.forEach((c) => {
-      c.classList.add("service--inactive");
-    });
+		tabContents.forEach((c) => {
+			c.classList.add("service--inactive");
+		});
 
-    targetContent.forEach((tc) => {
-      tc.classList.remove("service--inactive");
-    });
-    tabTargets.classList.add("mob--selected");
-    tabTargets.classList.add("selected");
-  });
+		targetContent.forEach((tc) => {
+			tc.classList.remove("service--inactive");
+		});
+
+		if (hamburger.classList.contains("is-active")) {
+			tabTargets.classList.add("mob--selected");
+		}
+		tabTargets.classList.add("selected");
+	});
 });

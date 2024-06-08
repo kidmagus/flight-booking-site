@@ -6800,7 +6800,13 @@ input:checked + .switcher:before {
   .amenities--tab {
     display: block;
   }
+  .mob__amenities--tab {
+    display: none;
+  }
   .hamburger {
+    display: none;
+  }
+  .mob .hamburger {
     display: none;
   }
 }

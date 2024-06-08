@@ -1,383 +1,564 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Amenities</title>
-    <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-    <link href="node_modules/hamburgers/dist/hamburgers.css" rel="stylesheet" />
-  </head>
-  <body onload="load()" class="bg-quinary">
-    <div class="ring">
-      <img src="img/earth.png" class="earth" />
-      <img src="img/logo.png" class="plane__logo" />
-      <span><img src="img/airplane.png" class="plane" /></span>
-    </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Amenities</title>
+		<link rel="stylesheet" href="css/index.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+		/>
+		<link href="css/hamburgers.css" rel="stylesheet" />
+	</head>
+	<body onload="load()" class="bg-quinary">
+		<div class="ring">
+			<img src="img/earth.png" class="earth" />
+			<img src="img/logo.png" class="plane__logo" />
+			<span><img src="img/airplane.png" class="plane" /></span>
+		</div>
 
-    <div class="hide">
-      <header class="navbar-primary header">
-        <div class="container text-white display-f align-center justify-space-between">
-          <div class="display-f align-center col-gap-2">
-            <p class="font-lg fw-xl">
-              <a href="Homepage.html">Envision Air</a>
-            </p>
-            <img class="logo" src="img/logo.png" />
-          </div>
+		<div class="hide">
+			<header class="navbar-primary header">
+				<div
+					class="container text-white display-f align-center justify-space-between"
+				>
+					<div class="display-f align-center col-gap-2">
+						<p class="font-lg fw-xl">
+							<a href="Homepage.html">Envision Air</a>
+						</p>
+						<img class="logo" src="img/logo.png" />
+					</div>
 
-          <nav class="display-f col-gap-2 font-md">
-            <ul class="p-0">
-              <a class="text-hover-gray-light-5" href="FirstScreen.html"><i class="fa-solid fa-house"></i></a>
-            </ul>
-            <ul>
-              <a class="text-hover-gray-light-5" href="TicketScreen.html"><i class="fa-solid fa-ticket"></i></a>
-            </ul>
-            <ul>
-              <a class="text-hover-gray-light-5" href="Profile.html"><i class="fa-solid fa-user"></i></a>
-            </ul>
-          </nav>
-        </div>
-      </header>
+					<nav class="display-f col-gap-2 font-md">
+						<ul class="p-0">
+							<a class="text-hover-gray-light-5" href="FirstScreen.html"
+								><i class="fa-solid fa-house"></i
+							></a>
+						</ul>
+						<ul>
+							<a class="text-hover-gray-light-5" href="TicketScreen.html"
+								><i class="fa-solid fa-ticket"></i
+							></a>
+						</ul>
+						<ul>
+							<a class="text-hover-gray-light-5" href="Profile.html"
+								><i class="fa-solid fa-user"></i
+							></a>
+						</ul>
+					</nav>
+				</div>
+			</header>
 
-      <div class="container mt-2 mb-1">
-        <button class="hamburger hamburger--spring" type="button">
-          <span class="hamburger-box">
-            <span class="hamburger-inner"></span>
-          </span>
-        </button>
-        <nav class="navbar-primary b-rad-sm mob__amenities--tab hide">
-          <ul class="display-f text-white flex-column row-gap-2">
-            <li><a href="#" class="mob--all mob--selected" data-tag="all">All</a></li>
-            <li><a href="#" class="mob--dinner" data-tag="dining">Dinner</a></li>
-            <li><a href="#" class="mob--entertainment" data-tag="entertainment">Entertainment</a></li>
-            <li><a href="#" class="mob--shopping" data-tag="shopping">Shopping</a></li>
-            <li><a href="#" class="mob--lounge" data-tag="lounge">Lounge</a></li>
-            <li><a href="#" class="mob--deals" data-tag="deals">Deals and Offers</a></li>
-          </ul>
-        </nav>
+			<div class="container mt-2 mb-1">
+				<button class="hamburger hamburger--spring" type="button">
+					<span class="hamburger-box">
+						<span class="hamburger-inner"></span>
+					</span>
+				</button>
+				<nav class="navbar-primary b-rad-sm mob__amenities--tab hide">
+					<ul class="display-f text-white flex-column row-gap-2">
+						<li>
+							<a href="#" class="mob--all mob--selected" data-tag="all">All</a>
+						</li>
+						<li>
+							<a href="#" class="mob--dinner" data-tag="dining">Dinner</a>
+						</li>
+						<li>
+							<a href="#" class="mob--entertainment" data-tag="entertainment"
+								>Entertainment</a
+							>
+						</li>
+						<li>
+							<a href="#" class="mob--shopping" data-tag="shopping">Shopping</a>
+						</li>
+						<li>
+							<a href="#" class="mob--lounge" data-tag="lounge">Lounge</a>
+						</li>
+						<li>
+							<a href="#" class="mob--deals" data-tag="deals"
+								>Deals and Offers</a
+							>
+						</li>
+					</ul>
+				</nav>
 
-        <nav class="navbar-primary b-rad-sm amenities--tab">
-          <ul class="display-f text-white col-gap-6 align-center">
-            <li><a href="#" class="all selected" data-tag="all">All</a></li>
-            <hr class="h-15" />
-            <li><a href="#" class="dinner" data-tag="dining">Dinner</a></li>
-            <hr class="h-15" />
-            <li><a href="#" class="entertainment" data-tag="entertainment">Entertainment</a></li>
-            <hr class="h-15" />
-            <li><a href="#" class="shopping" data-tag="shopping">Shopping</a></li>
-            <hr class="h-15" />
-            <li><a href="#" class="lounge" data-tag="lounge">Lounge</a></li>
-            <hr class="h-15" />
-            <li><a href="#" class="deals" data-tag="deals">Deals and Offers</a></li>
-          </ul>
-        </nav>
-      </div>
+				<nav class="navbar-primary b-rad-sm amenities--tab">
+					<ul class="display-f text-white pl-2 pr-2 align-center">
+						<li><a href="#" class="all selected" data-tag="all">All</a></li>
+						<hr class="h-15" />
+						<li><a href="#" class="dinner" data-tag="dining">Dinner</a></li>
+						<hr class="h-15" />
+						<li>
+							<a href="#" class="entertainment" data-tag="entertainment"
+								>Entertainment</a
+							>
+						</li>
+						<hr class="h-15" />
+						<li>
+							<a href="#" class="shopping" data-tag="shopping">Shopping</a>
+						</li>
+						<hr class="h-15" />
+						<li><a href="#" class="lounge" data-tag="lounge">Lounge</a></li>
+						<hr class="h-15" />
+						<li>
+							<a href="#" class="deals" data-tag="deals">Deals and Offers</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
 
-      <div class="container">
-        <div class="row gap-1">
-          <div class="col-12-xs col-4-md col-4-lg service service--shop" data-tags="shopping all ">
-            <div class="service__card service--confection">
-              <img src="img/confectionery.jpg" />
-              <div class="display-f align-center justify-space-between service__desc">
-                <p>Confectionery</p>
-                <div><i class="fa-solid fa-chevron-right"></i></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12-xs col-4-md col-4-lg service service--shop" data-tags="shopping all">
-            <div class="service__card service--convention">
-              <img src="img/convention-store.jpg" />
-              <div class="display-f align-center justify-space-between service__desc">
-                <p>Convenience Store</p>
-                <div><i class="fa-solid fa-chevron-right"></i></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12-xs col-4-md col-4-lg service service--shop" data-tags="shopping all">
-            <div class="service__card service--fashion">
-              <img src="img/fashion-new.jpg" />
-              <div class="display-f align-center justify-space-between service__desc">
-                <p>Fashion & Accessories</p>
-                <div><i class="fa-solid fa-chevron-right"></i></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12-xs col-4-md col-4-lg service service--shop" data-tags="shopping all">
-            <div class="service__card service--jewels">
-              <img src="img/jewels.jpg" />
-              <div class="display-f align-center justify-space-between service__desc">
-                <p>Jewelry & Watches</p>
-                <div><i class="fa-solid fa-chevron-right"></i></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12-xs col-4-md col-4-lg service service--shop" data-tags="shopping all">
-            <div class="service__card service--liquor">
-              <img src="img/liquor.jpg" />
-              <div class="display-f align-center justify-space-between service__desc">
-                <p>Liquor & Tobacco</p>
-                <div><i class="fa-solid fa-chevron-right"></i></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12-xs col-4-md col-4-lg service service--shop" data-tags="shopping all">
-            <div class="service__card service--cosmetics">
-              <img src="img/cosmetics-new.jpg" />
-              <div class="display-f align-center justify-space-between service__desc">
-                <p>Perfumery & Cosmetics</p>
-                <div><i class="fa-solid fa-chevron-right"></i></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12-xs col-4-md col-4-lg service service--shop" data-tags="shopping all ">
-            <div class="service__card service--souvenirs">
-              <img src="img/souvenir-new.jpg" />
-              <div class="display-f align-center justify-space-between service__desc">
-                <p>Souvenirs & Gifting</p>
-                <div><i class="fa-solid fa-chevron-right"></i></div>
-              </div>
-            </div>
-          </div>
+			<div class="container">
+				<div class="row gap-1">
+					<div
+						class="col-12-xs col-4-md col-4-lg service service--shop"
+						data-tags="shopping all "
+					>
+						<div class="service__card service--confection">
+							<img src="img/confectionery.jpg" />
+							<div
+								class="display-f align-center justify-space-between service__desc"
+							>
+								<p>Confectionery</p>
+								<div><i class="fa-solid fa-chevron-right"></i></div>
+							</div>
+						</div>
+					</div>
+					<div
+						class="col-12-xs col-4-md col-4-lg service service--shop"
+						data-tags="shopping all"
+					>
+						<div class="service__card service--convention">
+							<img src="img/convention-store.jpg" />
+							<div
+								class="display-f align-center justify-space-between service__desc"
+							>
+								<p>Convenience Store</p>
+								<div><i class="fa-solid fa-chevron-right"></i></div>
+							</div>
+						</div>
+					</div>
+					<div
+						class="col-12-xs col-4-md col-4-lg service service--shop"
+						data-tags="shopping all"
+					>
+						<div class="service__card service--fashion">
+							<img src="img/fashion-new.jpg" />
+							<div
+								class="display-f align-center justify-space-between service__desc"
+							>
+								<p>Fashion & Accessories</p>
+								<div><i class="fa-solid fa-chevron-right"></i></div>
+							</div>
+						</div>
+					</div>
+					<div
+						class="col-12-xs col-4-md col-4-lg service service--shop"
+						data-tags="shopping all"
+					>
+						<div class="service__card service--jewels">
+							<img src="img/jewels.jpg" />
+							<div
+								class="display-f align-center justify-space-between service__desc"
+							>
+								<p>Jewelry & Watches</p>
+								<div><i class="fa-solid fa-chevron-right"></i></div>
+							</div>
+						</div>
+					</div>
+					<div
+						class="col-12-xs col-4-md col-4-lg service service--shop"
+						data-tags="shopping all"
+					>
+						<div class="service__card service--liquor">
+							<img src="img/liquor.jpg" />
+							<div
+								class="display-f align-center justify-space-between service__desc"
+							>
+								<p>Liquor & Tobacco</p>
+								<div><i class="fa-solid fa-chevron-right"></i></div>
+							</div>
+						</div>
+					</div>
+					<div
+						class="col-12-xs col-4-md col-4-lg service service--shop"
+						data-tags="shopping all"
+					>
+						<div class="service__card service--cosmetics">
+							<img src="img/cosmetics-new.jpg" />
+							<div
+								class="display-f align-center justify-space-between service__desc"
+							>
+								<p>Perfumery & Cosmetics</p>
+								<div><i class="fa-solid fa-chevron-right"></i></div>
+							</div>
+						</div>
+					</div>
+					<div
+						class="col-12-xs col-4-md col-4-lg service service--shop"
+						data-tags="shopping all "
+					>
+						<div class="service__card service--souvenirs">
+							<img src="img/souvenir-new.jpg" />
+							<div
+								class="display-f align-center justify-space-between service__desc"
+							>
+								<p>Souvenirs & Gifting</p>
+								<div><i class="fa-solid fa-chevron-right"></i></div>
+							</div>
+						</div>
+					</div>
 
-          <div class="col-12-xs col-4-md col-4-lg service service--shop" data-tags="shopping all">
-            <div class="service__card service--toystore">
-              <img src="img/toy-store-and-play-area.jpg" />
-              <div class="display-f align-center justify-space-between service__desc">
-                <p>Toy Store & Play Area</p>
-                <div><i class="fa-solid fa-chevron-right"></i></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12-xs col-4-md col-4-lg service service--dining" data-tags="dining all">
-            <div class="service__card service--casual">
-              <img src="img/casual-dining1.jpg" />
-              <div class="display-f align-center justify-space-between service__desc">
-                <p>Casual Dining</p>
-                <div><i class="fa-solid fa-chevron-right"></i></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12-xs col-4-md col-4-lg service service--dining" data-tags="dining all">
-            <div class="service__card service--bar">
-              <img src="img/bar-and-drinks.jpg" />
-              <div class="display-f align-center justify-space-between service__desc">
-                <p>Bar</p>
-                <div><i class="fa-solid fa-chevron-right"></i></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12-xs col-4-md col-4-lg service service--dining" data-tags="dining all">
-            <div class="service__card service--coffee">
-              <img src="img/coffee.jpg" />
-              <div class="display-f align-center justify-space-between service__desc">
-                <p>Coffee Shop</p>
-                <div><i class="fa-solid fa-chevron-right"></i></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12-xs col-4-md col-4-lg service service--dining" data-tags="dining all">
-            <div class="service__card service--grab">
-              <img src="img/grab-go-new.jpg" />
-              <div class="display-f align-center justify-space-between service__desc">
-                <p>Grab & Go</p>
-                <div><i class="fa-solid fa-chevron-right"></i></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12-xs col-4-md col-4-lg service service--dining" data-tags="dining all">
-            <div class="service__card service--qsr">
-              <img src="img/quick-service-restaurant.jpg" />
-              <div class="display-f align-center justify-space-between service__desc">
-                <p>Quick Service Restaurants</p>
-                <div><i class="fa-solid fa-chevron-right"></i></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12-xs col-4-md col-4-lg service service--lounge" data-tags="lounge all">
-            <div class="service__card service--govt">
-              <img src="img/govt-office.jpg" />
-              <div class="display-f align-center justify-space-between service__desc">
-                <p>Government Office</p>
-                <div><i class="fa-solid fa-chevron-right"></i></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12-xs col-4-md col-4-lg service service--lounge" data-tags="lounge all">
-            <div class="service__card service--prayer">
-              <img src="img/prayer-room.jpg" />
-              <div class="display-f align-center justify-space-between service__desc">
-                <p>Prayer Room</p>
-                <div><i class="fa-solid fa-chevron-right"></i></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12-xs col-4-md col-4-lg service service--entertainment" data-tags="entertainment all">
-            <div class="service__card service--airport">
-              <img src="img/airport-hotel.jpg" />
-              <div class="display-f align-center justify-space-between service__desc">
-                <p>Airport Hotel</p>
-                <div><i class="fa-solid fa-chevron-right"></i></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12-xs col-4-md col-4-lg service service--lounge" data-tags="lounge all">
-            <div class="service__card service--lounge">
-              <img src="img/lounge.jpg" />
-              <div class="display-f align-center justify-space-between service__desc">
-                <p>Lounge</p>
-                <div><i class="fa-solid fa-chevron-right"></i></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12-xs col-4-md col-4-lg service service--entertainment" data-tags="entertainment all">
-            <div class="service__card service--luggage">
-              <img src="img/luggage-handling-new.jpg" />
-              <div class="display-f align-center justify-space-between service__desc">
-                <p>Luggage handling</p>
-                <div><i class="fa-solid fa-chevron-right"></i></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12-xs col-4-md col-4-lg service service--entertainment" data-tags="entertainment all">
-            <div class="service__card service--massage">
-              <img src="img/massage-new.jpg" />
-              <div class="display-f align-center justify-space-between service__desc">
-                <p>Massage</p>
-                <div><i class="fa-solid fa-chevron-right"></i></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12-xs col-4-md col-4-lg service service--lounge" data-tags="lounge all">
-            <div class="service__card service--money">
-              <img src="img/money-exchange-new.jpg" />
-              <div class="display-f align-center justify-space-between service__desc">
-                <p>Money exchange</p>
-                <div><i class="fa-solid fa-chevron-right"></i></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12-xs col-4-md col-4-lg service service--entertainment" data-tags="entertainment all">
-            <div class="service__card service--pharmacy">
-              <img src="img/pharmacy-logo.jpg" />
-              <div class="display-f align-center justify-space-between service__desc">
-                <p>Pharmacy</p>
-                <div><i class="fa-solid fa-chevron-right"></i></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12-xs col-4-md col-4-lg service service--lounge" data-tags="lounge all">
-            <div class="service__card service--porter">
-              <img src="img/porter-service-new.jpg" />
-              <div class="display-f align-center justify-space-between service__desc">
-                <p>Porter services</p>
-                <div><i class="fa-solid fa-chevron-right"></i></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12-xs col-4-md col-4-lg service service--entertainment" data-tags="entertainment all">
-            <div class="service__card service--telecom">
-              <img src="img/telecom-new.jpg" />
-              <div class="display-f align-center justify-space-between service__desc">
-                <p>Telecom</p>
-                <div><i class="fa-solid fa-chevron-right"></i></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12-xs col-4-md col-4-lg service service--lounge" data-tags="lounge all">
-            <div class="service__card service--ticketing">
-              <img src="img/ticketing-new.jpg" />
-              <div class="display-f align-center justify-space-between service__desc">
-                <p>Ticketing</p>
-                <div><i class="fa-solid fa-chevron-right"></i></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12-xs col-6-md col-6-lg service service--deals service--inactive" data-tags="deals ">
-            <div class="service__card service--deal-1">
-              <img src="img/poster.png" />
-              <div class="display-f align-center justify-space-between service__desc">
-                <p>Online Form1</p>
-                <div><i class="fa-solid fa-chevron-right"></i></div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12-xs col-6-md col-6-lg service service--deals service--inactive" data-tags="deals">
-            <div class="service__card service--deal-2">
-              <img src="img/poster.png" />
-              <div class="display-f align-center justify-space-between service__desc">
-                <p>Online Form2</p>
-                <div><i class="fa-solid fa-chevron-right"></i></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+					<div
+						class="col-12-xs col-4-md col-4-lg service service--shop"
+						data-tags="shopping all"
+					>
+						<div class="service__card service--toystore">
+							<img src="img/toy-store-and-play-area.jpg" />
+							<div
+								class="display-f align-center justify-space-between service__desc"
+							>
+								<p>Toy Store & Play Area</p>
+								<div><i class="fa-solid fa-chevron-right"></i></div>
+							</div>
+						</div>
+					</div>
+					<div
+						class="col-12-xs col-4-md col-4-lg service service--dining"
+						data-tags="dining all"
+					>
+						<div class="service__card service--casual">
+							<img src="img/casual-dining1.jpg" />
+							<div
+								class="display-f align-center justify-space-between service__desc"
+							>
+								<p>Casual Dining</p>
+								<div><i class="fa-solid fa-chevron-right"></i></div>
+							</div>
+						</div>
+					</div>
+					<div
+						class="col-12-xs col-4-md col-4-lg service service--dining"
+						data-tags="dining all"
+					>
+						<div class="service__card service--bar">
+							<img src="img/bar-and-drinks.jpg" />
+							<div
+								class="display-f align-center justify-space-between service__desc"
+							>
+								<p>Bar</p>
+								<div><i class="fa-solid fa-chevron-right"></i></div>
+							</div>
+						</div>
+					</div>
+					<div
+						class="col-12-xs col-4-md col-4-lg service service--dining"
+						data-tags="dining all"
+					>
+						<div class="service__card service--coffee">
+							<img src="img/coffee.jpg" />
+							<div
+								class="display-f align-center justify-space-between service__desc"
+							>
+								<p>Coffee Shop</p>
+								<div><i class="fa-solid fa-chevron-right"></i></div>
+							</div>
+						</div>
+					</div>
+					<div
+						class="col-12-xs col-4-md col-4-lg service service--dining"
+						data-tags="dining all"
+					>
+						<div class="service__card service--grab">
+							<img src="img/grab-go-new.jpg" />
+							<div
+								class="display-f align-center justify-space-between service__desc"
+							>
+								<p>Grab & Go</p>
+								<div><i class="fa-solid fa-chevron-right"></i></div>
+							</div>
+						</div>
+					</div>
+					<div
+						class="col-12-xs col-4-md col-4-lg service service--dining"
+						data-tags="dining all"
+					>
+						<div class="service__card service--qsr">
+							<img src="img/quick-service-restaurant.jpg" />
+							<div
+								class="display-f align-center justify-space-between service__desc"
+							>
+								<p>Quick Service Restaurants</p>
+								<div><i class="fa-solid fa-chevron-right"></i></div>
+							</div>
+						</div>
+					</div>
+					<div
+						class="col-12-xs col-4-md col-4-lg service service--lounge"
+						data-tags="lounge all"
+					>
+						<div class="service__card service--govt">
+							<img src="img/govt-office.jpg" />
+							<div
+								class="display-f align-center justify-space-between service__desc"
+							>
+								<p>Government Office</p>
+								<div><i class="fa-solid fa-chevron-right"></i></div>
+							</div>
+						</div>
+					</div>
+					<div
+						class="col-12-xs col-4-md col-4-lg service service--lounge"
+						data-tags="lounge all"
+					>
+						<div class="service__card service--prayer">
+							<img src="img/prayer-room.jpg" />
+							<div
+								class="display-f align-center justify-space-between service__desc"
+							>
+								<p>Prayer Room</p>
+								<div><i class="fa-solid fa-chevron-right"></i></div>
+							</div>
+						</div>
+					</div>
+					<div
+						class="col-12-xs col-4-md col-4-lg service service--entertainment"
+						data-tags="entertainment all"
+					>
+						<div class="service__card service--airport">
+							<img src="img/airport-hotel.jpg" />
+							<div
+								class="display-f align-center justify-space-between service__desc"
+							>
+								<p>Airport Hotel</p>
+								<div><i class="fa-solid fa-chevron-right"></i></div>
+							</div>
+						</div>
+					</div>
+					<div
+						class="col-12-xs col-4-md col-4-lg service service--lounge"
+						data-tags="lounge all"
+					>
+						<div class="service__card service--lounge">
+							<img src="img/lounge.jpg" />
+							<div
+								class="display-f align-center justify-space-between service__desc"
+							>
+								<p>Lounge</p>
+								<div><i class="fa-solid fa-chevron-right"></i></div>
+							</div>
+						</div>
+					</div>
+					<div
+						class="col-12-xs col-4-md col-4-lg service service--entertainment"
+						data-tags="entertainment all"
+					>
+						<div class="service__card service--luggage">
+							<img src="img/luggage-handling-new.jpg" />
+							<div
+								class="display-f align-center justify-space-between service__desc"
+							>
+								<p>Luggage handling</p>
+								<div><i class="fa-solid fa-chevron-right"></i></div>
+							</div>
+						</div>
+					</div>
+					<div
+						class="col-12-xs col-4-md col-4-lg service service--entertainment"
+						data-tags="entertainment all"
+					>
+						<div class="service__card service--massage">
+							<img src="img/massage-new.jpg" />
+							<div
+								class="display-f align-center justify-space-between service__desc"
+							>
+								<p>Massage</p>
+								<div><i class="fa-solid fa-chevron-right"></i></div>
+							</div>
+						</div>
+					</div>
+					<div
+						class="col-12-xs col-4-md col-4-lg service service--lounge"
+						data-tags="lounge all"
+					>
+						<div class="service__card service--money">
+							<img src="img/money-exchange-new.jpg" />
+							<div
+								class="display-f align-center justify-space-between service__desc"
+							>
+								<p>Money exchange</p>
+								<div><i class="fa-solid fa-chevron-right"></i></div>
+							</div>
+						</div>
+					</div>
+					<div
+						class="col-12-xs col-4-md col-4-lg service service--entertainment"
+						data-tags="entertainment all"
+					>
+						<div class="service__card service--pharmacy">
+							<img src="img/pharmacy-logo.jpg" />
+							<div
+								class="display-f align-center justify-space-between service__desc"
+							>
+								<p>Pharmacy</p>
+								<div><i class="fa-solid fa-chevron-right"></i></div>
+							</div>
+						</div>
+					</div>
+					<div
+						class="col-12-xs col-4-md col-4-lg service service--lounge"
+						data-tags="lounge all"
+					>
+						<div class="service__card service--porter">
+							<img src="img/porter-service-new.jpg" />
+							<div
+								class="display-f align-center justify-space-between service__desc"
+							>
+								<p>Porter services</p>
+								<div><i class="fa-solid fa-chevron-right"></i></div>
+							</div>
+						</div>
+					</div>
+					<div
+						class="col-12-xs col-4-md col-4-lg service service--entertainment"
+						data-tags="entertainment all"
+					>
+						<div class="service__card service--telecom">
+							<img src="img/telecom-new.jpg" />
+							<div
+								class="display-f align-center justify-space-between service__desc"
+							>
+								<p>Telecom</p>
+								<div><i class="fa-solid fa-chevron-right"></i></div>
+							</div>
+						</div>
+					</div>
+					<div
+						class="col-12-xs col-4-md col-4-lg service service--lounge"
+						data-tags="lounge all"
+					>
+						<div class="service__card service--ticketing">
+							<img src="img/ticketing-new.jpg" />
+							<div
+								class="display-f align-center justify-space-between service__desc"
+							>
+								<p>Ticketing</p>
+								<div><i class="fa-solid fa-chevron-right"></i></div>
+							</div>
+						</div>
+					</div>
+					<div
+						class="col-12-xs col-6-md col-6-lg service service--deals service--inactive"
+						data-tags="deals "
+					>
+						<div class="service__card service--deal-1">
+							<img src="img/poster.png" />
+							<div
+								class="display-f align-center justify-space-between service__desc"
+							>
+								<p>Online Form</p>
+								<div><i class="fa-solid fa-chevron-right"></i></div>
+							</div>
+						</div>
+					</div>
+					<div
+						class="col-12-xs col-6-md col-6-lg service service--deals service--inactive"
+						data-tags="deals"
+					>
+						<div class="service__card service--deal-2">
+							<img src="img/poster.png" />
+							<div
+								class="display-f align-center justify-space-between service__desc"
+							>
+								<p>Nomad Form</p>
+								<div><i class="fa-solid fa-chevron-right"></i></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
-      <div class="support">
-        <button class="support__icon"><i class="fa-solid fa-comments"></i></button>
-      </div>
+			<div class="support">
+				<button class="support__icon">
+					<i class="fa-solid fa-comments"></i>
+				</button>
+			</div>
 
-      <div class="chat hide">
-        <button class="chat__btn"><i class="fa-solid fa-chevron-down"></i></button>
-        <div class="display-f align-center col-gap-1 chat__header">
-          <i class="fa-solid fa-comments"></i>
-          <h2>Conversation</h2>
-        </div>
+			<div class="chat hide">
+				<button class="chat__btn">
+					<i class="fa-solid fa-chevron-down"></i>
+				</button>
+				<div class="display-f align-center col-gap-1 chat__header">
+					<i class="fa-solid fa-comments"></i>
+					<h2>Conversation</h2>
+				</div>
 
-        <div class="chat__content">
-          <input type="text" class="chat__input" />
-        </div>
-      </div>
+				<div class="chat__content">
+					<input type="text" class="chat__input" />
+				</div>
+			</div>
 
-      <footer class="footer bg-primary-dark-6 text-white pt-2 pb-2">
-        <div class="container row col-gap-9 justify-space-between">
-          <div class="col-12-sm col-2-lg">
-            <h3>Startup 3</h3>
-            <label>Be sure to take a look at our Terms of Use and Privacy Policy</label>
-          </div>
-          <div class="col-4-sm col-1-lg">
-            <h3>About</h3>
-            <p>About Us</p>
-            <p>Blog</p>
-            <p>Team</p>
-            <p>Career</p>
-            <p>Contact</p>
-          </div>
-          <div class="col-4-sm col-1-lg">
-            <h3>Company</h3>
-            <p>Privacy</p>
-            <p>Support</p>
-            <p>Help Desk</p>
-            <p>FAQ</p>
-          </div>
-          <div class="col-12-sm col-4-lg">
-            <h3>Subscribe to our NewsLetters</h3>
-            <input class="font-sm pl-1 pt-1 b-rad text-black border-1-solid-black pb-1" type="text" placeholder="Your email" />
-            <button class="btn-green text-white font-sm pl-2 pr-2 mt-1 b-rad">Subscribe</button>
-            <div class="display-f font-md mt-2 align-center col-gap-3">
-              <li class="text-tw text-hover-tw-dark-1">
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-              </li>
-              <li class="text-fb text-hover-fb-dark-1">
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-              </li>
-              <li class="text-yt text-hover-yt-dark-1">
-                <a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
-              </li>
-            </div>
-          </div>
-        </div>
-      </footer>
-      <div class="navbar-quaternary text-center">
-        <div class="container">
-          <p class="text-gray-dark-2">Startup Framework contains components and complex blocks which can easily be integrated into almost any design.</p>
-        </div>
-      </div>
-    </div>
+			<footer class="footer bg-primary-dark-6 text-white pt-2 pb-2">
+				<div class="container row col-gap-9 justify-space-between">
+					<div class="col-12-sm col-2-lg">
+						<h3>Startup 3</h3>
+						<label
+							>Be sure to take a look at our Terms of Use and Privacy
+							Policy</label
+						>
+					</div>
+					<div class="col-4-sm col-1-lg">
+						<h3>About</h3>
+						<p>About Us</p>
+						<p>Blog</p>
+						<p>Team</p>
+						<p>Career</p>
+						<p>Contact</p>
+					</div>
+					<div class="col-4-sm col-1-lg">
+						<h3>Company</h3>
+						<p>Privacy</p>
+						<p>Support</p>
+						<p>Help Desk</p>
+						<p>FAQ</p>
+					</div>
+					<div class="col-12-sm col-4-lg">
+						<h3>Subscribe to our NewsLetters</h3>
+						<input
+							class="font-sm pl-1 pt-1 b-rad text-black border-1-solid-black pb-1"
+							type="text"
+							placeholder="Your email"
+						/>
+						<button class="btn-green text-white font-sm pl-2 pr-2 mt-1 b-rad">
+							Subscribe
+						</button>
+						<div class="display-f font-md mt-2 align-center col-gap-3">
+							<li class="text-tw text-hover-tw-dark-1">
+								<a href="#"><i class="fa-brands fa-twitter"></i></a>
+							</li>
+							<li class="text-fb text-hover-fb-dark-1">
+								<a href="#"><i class="fa-brands fa-facebook"></i></a>
+							</li>
+							<li class="text-yt text-hover-yt-dark-1">
+								<a href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+							</li>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<div class="navbar-quaternary text-center">
+				<div class="container">
+					<p class="text-gray-dark-2">
+						Startup Framework contains components and complex blocks which can
+						easily be integrated into almost any design.
+					</p>
+				</div>
+			</div>
+		</div>
 
-    <script src="js/loadingmenu.js"></script>
-    <script src="js/amenities.js"></script>
-    <script src="js/hamburger.js"></script>
-    <script src="js/chatsupport.js"></script>
-  </body>
+		<script src="js/loadingmenu.js"></script>
+		<script src="js/amenities.js"></script>
+		<script src="js/hamburger.js"></script>
+		<script src="js/chatsupport.js"></script>
+	</body>
 </html>

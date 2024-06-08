@@ -1,54 +1,62 @@
 .selected {
-  color: $tertiary;
-  border-bottom: 3px solid $tertiary;
-  padding: 30px 0px;
+	color: $tertiary;
+	border-bottom: 3px solid $tertiary;
+	padding: 30px 0px;
 }
 .service {
-  &__card {
-    background: linear-gradient(to left, #fff 50%, #c82b24 50%, #faad13);
-    background-size: 200% 100%;
-    background-position: right bottom;
-    cursor: pointer;
-    transition: all ease 0.5s;
+	&__card {
+		background: linear-gradient(to left, #fff 50%, #c82b24 50%, #faad13);
+		background-size: 200% 100%;
+		background-position: right bottom;
+		cursor: pointer;
+		transition: all ease 0.5s;
 
-    &:hover {
-      background-position: left bottom;
-      color: white;
-    }
-  }
-  &__desc {
-    font-size: 24px;
-    padding: 17px;
-  }
+		&:hover {
+			background-position: left bottom;
+			color: white;
+		}
+	}
+	&__desc {
+		font-size: 24px;
+		padding: 17px;
+	}
 }
 
 .service--inactive {
-  display: none;
+	display: none;
 }
 
 //Mobile
 .mob--selected {
-  color: $tertiary;
-  border-bottom: 3px solid $tertiary;
-  padding: 2px 0px;
+	color: $tertiary;
+	border-bottom: 3px solid $tertiary;
+	padding: 2px 0px;
 }
 
 @include xs {
-  .amenities--tab {
-    display: none;
-  }
+	.amenities--tab {
+		display: none;
+	}
 
-  .hamburger {
-    display: inline-block;
-  }
+	.hamburger {
+		display: inline-block;
+	}
 }
 
 @include lg {
-  .amenities--tab {
-    display: block;
-  }
+	.amenities--tab {
+		display: block;
+	}
 
-  .hamburger {
-    display: none;
-  }
+	.mob__amenities--tab {
+		display: none;
+	}
+
+	.hamburger {
+		display: none;
+	}
+
+	.mob .hamburger {
+		display: none;
+	}
 }
