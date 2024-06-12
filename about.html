@@ -4,17 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us</title>
+
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-    <script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-    <script defer src="js/about.js"></script>
   </head>
   <body onload="load()" class="bg-quinary">
     <div class="ring">
       <img src="img/earth.png" class="earth" />
-      <img src="img/logo.png" class="plane__logo" />
-      <span><img src="img/airplane.png" class="plane" /></span>
+      <img src="img/icon.png" class="plane__logo" />
+      <span><img src="img/plane.png" class="plane" /></span>
     </div>
 
     <div class="hide">
@@ -41,7 +39,16 @@
         </div>
       </header>
       <div class="container">
-        <div id="map"></div>
+        <input type="text" class="country__input" />
+        <button class="country__btn">Submit</button>
+        <div class="countries"></div>
+
+        <form class="weatherForm">
+          <input type="text" class="cityInput" placeholder="Enter city" />
+          <button type="submit">Get Weather</button>
+        </form>
+
+        <div class="cardWeather mb-5"></div>
       </div>
 
       <footer class="footer bg-primary-dark-6 text-white pt-2 pb-2">
@@ -89,6 +96,8 @@
         </div>
       </div>
     </div>
+
+    <script src="js/about.js"></script>
     <script src="js/loadingmenu.js"></script>
   </body>
 </html>
