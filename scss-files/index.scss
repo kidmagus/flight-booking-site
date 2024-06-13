@@ -25,6 +25,7 @@
 @import "components/chatsupport";
 
 //pages
+@import "pages/about";
 @import "pages/firstscreen";
 @import "pages/language";
 @import "pages/profile";
@@ -32,7 +33,8 @@
 @import "pages/settings";
 @import "pages/payment";
 @import "pages/amenities";
-@import "pages/about";
+
+@import "pages/ticketpage";
 //utilities
 @import "utilities/utilities";
 

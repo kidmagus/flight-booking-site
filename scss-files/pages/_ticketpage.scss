@@ -1,0 +1,98 @@
+.searchAds {
+  position: relative;
+  margin-top: 20px;
+  &__img {
+    width: 100%;
+    max-width: 1200px;
+    height: 200px;
+    filter: brightness(50%);
+  }
+  &__title {
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+    color: $white;
+  }
+
+  &__search {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__cont {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+  }
+}
+
+//Country styles
+
+.country {
+  &__search {
+    @include about__search;
+  }
+
+  &__input {
+    @include about__input;
+  }
+
+  &__btn {
+    @include about__btn;
+  }
+
+  &__card {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 50px;
+  }
+
+  &__clear {
+    background: none;
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+@include xs {
+  .country__card {
+    justify-content: center;
+  }
+}
+
+.countries {
+  @include card($quinary);
+  border-radius: $base-border-radius;
+  &__img {
+    width: 320px;
+    height: 200px;
+    object-fit: fill;
+  }
+
+  &__desc {
+    padding-left: 15px;
+  }
+
+  &__name {
+  }
+
+  &__capital {
+  }
+
+  &__region {
+  }
+
+  &__popl {
+  }
+
+  &__tz {
+  }
+}

@@ -1,30 +1,25 @@
-#map {
-  flex: 1;
-  //   height: 100%;
-  height: 380px;
-  margin-top: 200px;
-  background-color: var(--color-light--1);
+@mixin about__search($max-width: 250px) {
+  position: relative;
+  max-width: $max-width;
+  width: 100%;
 }
 
-/* Popup width is defined in JS using options */
-.leaflet-popup .leaflet-popup-content-wrapper {
-  background-color: var(--color-dark--1);
-  color: var(--color-light--2);
-  border-radius: 5px;
-  padding-right: 0.6rem;
+@mixin about__input($max-width: 250px) {
+  max-width: $max-width;
+  width: 100%;
+  padding: 10px;
+  overflow: hidden;
+  border: 1px solid gray;
+  border-radius: 20px;
 }
 
-.leaflet-popup .leaflet-popup-content {
-  font-size: 1.5rem;
-}
-
-.leaflet-popup .leaflet-popup-tip {
-  background-color: var(--color-dark--1);
-}
-
-.running-popup .leaflet-popup-content-wrapper {
-  border-left: 5px solid var(--color-brand--2);
-}
-.cycling-popup .leaflet-popup-content-wrapper {
-  border-left: 5px solid var(--color-brand--1);
+@mixin about__btn {
+  padding: 8px;
+  border: none;
+  background: white;
+  border-left: 1px solid gray;
+  position: absolute;
+  right: 10px;
+  top: 3px;
+  cursor: pointer;
 }

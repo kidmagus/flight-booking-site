@@ -38,6 +38,22 @@
       </header>
 
       <div class="container">
+        <div class="searchAds">
+          <img class="searchAds__img" src="img/dinner.jpg" />
+          <h1 class="searchAds__title">Don't know where to go? Have a look!</h1>
+          <div class="searchAds__search">
+            <form class="country mt-2">
+              <div class="country__search">
+                <input type="text" placeholder="Enter country" class="country__input" />
+                <button type="submit" class="country__btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="searchAds__cont">
+          <button class="country__clear hide">Clear Searches</button>
+        </div>
+        <div class="country__card"></div>
         <h3 class="font-md">Recommended Flight</h3>
         <div class="ticket bg-senary-dark-2">
           <div class="text-primary">
@@ -175,5 +191,6 @@
     <script src="js/nav.js"></script>
     <script src="js/loadingmenu.js"></script>
     <script src="js/chatsupport.js"></script>
+    <script src="js/country.js"></script>
   </body>
 </html>

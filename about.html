@@ -38,16 +38,26 @@
         </div>
       </header>
       <div class="container">
-        <input type="text" class="country__input" />
-        <button class="country__btn">Submit</button>
-        <div class="countries"></div>
-
-        <form class="weatherForm">
-          <input type="text" class="cityInput" placeholder="Enter city" />
-          <button type="submit">Get Weather</button>
+        <div class="display-f align-center justify-space-between">
+          <form class="country mt-2">
+            <div class="country__search">
+              <input type="text" placeholder="Enter country" class="country__input" />
+              <button type="submit" class="country__btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+          </form>
+          <div>
+            <button class="country__clear">Clear Searches</button>
+          </div>
+        </div>
+        <div class="country__card"></div>
+        <!-- <form class="weather">
+          <div class="weather__search">
+            <input type="text" class="weather__input" placeholder="Enter city" />
+            <button class="weather__btn" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </div>
         </form>
 
-        <div class="cardWeather mb-5"></div>
+        <div class="weather__card mb-5"></div> -->
       </div>
 
       <footer class="footer bg-primary-dark-6 text-white pt-2 pb-2">
