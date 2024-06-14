@@ -5,6 +5,8 @@ const apiKey = "80f0b8b8744c97de71a8307094a20ba5";
 const weatherClose = document.querySelector(".weather__btn--close");
 const weatherPopup = document.querySelector(".popup");
 const weatherMessage = document.querySelector(".weather__message");
+const weatherPopdown = document.querySelector(".popdown");
+const weatherPopBtn = document.querySelector(".popdown__btn");
 
 weatherForm.addEventListener("submit", async (event) => {
   event.preventDefault();
@@ -111,5 +113,32 @@ function displayError(message) {
 }
 
 weatherClose.addEventListener("click", () => {
-  weatherPopup.style.display = " none";
+  weatherPopup.classList.add("hide");
+  weatherPopdown.classList.remove("hide");
+});
+
+weatherPopBtn.addEventListener("click", () => {
+  weatherPopup.classList.toggle("hide");
+
+  if (!support.classList.contains("hide")) {
+    chat.classList.add("hide");
+  }
+});
+
+//Originally from chatsupport.js
+const support = document.querySelector(".support");
+const chat = document.querySelector(".chat");
+const chatBtn = document.querySelector(".chat__btn");
+
+support.addEventListener("click", () => {
+  chat.classList.toggle("hide");
+
+  if (!weatherPopup.classList.contains("hide")) {
+    weatherPopup.classList.add("hide");
+  }
+});
+
+chatBtn.addEventListener("click", () => {
+  chat.classList.add("hide");
+  support.classList.remove("hide");
 });

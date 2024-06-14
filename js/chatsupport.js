@@ -3,8 +3,7 @@ const chat = document.querySelector(".chat");
 const chatBtn = document.querySelector(".chat__btn");
 
 support.addEventListener("click", () => {
-  chat.classList.remove("hide");
-  support.classList.add("hide");
+  chat.classList.toggle("hide");
 });
 
 chatBtn.addEventListener("click", () => {

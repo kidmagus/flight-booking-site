@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Heebo:wght@100..900&family=Kumbh+Sans:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Overpass:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@import url("dist/_include-media.scss");
 * {
   color: inherit;
 }
@@ -3321,7 +3320,6 @@ input:focus {
 }
 
 .card {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -3335,7 +3333,6 @@ input:focus {
 }
 
 .card-primary {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -3517,7 +3514,6 @@ input:focus {
 }
 
 .card-secondary {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -3699,7 +3695,6 @@ input:focus {
 }
 
 .card-tertiary {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -3881,7 +3876,6 @@ input:focus {
 }
 
 .card-quaternary {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -4063,7 +4057,6 @@ input:focus {
 }
 
 .card-quinary {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -4245,7 +4238,6 @@ input:focus {
 }
 
 .card-senary {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -4427,7 +4419,6 @@ input:focus {
 }
 
 .card-black {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -4609,7 +4600,6 @@ input:focus {
 }
 
 .card-white {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -4791,7 +4781,6 @@ input:focus {
 }
 
 .card-gray {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -4973,7 +4962,6 @@ input:focus {
 }
 
 .card-tw {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -5155,7 +5143,6 @@ input:focus {
 }
 
 .card-fb {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -5337,7 +5324,6 @@ input:focus {
 }
 
 .card-yt {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -5519,7 +5505,6 @@ input:focus {
 }
 
 .card-green {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -6307,7 +6292,7 @@ input:checked + .switcher:before {
 .chat {
   width: 250px;
   position: fixed;
-  bottom: 10px;
+  bottom: 80px;
   right: 5px;
   z-index: 1001;
 }
@@ -6378,10 +6363,9 @@ input:checked + .switcher:before {
   position: fixed;
   width: 100%;
   height: 360px;
-  top: 550px;
-  left: 10px;
+  top: 500px;
+  right: 10px;
   z-index: 1000;
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -6463,6 +6447,29 @@ input:checked + .switcher:before {
   justify-content: center;
   flex-direction: column;
   margin-top: 100px;
+}
+
+.popdown {
+  position: fixed;
+  bottom: 10px;
+  right: 70px;
+  z-index: 1000;
+}
+.popdown button {
+  position: relative;
+  padding: 3px;
+  width: 60px;
+  border-radius: 60px;
+  border: none;
+  height: 60px;
+  font-size: 29px;
+  background-color: #0066cc;
+  color: #fff;
+  cursor: pointer;
+  line-height: 100%;
+}
+.popdown :hover {
+  background-color: #004d99;
 }
 
 .flag {
@@ -6974,7 +6981,6 @@ input:checked + .switcher:before {
   }
 }
 .countries {
-  display: block;
   padding: 0.75rem;
   background-color: #caf0f8;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -6991,6 +6997,8 @@ input:checked + .switcher:before {
   width: 320px;
   height: 200px;
   object-fit: fill;
+  border: 1px solid #fdfdf5;
+  border-radius: 20px;
 }
 .countries__desc {
   padding-left: 15px;
@@ -7525,7 +7533,6 @@ input:checked + .switcher:before {
 }
 
 .card-primary-light-1 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -7584,7 +7591,6 @@ input:checked + .switcher:before {
 }
 
 .card-primary-light-2 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -7643,7 +7649,6 @@ input:checked + .switcher:before {
 }
 
 .card-primary-light-3 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -7702,7 +7707,6 @@ input:checked + .switcher:before {
 }
 
 .card-primary-light-4 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -7761,7 +7765,6 @@ input:checked + .switcher:before {
 }
 
 .card-primary-light-5 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -7820,7 +7823,6 @@ input:checked + .switcher:before {
 }
 
 .card-primary-light-6 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -7879,7 +7881,6 @@ input:checked + .switcher:before {
 }
 
 .card-primary-light-7 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -7938,7 +7939,6 @@ input:checked + .switcher:before {
 }
 
 .card-primary-light-8 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -7997,7 +7997,6 @@ input:checked + .switcher:before {
 }
 
 .card-primary-light-9 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -8058,7 +8057,6 @@ input:checked + .switcher:before {
 }
 
 .card-primary-dark-1 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -8119,7 +8117,6 @@ input:checked + .switcher:before {
 }
 
 .card-primary-dark-2 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -8180,7 +8177,6 @@ input:checked + .switcher:before {
 }
 
 .card-primary-dark-3 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -8241,7 +8237,6 @@ input:checked + .switcher:before {
 }
 
 .card-primary-dark-4 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -8302,7 +8297,6 @@ input:checked + .switcher:before {
 }
 
 .card-primary-dark-5 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -8363,7 +8357,6 @@ input:checked + .switcher:before {
 }
 
 .card-primary-dark-6 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -8424,7 +8417,6 @@ input:checked + .switcher:before {
 }
 
 .card-primary-dark-7 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -8485,7 +8477,6 @@ input:checked + .switcher:before {
 }
 
 .card-primary-dark-8 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -8546,7 +8537,6 @@ input:checked + .switcher:before {
 }
 
 .card-primary-dark-9 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -8618,7 +8608,6 @@ input:checked + .switcher:before {
 }
 
 .card-secondary-light-1 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -8677,7 +8666,6 @@ input:checked + .switcher:before {
 }
 
 .card-secondary-light-2 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -8736,7 +8724,6 @@ input:checked + .switcher:before {
 }
 
 .card-secondary-light-3 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -8795,7 +8782,6 @@ input:checked + .switcher:before {
 }
 
 .card-secondary-light-4 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -8854,7 +8840,6 @@ input:checked + .switcher:before {
 }
 
 .card-secondary-light-5 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -8913,7 +8898,6 @@ input:checked + .switcher:before {
 }
 
 .card-secondary-light-6 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -8972,7 +8956,6 @@ input:checked + .switcher:before {
 }
 
 .card-secondary-light-7 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -9031,7 +9014,6 @@ input:checked + .switcher:before {
 }
 
 .card-secondary-light-8 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -9090,7 +9072,6 @@ input:checked + .switcher:before {
 }
 
 .card-secondary-light-9 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -9151,7 +9132,6 @@ input:checked + .switcher:before {
 }
 
 .card-secondary-dark-1 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -9212,7 +9192,6 @@ input:checked + .switcher:before {
 }
 
 .card-secondary-dark-2 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -9273,7 +9252,6 @@ input:checked + .switcher:before {
 }
 
 .card-secondary-dark-3 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -9334,7 +9312,6 @@ input:checked + .switcher:before {
 }
 
 .card-secondary-dark-4 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -9395,7 +9372,6 @@ input:checked + .switcher:before {
 }
 
 .card-secondary-dark-5 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -9456,7 +9432,6 @@ input:checked + .switcher:before {
 }
 
 .card-secondary-dark-6 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -9517,7 +9492,6 @@ input:checked + .switcher:before {
 }
 
 .card-secondary-dark-7 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -9578,7 +9552,6 @@ input:checked + .switcher:before {
 }
 
 .card-secondary-dark-8 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -9639,7 +9612,6 @@ input:checked + .switcher:before {
 }
 
 .card-secondary-dark-9 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -9711,7 +9683,6 @@ input:checked + .switcher:before {
 }
 
 .card-tertiary-light-1 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -9770,7 +9741,6 @@ input:checked + .switcher:before {
 }
 
 .card-tertiary-light-2 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -9829,7 +9799,6 @@ input:checked + .switcher:before {
 }
 
 .card-tertiary-light-3 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -9888,7 +9857,6 @@ input:checked + .switcher:before {
 }
 
 .card-tertiary-light-4 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -9947,7 +9915,6 @@ input:checked + .switcher:before {
 }
 
 .card-tertiary-light-5 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -10006,7 +9973,6 @@ input:checked + .switcher:before {
 }
 
 .card-tertiary-light-6 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -10065,7 +10031,6 @@ input:checked + .switcher:before {
 }
 
 .card-tertiary-light-7 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -10124,7 +10089,6 @@ input:checked + .switcher:before {
 }
 
 .card-tertiary-light-8 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -10183,7 +10147,6 @@ input:checked + .switcher:before {
 }
 
 .card-tertiary-light-9 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -10244,7 +10207,6 @@ input:checked + .switcher:before {
 }
 
 .card-tertiary-dark-1 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -10305,7 +10267,6 @@ input:checked + .switcher:before {
 }
 
 .card-tertiary-dark-2 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -10366,7 +10327,6 @@ input:checked + .switcher:before {
 }
 
 .card-tertiary-dark-3 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -10427,7 +10387,6 @@ input:checked + .switcher:before {
 }
 
 .card-tertiary-dark-4 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -10488,7 +10447,6 @@ input:checked + .switcher:before {
 }
 
 .card-tertiary-dark-5 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -10549,7 +10507,6 @@ input:checked + .switcher:before {
 }
 
 .card-tertiary-dark-6 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -10610,7 +10567,6 @@ input:checked + .switcher:before {
 }
 
 .card-tertiary-dark-7 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -10671,7 +10627,6 @@ input:checked + .switcher:before {
 }
 
 .card-tertiary-dark-8 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -10732,7 +10687,6 @@ input:checked + .switcher:before {
 }
 
 .card-tertiary-dark-9 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -10804,7 +10758,6 @@ input:checked + .switcher:before {
 }
 
 .card-quaternary-light-1 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -10863,7 +10816,6 @@ input:checked + .switcher:before {
 }
 
 .card-quaternary-light-2 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -10922,7 +10874,6 @@ input:checked + .switcher:before {
 }
 
 .card-quaternary-light-3 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -10981,7 +10932,6 @@ input:checked + .switcher:before {
 }
 
 .card-quaternary-light-4 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -11040,7 +10990,6 @@ input:checked + .switcher:before {
 }
 
 .card-quaternary-light-5 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -11099,7 +11048,6 @@ input:checked + .switcher:before {
 }
 
 .card-quaternary-light-6 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -11158,7 +11106,6 @@ input:checked + .switcher:before {
 }
 
 .card-quaternary-light-7 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -11217,7 +11164,6 @@ input:checked + .switcher:before {
 }
 
 .card-quaternary-light-8 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -11276,7 +11222,6 @@ input:checked + .switcher:before {
 }
 
 .card-quaternary-light-9 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -11337,7 +11282,6 @@ input:checked + .switcher:before {
 }
 
 .card-quaternary-dark-1 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -11398,7 +11342,6 @@ input:checked + .switcher:before {
 }
 
 .card-quaternary-dark-2 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -11459,7 +11402,6 @@ input:checked + .switcher:before {
 }
 
 .card-quaternary-dark-3 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -11520,7 +11462,6 @@ input:checked + .switcher:before {
 }
 
 .card-quaternary-dark-4 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -11581,7 +11522,6 @@ input:checked + .switcher:before {
 }
 
 .card-quaternary-dark-5 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -11642,7 +11582,6 @@ input:checked + .switcher:before {
 }
 
 .card-quaternary-dark-6 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -11703,7 +11642,6 @@ input:checked + .switcher:before {
 }
 
 .card-quaternary-dark-7 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -11764,7 +11702,6 @@ input:checked + .switcher:before {
 }
 
 .card-quaternary-dark-8 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -11825,7 +11762,6 @@ input:checked + .switcher:before {
 }
 
 .card-quaternary-dark-9 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -11897,7 +11833,6 @@ input:checked + .switcher:before {
 }
 
 .card-quinary-light-1 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -11956,7 +11891,6 @@ input:checked + .switcher:before {
 }
 
 .card-quinary-light-2 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -12015,7 +11949,6 @@ input:checked + .switcher:before {
 }
 
 .card-quinary-light-3 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -12074,7 +12007,6 @@ input:checked + .switcher:before {
 }
 
 .card-quinary-light-4 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -12133,7 +12065,6 @@ input:checked + .switcher:before {
 }
 
 .card-quinary-light-5 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -12192,7 +12123,6 @@ input:checked + .switcher:before {
 }
 
 .card-quinary-light-6 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -12251,7 +12181,6 @@ input:checked + .switcher:before {
 }
 
 .card-quinary-light-7 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -12310,7 +12239,6 @@ input:checked + .switcher:before {
 }
 
 .card-quinary-light-8 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -12369,7 +12297,6 @@ input:checked + .switcher:before {
 }
 
 .card-quinary-light-9 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -12430,7 +12357,6 @@ input:checked + .switcher:before {
 }
 
 .card-quinary-dark-1 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -12491,7 +12417,6 @@ input:checked + .switcher:before {
 }
 
 .card-quinary-dark-2 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -12552,7 +12477,6 @@ input:checked + .switcher:before {
 }
 
 .card-quinary-dark-3 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -12613,7 +12537,6 @@ input:checked + .switcher:before {
 }
 
 .card-quinary-dark-4 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -12674,7 +12597,6 @@ input:checked + .switcher:before {
 }
 
 .card-quinary-dark-5 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -12735,7 +12657,6 @@ input:checked + .switcher:before {
 }
 
 .card-quinary-dark-6 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -12796,7 +12717,6 @@ input:checked + .switcher:before {
 }
 
 .card-quinary-dark-7 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -12857,7 +12777,6 @@ input:checked + .switcher:before {
 }
 
 .card-quinary-dark-8 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -12918,7 +12837,6 @@ input:checked + .switcher:before {
 }
 
 .card-quinary-dark-9 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -12990,7 +12908,6 @@ input:checked + .switcher:before {
 }
 
 .card-senary-light-1 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -13049,7 +12966,6 @@ input:checked + .switcher:before {
 }
 
 .card-senary-light-2 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -13108,7 +13024,6 @@ input:checked + .switcher:before {
 }
 
 .card-senary-light-3 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -13167,7 +13082,6 @@ input:checked + .switcher:before {
 }
 
 .card-senary-light-4 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -13226,7 +13140,6 @@ input:checked + .switcher:before {
 }
 
 .card-senary-light-5 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -13285,7 +13198,6 @@ input:checked + .switcher:before {
 }
 
 .card-senary-light-6 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -13344,7 +13256,6 @@ input:checked + .switcher:before {
 }
 
 .card-senary-light-7 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -13403,7 +13314,6 @@ input:checked + .switcher:before {
 }
 
 .card-senary-light-8 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -13462,7 +13372,6 @@ input:checked + .switcher:before {
 }
 
 .card-senary-light-9 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -13523,7 +13432,6 @@ input:checked + .switcher:before {
 }
 
 .card-senary-dark-1 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -13584,7 +13492,6 @@ input:checked + .switcher:before {
 }
 
 .card-senary-dark-2 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -13645,7 +13552,6 @@ input:checked + .switcher:before {
 }
 
 .card-senary-dark-3 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -13706,7 +13612,6 @@ input:checked + .switcher:before {
 }
 
 .card-senary-dark-4 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -13767,7 +13672,6 @@ input:checked + .switcher:before {
 }
 
 .card-senary-dark-5 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -13828,7 +13732,6 @@ input:checked + .switcher:before {
 }
 
 .card-senary-dark-6 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -13889,7 +13792,6 @@ input:checked + .switcher:before {
 }
 
 .card-senary-dark-7 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -13950,7 +13852,6 @@ input:checked + .switcher:before {
 }
 
 .card-senary-dark-8 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -14011,7 +13912,6 @@ input:checked + .switcher:before {
 }
 
 .card-senary-dark-9 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -14083,7 +13983,6 @@ input:checked + .switcher:before {
 }
 
 .card-black-light-1 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -14142,7 +14041,6 @@ input:checked + .switcher:before {
 }
 
 .card-black-light-2 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -14201,7 +14099,6 @@ input:checked + .switcher:before {
 }
 
 .card-black-light-3 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -14260,7 +14157,6 @@ input:checked + .switcher:before {
 }
 
 .card-black-light-4 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -14319,7 +14215,6 @@ input:checked + .switcher:before {
 }
 
 .card-black-light-5 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -14378,7 +14273,6 @@ input:checked + .switcher:before {
 }
 
 .card-black-light-6 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -14437,7 +14331,6 @@ input:checked + .switcher:before {
 }
 
 .card-black-light-7 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -14496,7 +14389,6 @@ input:checked + .switcher:before {
 }
 
 .card-black-light-8 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -14555,7 +14447,6 @@ input:checked + .switcher:before {
 }
 
 .card-black-light-9 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -14616,7 +14507,6 @@ input:checked + .switcher:before {
 }
 
 .card-black-dark-1 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -14677,7 +14567,6 @@ input:checked + .switcher:before {
 }
 
 .card-black-dark-2 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -14738,7 +14627,6 @@ input:checked + .switcher:before {
 }
 
 .card-black-dark-3 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -14799,7 +14687,6 @@ input:checked + .switcher:before {
 }
 
 .card-black-dark-4 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -14860,7 +14747,6 @@ input:checked + .switcher:before {
 }
 
 .card-black-dark-5 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -14921,7 +14807,6 @@ input:checked + .switcher:before {
 }
 
 .card-black-dark-6 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -14982,7 +14867,6 @@ input:checked + .switcher:before {
 }
 
 .card-black-dark-7 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -15043,7 +14927,6 @@ input:checked + .switcher:before {
 }
 
 .card-black-dark-8 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -15104,7 +14987,6 @@ input:checked + .switcher:before {
 }
 
 .card-black-dark-9 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -15176,7 +15058,6 @@ input:checked + .switcher:before {
 }
 
 .card-white-light-1 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -15235,7 +15116,6 @@ input:checked + .switcher:before {
 }
 
 .card-white-light-2 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -15294,7 +15174,6 @@ input:checked + .switcher:before {
 }
 
 .card-white-light-3 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -15353,7 +15232,6 @@ input:checked + .switcher:before {
 }
 
 .card-white-light-4 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -15412,7 +15290,6 @@ input:checked + .switcher:before {
 }
 
 .card-white-light-5 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -15471,7 +15348,6 @@ input:checked + .switcher:before {
 }
 
 .card-white-light-6 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -15530,7 +15406,6 @@ input:checked + .switcher:before {
 }
 
 .card-white-light-7 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -15589,7 +15464,6 @@ input:checked + .switcher:before {
 }
 
 .card-white-light-8 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -15648,7 +15522,6 @@ input:checked + .switcher:before {
 }
 
 .card-white-light-9 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -15709,7 +15582,6 @@ input:checked + .switcher:before {
 }
 
 .card-white-dark-1 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -15770,7 +15642,6 @@ input:checked + .switcher:before {
 }
 
 .card-white-dark-2 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -15831,7 +15702,6 @@ input:checked + .switcher:before {
 }
 
 .card-white-dark-3 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -15892,7 +15762,6 @@ input:checked + .switcher:before {
 }
 
 .card-white-dark-4 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -15953,7 +15822,6 @@ input:checked + .switcher:before {
 }
 
 .card-white-dark-5 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -16014,7 +15882,6 @@ input:checked + .switcher:before {
 }
 
 .card-white-dark-6 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -16075,7 +15942,6 @@ input:checked + .switcher:before {
 }
 
 .card-white-dark-7 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -16136,7 +16002,6 @@ input:checked + .switcher:before {
 }
 
 .card-white-dark-8 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -16197,7 +16062,6 @@ input:checked + .switcher:before {
 }
 
 .card-white-dark-9 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -16269,7 +16133,6 @@ input:checked + .switcher:before {
 }
 
 .card-gray-light-1 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -16328,7 +16191,6 @@ input:checked + .switcher:before {
 }
 
 .card-gray-light-2 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -16387,7 +16249,6 @@ input:checked + .switcher:before {
 }
 
 .card-gray-light-3 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -16446,7 +16307,6 @@ input:checked + .switcher:before {
 }
 
 .card-gray-light-4 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -16505,7 +16365,6 @@ input:checked + .switcher:before {
 }
 
 .card-gray-light-5 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -16564,7 +16423,6 @@ input:checked + .switcher:before {
 }
 
 .card-gray-light-6 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -16623,7 +16481,6 @@ input:checked + .switcher:before {
 }
 
 .card-gray-light-7 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -16682,7 +16539,6 @@ input:checked + .switcher:before {
 }
 
 .card-gray-light-8 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -16741,7 +16597,6 @@ input:checked + .switcher:before {
 }
 
 .card-gray-light-9 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -16802,7 +16657,6 @@ input:checked + .switcher:before {
 }
 
 .card-gray-dark-1 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -16863,7 +16717,6 @@ input:checked + .switcher:before {
 }
 
 .card-gray-dark-2 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -16924,7 +16777,6 @@ input:checked + .switcher:before {
 }
 
 .card-gray-dark-3 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -16985,7 +16837,6 @@ input:checked + .switcher:before {
 }
 
 .card-gray-dark-4 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -17046,7 +16897,6 @@ input:checked + .switcher:before {
 }
 
 .card-gray-dark-5 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -17107,7 +16957,6 @@ input:checked + .switcher:before {
 }
 
 .card-gray-dark-6 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -17168,7 +17017,6 @@ input:checked + .switcher:before {
 }
 
 .card-gray-dark-7 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -17229,7 +17077,6 @@ input:checked + .switcher:before {
 }
 
 .card-gray-dark-8 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -17290,7 +17137,6 @@ input:checked + .switcher:before {
 }
 
 .card-gray-dark-9 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -17362,7 +17208,6 @@ input:checked + .switcher:before {
 }
 
 .card-tw-light-1 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -17421,7 +17266,6 @@ input:checked + .switcher:before {
 }
 
 .card-tw-light-2 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -17480,7 +17324,6 @@ input:checked + .switcher:before {
 }
 
 .card-tw-light-3 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -17539,7 +17382,6 @@ input:checked + .switcher:before {
 }
 
 .card-tw-light-4 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -17598,7 +17440,6 @@ input:checked + .switcher:before {
 }
 
 .card-tw-light-5 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -17657,7 +17498,6 @@ input:checked + .switcher:before {
 }
 
 .card-tw-light-6 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -17716,7 +17556,6 @@ input:checked + .switcher:before {
 }
 
 .card-tw-light-7 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -17775,7 +17614,6 @@ input:checked + .switcher:before {
 }
 
 .card-tw-light-8 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -17834,7 +17672,6 @@ input:checked + .switcher:before {
 }
 
 .card-tw-light-9 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -17895,7 +17732,6 @@ input:checked + .switcher:before {
 }
 
 .card-tw-dark-1 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -17956,7 +17792,6 @@ input:checked + .switcher:before {
 }
 
 .card-tw-dark-2 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -18017,7 +17852,6 @@ input:checked + .switcher:before {
 }
 
 .card-tw-dark-3 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -18078,7 +17912,6 @@ input:checked + .switcher:before {
 }
 
 .card-tw-dark-4 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -18139,7 +17972,6 @@ input:checked + .switcher:before {
 }
 
 .card-tw-dark-5 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -18200,7 +18032,6 @@ input:checked + .switcher:before {
 }
 
 .card-tw-dark-6 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -18261,7 +18092,6 @@ input:checked + .switcher:before {
 }
 
 .card-tw-dark-7 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -18322,7 +18152,6 @@ input:checked + .switcher:before {
 }
 
 .card-tw-dark-8 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -18383,7 +18212,6 @@ input:checked + .switcher:before {
 }
 
 .card-tw-dark-9 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -18455,7 +18283,6 @@ input:checked + .switcher:before {
 }
 
 .card-fb-light-1 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -18514,7 +18341,6 @@ input:checked + .switcher:before {
 }
 
 .card-fb-light-2 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -18573,7 +18399,6 @@ input:checked + .switcher:before {
 }
 
 .card-fb-light-3 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -18632,7 +18457,6 @@ input:checked + .switcher:before {
 }
 
 .card-fb-light-4 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -18691,7 +18515,6 @@ input:checked + .switcher:before {
 }
 
 .card-fb-light-5 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -18750,7 +18573,6 @@ input:checked + .switcher:before {
 }
 
 .card-fb-light-6 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -18809,7 +18631,6 @@ input:checked + .switcher:before {
 }
 
 .card-fb-light-7 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -18868,7 +18689,6 @@ input:checked + .switcher:before {
 }
 
 .card-fb-light-8 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -18927,7 +18747,6 @@ input:checked + .switcher:before {
 }
 
 .card-fb-light-9 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -18988,7 +18807,6 @@ input:checked + .switcher:before {
 }
 
 .card-fb-dark-1 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -19049,7 +18867,6 @@ input:checked + .switcher:before {
 }
 
 .card-fb-dark-2 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -19110,7 +18927,6 @@ input:checked + .switcher:before {
 }
 
 .card-fb-dark-3 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -19171,7 +18987,6 @@ input:checked + .switcher:before {
 }
 
 .card-fb-dark-4 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -19232,7 +19047,6 @@ input:checked + .switcher:before {
 }
 
 .card-fb-dark-5 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -19293,7 +19107,6 @@ input:checked + .switcher:before {
 }
 
 .card-fb-dark-6 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -19354,7 +19167,6 @@ input:checked + .switcher:before {
 }
 
 .card-fb-dark-7 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -19415,7 +19227,6 @@ input:checked + .switcher:before {
 }
 
 .card-fb-dark-8 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -19476,7 +19287,6 @@ input:checked + .switcher:before {
 }
 
 .card-fb-dark-9 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -19548,7 +19358,6 @@ input:checked + .switcher:before {
 }
 
 .card-yt-light-1 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -19607,7 +19416,6 @@ input:checked + .switcher:before {
 }
 
 .card-yt-light-2 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -19666,7 +19474,6 @@ input:checked + .switcher:before {
 }
 
 .card-yt-light-3 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -19725,7 +19532,6 @@ input:checked + .switcher:before {
 }
 
 .card-yt-light-4 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -19784,7 +19590,6 @@ input:checked + .switcher:before {
 }
 
 .card-yt-light-5 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -19843,7 +19648,6 @@ input:checked + .switcher:before {
 }
 
 .card-yt-light-6 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -19902,7 +19706,6 @@ input:checked + .switcher:before {
 }
 
 .card-yt-light-7 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -19961,7 +19764,6 @@ input:checked + .switcher:before {
 }
 
 .card-yt-light-8 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -20020,7 +19822,6 @@ input:checked + .switcher:before {
 }
 
 .card-yt-light-9 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -20081,7 +19882,6 @@ input:checked + .switcher:before {
 }
 
 .card-yt-dark-1 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -20142,7 +19942,6 @@ input:checked + .switcher:before {
 }
 
 .card-yt-dark-2 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -20203,7 +20002,6 @@ input:checked + .switcher:before {
 }
 
 .card-yt-dark-3 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -20264,7 +20062,6 @@ input:checked + .switcher:before {
 }
 
 .card-yt-dark-4 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -20325,7 +20122,6 @@ input:checked + .switcher:before {
 }
 
 .card-yt-dark-5 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -20386,7 +20182,6 @@ input:checked + .switcher:before {
 }
 
 .card-yt-dark-6 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -20447,7 +20242,6 @@ input:checked + .switcher:before {
 }
 
 .card-yt-dark-7 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -20508,7 +20302,6 @@ input:checked + .switcher:before {
 }
 
 .card-yt-dark-8 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -20569,7 +20362,6 @@ input:checked + .switcher:before {
 }
 
 .card-yt-dark-9 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -20641,7 +20433,6 @@ input:checked + .switcher:before {
 }
 
 .card-green-light-1 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -20700,7 +20491,6 @@ input:checked + .switcher:before {
 }
 
 .card-green-light-2 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -20759,7 +20549,6 @@ input:checked + .switcher:before {
 }
 
 .card-green-light-3 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -20818,7 +20607,6 @@ input:checked + .switcher:before {
 }
 
 .card-green-light-4 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -20877,7 +20665,6 @@ input:checked + .switcher:before {
 }
 
 .card-green-light-5 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -20936,7 +20723,6 @@ input:checked + .switcher:before {
 }
 
 .card-green-light-6 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -20995,7 +20781,6 @@ input:checked + .switcher:before {
 }
 
 .card-green-light-7 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -21054,7 +20839,6 @@ input:checked + .switcher:before {
 }
 
 .card-green-light-8 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -21113,7 +20897,6 @@ input:checked + .switcher:before {
 }
 
 .card-green-light-9 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -21174,7 +20957,6 @@ input:checked + .switcher:before {
 }
 
 .card-green-dark-1 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -21235,7 +21017,6 @@ input:checked + .switcher:before {
 }
 
 .card-green-dark-2 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -21296,7 +21077,6 @@ input:checked + .switcher:before {
 }
 
 .card-green-dark-3 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -21357,7 +21137,6 @@ input:checked + .switcher:before {
 }
 
 .card-green-dark-4 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -21418,7 +21197,6 @@ input:checked + .switcher:before {
 }
 
 .card-green-dark-5 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -21479,7 +21257,6 @@ input:checked + .switcher:before {
 }
 
 .card-green-dark-6 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -21540,7 +21317,6 @@ input:checked + .switcher:before {
 }
 
 .card-green-dark-7 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -21601,7 +21377,6 @@ input:checked + .switcher:before {
 }
 
 .card-green-dark-8 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);
@@ -21662,7 +21437,6 @@ input:checked + .switcher:before {
 }
 
 .card-green-dark-9 {
-  display: block;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);

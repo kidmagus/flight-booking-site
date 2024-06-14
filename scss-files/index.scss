@@ -8,6 +8,7 @@
 @import "layout/grid";
 
 //components;
+@import "components/absoluteIcons";
 @import "components/border";
 @import "components/button";
 @import "components/card";
@@ -23,9 +24,9 @@
 @import "components/overlay";
 @import "components/input";
 @import "components/chatsupport";
+@import "components/about";
 
 //pages
-@import "pages/about";
 @import "pages/firstscreen";
 @import "pages/language";
 @import "pages/profile";

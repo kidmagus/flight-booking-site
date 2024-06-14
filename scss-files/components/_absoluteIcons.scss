@@ -1,0 +1,24 @@
+@mixin sticky($bottom, $right, $zIndex) {
+  position: fixed;
+  bottom: $bottom;
+  right: $right;
+  z-index: $zIndex;
+}
+
+@mixin stickyIcon {
+  position: relative;
+  padding: 3px;
+  width: 60px;
+  border-radius: 60px;
+  border: none;
+  height: 60px;
+  font-size: 29px;
+  background-color: #0066cc;
+  color: #fff;
+  cursor: pointer;
+  line-height: 100%;
+}
+
+@mixin stickyIconHover {
+  background-color: darken($color: #0066cc, $amount: 10px);
+}

@@ -75,6 +75,8 @@
     width: 320px;
     height: 200px;
     object-fit: fill;
+    border: 1px solid $senary;
+    border-radius: 20px;
   }
 
   &__desc {

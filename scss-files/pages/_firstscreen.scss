@@ -37,8 +37,8 @@
   position: fixed;
   width: 100%;
   height: 360px;
-  top: 550px;
-  left: 10px;
+  top: 500px;
+  right: 10px;
   z-index: 1000;
   @include card();
 
@@ -84,11 +84,12 @@
       font-weight: 600;
       color: $primary;
     }
-    &--city {
-    }
+    // &--city {
+    // }
 
-    &--country {
-    }
+    // &--country {
+
+    // }
 
     &--temp {
       font-size: 24px;
@@ -111,5 +112,15 @@
     justify-content: center;
     flex-direction: column;
     margin-top: 100px;
+  }
+}
+
+.popdown {
+  @include sticky(10px, 70px, 1000);
+  button {
+    @include stickyIcon;
+  }
+  :hover {
+    @include stickyIconHover;
   }
 }
