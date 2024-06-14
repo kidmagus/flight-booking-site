@@ -1,7 +1,7 @@
 let show;
 
 function load() {
-  show = setTimeout(showPage, 3000);
+  show = setTimeout(showPage, 5000);
 }
 function showPage() {
   document.querySelector(".ring").style.display = "none";
