@@ -1,126 +1,143 @@
 .logo {
-  width: 100%;
-  display: block;
-  object-fit: cover;
-  max-width: 50px;
-  transform: rotate(90deg);
+	width: 100%;
+	display: block;
+	object-fit: cover;
+	max-width: 50px;
+	transform: rotate(90deg);
 }
 
 @include xs {
-  .book {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    row-gap: 10px;
-    align-items: center;
-  }
+	.book {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		row-gap: 10px;
+		align-items: center;
+	}
 }
 
 @include lg {
-  .book {
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    column-gap: 220px;
-    padding-left: 100px;
-    margin-top: 30px;
-    text-align: left;
-  }
+	.book {
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		column-gap: 220px;
+		padding-left: 100px;
+		margin-top: 30px;
+		text-align: left;
+	}
 }
 
 .reserve:hover {
-  background-color: #01022d;
+	background-color: #01022d;
+}
+
+.boarding__btn {
+	float: right;
+	transform: translateY(-150%);
+	margin-right: 10px;
+	background: none;
+	border: none;
+	cursor: pointer;
+	font-size: 28px;
 }
 
 //Weather styles
 .popup {
-  position: fixed;
-  width: 100%;
-  height: 360px;
-  top: 500px;
-  right: 10px;
-  z-index: 1000;
-  @include card();
+	position: fixed;
+	width: 100%;
+	height: 360px;
+	top: 500px;
+	right: 10px;
+	z-index: 2;
+	@include card();
 
-  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(187, 241, 27, 1) 0%, rgba(145, 189, 198, 1) 0%, rgba(220, 221, 119, 1) 19%, rgba(100, 182, 221, 1) 99%);
-  border-radius: $base-border-radius;
-  max-width: 340px;
-  margin: 0 auto;
+	background: linear-gradient(
+		90deg,
+		rgba(2, 0, 36, 1) 0%,
+		rgba(187, 241, 27, 1) 0%,
+		rgba(145, 189, 198, 1) 0%,
+		rgba(220, 221, 119, 1) 19%,
+		rgba(100, 182, 221, 1) 99%
+	);
+	border-radius: $base-border-radius;
+	max-width: 340px;
+	margin: 0 auto;
 }
 .weather {
-  position: relative;
-  &__search {
-    @include about__search;
-  }
+	position: relative;
+	&__search {
+		@include about__search;
+	}
 
-  &__input {
-    @include about__input;
-  }
+	&__input {
+		@include about__input;
+	}
 
-  &__btn {
-    @include about__btn;
+	&__btn {
+		@include about__btn;
 
-    &--close {
-      position: absolute;
-      right: 20px;
-      top: 15px;
-      background: none;
-      border: none;
-      cursor: pointer;
-      font-size: 28px;
-    }
-  }
+		&--close {
+			position: absolute;
+			right: 20px;
+			top: 15px;
+			background: none;
+			border: none;
+			cursor: pointer;
+			font-size: 28px;
+		}
+	}
 
-  &__card {
-    text-align: center;
-    margin-top: 80px;
+	&__card {
+		text-align: center;
+		margin-top: 80px;
 
-    &--heading {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      column-gap: 10px;
-      font-size: 25px;
-      font-weight: 600;
-      color: $primary;
-    }
-    // &--city {
-    // }
+		&--heading {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			column-gap: 10px;
+			font-size: 25px;
+			font-weight: 600;
+			color: $primary;
+		}
+		// &--city {
+		// }
 
-    // &--country {
+		// &--country {
 
-    // }
+		// }
 
-    &--temp {
-      font-size: 24px;
-    }
+		&--temp {
+			font-size: 24px;
+		}
 
-    &--desc {
-      font-size: 14px;
-    }
+		&--desc {
+			font-size: 14px;
+		}
 
-    &--emoji {
-      font-size: 50px;
-      line-height: 0.1;
-    }
-  }
+		&--emoji {
+			font-size: 50px;
+			line-height: 0.1;
+		}
+	}
 
-  &__message {
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 100px;
-  }
+	&__message {
+		color: #fff;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		margin-top: 100px;
+	}
 }
 
 .popdown {
-  @include sticky(10px, 70px, 1000);
-  button {
-    @include stickyIcon;
-  }
-  :hover {
-    @include stickyIconHover;
-  }
+	@include sticky(10px, 70px, 1000);
+	button {
+		@include stickyIcon;
+	}
+	:hover {
+		@include stickyIconHover;
+	}
 }

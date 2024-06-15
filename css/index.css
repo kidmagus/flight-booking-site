@@ -6220,7 +6220,7 @@ input:checked + .switcher:before {
   max-width: 60rem;
   padding: 5rem 6rem;
   box-shadow: 0 4rem 6rem rgba(0, 0, 0, 0.3);
-  z-index: 1000;
+  z-index: 1200;
   transition: all 0.5s ease-in;
 }
 
@@ -6359,13 +6359,23 @@ input:checked + .switcher:before {
   background-color: #01022d;
 }
 
+.boarding__btn {
+  float: right;
+  transform: translateY(-150%);
+  margin-right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 28px;
+}
+
 .popup {
   position: fixed;
   width: 100%;
   height: 360px;
   top: 500px;
   right: 10px;
-  z-index: 1000;
+  z-index: 2;
   padding: 0.75rem;
   background-color: #fff;
   box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.7);

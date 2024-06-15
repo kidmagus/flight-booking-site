@@ -12,10 +12,10 @@ const chosenReturn = document.querySelector(".chosen__return");
 const chosenBoard = document.querySelector(".chosen__board");
 const closeBook = document.querySelector(".btn--close-modal");
 book.addEventListener("click", () => {
-  boarding.classList.remove("hide");
-  chosenFlight.textContent = flight.value;
-  chosenPassenger.textContent = passenger.value;
-  chosenDepart.textContent = departureDate.value;
-  chosenReturn.textContent = returnDate.value;
-  chosenBoard.textContent = departureDate.value;
+	// boarding.classList.remove("hide");
+	chosenFlight.textContent = flight.value;
+	chosenPassenger.textContent = passenger.value;
+	chosenDepart.textContent = departureDate.value;
+	chosenReturn.textContent = returnDate.value;
+	chosenBoard.textContent = departureDate.value;
 });
