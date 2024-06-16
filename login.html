@@ -1,45 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Create Account</title>
-    <link rel="stylesheet" href="css/index.css" />
-  </head>
-  <body class="bg-senary">
-    <button class="btn--go-back"><a href="Homepage.html">X</a></button>
-    <div
-      class="margin-auto mx-width-800 mt-5 p-5 display-f flex-column justify-center align-center"
-    >
-      <h2 class="fw-xl">Log In</h2>
-      <div class="credentials">
-        <label for="email" class="text">Email:</label>
-        <input
-          type="email"
-          placeholder="Write here..."
-          id="email"
-          name="email"
-          class="input"
-          required
-        />
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Create Account</title>
+		<link rel="stylesheet" href="css/index.css" />
+	</head>
+	<body onload="load()" class="bg-senary">
+		<div class="ring">
+			<img src="img/earth.png" class="earth" />
+			<img src="img/bluelogoplane.png" class="plane__logo" />
+			<span><img src="img/plane.png" class="plane" /></span>
+		</div>
 
-        <label for="password" class="text">Password:</label>
-        <input
-          type="password"
-          placeholder="Write here..."
-          id="password"
-          name="password"
-          class="input"
-          required
-        />
-      </div>
+		<div class="hide">
+			<button class="btn--go-back"><a href="Homepage.html">X</a></button>
+			<div
+				class="margin-auto mx-width-800 mt-5 p-5 display-f flex-column justify-center align-center"
+			>
+				<h2 class="fw-xl">Log In</h2>
+				<div class="credentials">
+					<label for="email" class="text">Email:</label>
+					<input
+						type="email"
+						placeholder="Write here..."
+						id="email"
+						name="email"
+						class="input"
+						required
+					/>
 
-      <button class="btn-primary text-white mt-2 w-300">Sign In</button>
-      <p class="ws-nowrap">
-        Don't have an account yet?<span class="ml-1 text-primary fw-xxl"
-          ><a href="createaccount.html">Sign Up</a></span
-        >
-      </p>
-    </div>
-  </body>
+					<label for="password" class="text">Password:</label>
+					<input
+						type="password"
+						placeholder="Write here..."
+						id="password"
+						name="password"
+						class="input"
+						required
+					/>
+				</div>
+
+				<button class="btn-primary text-white mt-2 w-300">Sign In</button>
+				<p class="ws-nowrap">
+					Don't have an account yet?<span class="ml-1 text-primary fw-xxl"
+						><a href="createaccount.html">Sign Up</a></span
+					>
+				</p>
+			</div>
+		</div>
+		<script src="js/loadingmenu.js"></script>
+	</body>
 </html>
